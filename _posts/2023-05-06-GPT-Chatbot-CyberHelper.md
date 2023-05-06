@@ -51,7 +51,7 @@ https://help.openai.com/en/articles/5112595-best-practices-for-api-key-safety
 
 Get the API keys from Chat GPT you will have to signup for a paid account. The request volume should be low and each API req is like .002 Cents per 1k tokens.
 
-![](../Media/Media/Pasted%20image%2020230416114944.png)
+![](../Media/Pasted%20image%2020230416114944.png)
 
 ![](../Media/Media/Pasted%20image%2020230416114831.png)
 
