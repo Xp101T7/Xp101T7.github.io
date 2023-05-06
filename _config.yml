@@ -13,32 +13,32 @@ baseurl: ""
 lang: en
 
 # Change to your timezone › http://www.timezoneconverter.com/cgi-bin/findzone/findzone
-timezone:
+timezone: America/Chicago
 
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Chirpy # the main title
+title: Heckin Techin # the main title
 
-tagline: A text-focused Jekyll theme # it will display as the sub-title
+tagline: Heckin all the Techin # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
-  A minimal, responsive and feature-rich Jekyll theme for technical writing.
+  A place to understand the the mis-understood
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
-url: ""
+url: "https://Xp101T7.github.io"
 
 github:
-  username: github_username # change to your github username
+  username: Xp101T7 # change to your github username
 
 twitter:
-  username: twitter_username # change to your twitter username
+  username: ITINTELPRO # change to your twitter username
 
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: your_full_name
-  email: example@domain.com # change to your email address
+  name: HeckinTechin.Tech
+  email: Techin@heckintechin.tech # change to your email address
   links:
     # The first element serves as the copyright owner's link
     - https://twitter.com/username # change to your twitter homepage
