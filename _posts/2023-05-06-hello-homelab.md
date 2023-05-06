@@ -1,5 +1,5 @@
 ---
-title: Initialiaze Git Repo and Set Obsidian Git Auto Backup on already created vault - GitHub workspace
+title: Initialiaze Git Repo and Set Obsidian Git Auto Backup on already
 date: 2023-05-06 12:00:00 -500
 categories: [github,vscode]
 tags: [Red,Blue,Purple]
