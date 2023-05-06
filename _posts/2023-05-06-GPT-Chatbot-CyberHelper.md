@@ -51,13 +51,10 @@ https://help.openai.com/en/articles/5112595-best-practices-for-api-key-safety
 
 Get the API keys from Chat GPT you will have to signup for a paid account. The request volume should be low and each API req is like .002 Cents per 1k tokens.
 
-![](../Media/Pasted%20image%2020230416114944.png)
-
-![](../Media/Pasted%20image%2020230416114831.png)
 
 For GPT 4 Pricing
 
-![](../Media/Pasted%20image%2020230416114951.png)
+
 
 We are using GPT-3.5-Turbo
 
@@ -138,9 +135,9 @@ You can also use PuTTY as well just remember to select the .pek instead .pem pri
 
 The AWS ssh connection command can be found under the, "connect" tab in the instance summary for your chatbot server
 
-![](../Media/Pasted%20image%2020230416123226.png)
 
-![](../Media/Pasted%20image%2020230416123246.png)
+
+
 
 	ssh -i "~/.ssh/authorized_keys/your_private_key.pem" ubuntu@aws_server_dns_srv_addr.amazonaws.com
 
@@ -194,7 +191,7 @@ https://www.python.org/downloads/source/
 
 Go to the Terminal and select "New Terminal" ctrl+shift+\`
 
-![](../_site/Media/Pasted%20image%2020230416123758.png)
+
 
 From the command line install the pip modules for openai and gradio
 
@@ -209,15 +206,15 @@ In your linux terminal open a new visual code window, then clone the remote repo
 
 	 code
 
-![](../_site/Media/Pasted%20image%2020230416125407.png)
+
 
 https://github.com/AIAdvantage/chatgpt-api-youtube
 
-![](../_site/Media/Pasted%20image%2020230416125454.png)
+
 
 Copy and paste the url into the clone git repo command pallete if you used the AIAdvantage repo then you will need to copy and paste your code from your machine over the top of his for the chatgpt chat assitant website.py file.
 
-![](../_site/Media/Pasted%20image%2020230416130256.png)
+
 
 #### Set Local Environment Variables for the Remote Machine
 
@@ -258,7 +255,7 @@ git config --global user.name "your-username"
 
 Once that is set you can use source control to commit or use bash terminal 
 
-![](../_site/Media/Pasted%20image%2020230416132505.png)
+
 
 When you commit and sync your changes you will be prompted to enter a username and password for the remote repo in the command pallete at the top of VS Code window.
 
