@@ -1,5 +1,5 @@
 ---
-title: Test Remote Hosted Cybersecurity GPT ChatBOT Named "MyCybersecHelper" 
+title: Remote Hosted Cybersecurity GPT ChatBOT Named "MyCybersecHelper" 
 date: 2023-05-06 12:00:00 -500
 categories: [github,vscode]
 tags: [coding,vscode,git,github]
