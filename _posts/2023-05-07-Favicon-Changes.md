@@ -33,6 +33,7 @@ See https://chirpy.cotes.page/posts/customize-the-favicon/ for what I believe to
 
 https://github.com/cotes2020/jekyll-theme-chirpy/issues/636
 
+Create folder in root directory for assets/img/favicons/ and drop the favicons in it push code and build. 
 
 
 
