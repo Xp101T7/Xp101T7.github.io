@@ -555,7 +555,7 @@ https://xp101t7.github.io/posts/Favicon-Changes/
 
 ---
 
-Links and Resources
+# Links and Resources
 
 * [cotes2020/jekyll-theme-chirpy: A minimal, responsive and feature-rich Jekyll theme for technical writing.](https://github.com/cotes2020/jekyll-theme-chirpy#documentation)
 * [Getting Started | Chirpy](https://chirpy.cotes.page/posts/getting-started/)
