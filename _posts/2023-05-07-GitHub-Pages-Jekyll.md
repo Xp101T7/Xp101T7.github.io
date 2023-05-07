@@ -498,6 +498,40 @@ If you commit your post before changing the relative links you will break the bu
 
 You are now all finished and can look in your remote repo to see your posts get rapily built out. 
 
+---
+
+## Adding Linked-in Links
+
+Just uncomment the linked-in refrences in your config.yml file and \_data > contanct.yml and share.yml files.
+
+Also add the code snippet for username same as github and twitter. This will help you use your site as for job interviews.
+
+---
+
+## Additional Value Adds Coming In Future Blog Posts
+
+- Adding your resume to the Site. 
+- Adding a domain name to the site.
+- Linking DynDNS or Static IP to the site.
+- Setting up a better CDN for images.
+- Creating pull requests to practice code colloboration.
+- Adding live action GIFs to your markdown posts.
+- Using Memex to enhance your posts.
+- GitHub Actions rabbit holing.
+- Adding comments to your posts.
+- Much, Much, More...
+
+---
+
+# F***\*in Favicons
+
+Everything is now complete except for those pisky favicons on the remote repo that need to be changed to reflect your creative image. 
+
+Check out my post, "Favicon Changes for Jekyll Site", to find out how I changed the favicons for my site. 
+
+https://xp101t7.github.io/posts/Favicon-Changes/
+
+
 
 
 
