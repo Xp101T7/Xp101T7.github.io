@@ -31,6 +31,7 @@ Right click > image resizer
 
 See https://chirpy.cotes.page/posts/customize-the-favicon/ for what I believe to be the local instance favicon fix. Still working on the build fix for github pages. 
 
+https://github.com/cotes2020/jekyll-theme-chirpy/issues/636
 
 
 
