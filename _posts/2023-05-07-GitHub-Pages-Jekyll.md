@@ -119,9 +119,28 @@ Great work your playground is now built. Now its time to break things.
 
 One quick statement here that needs be addressed is, you dont have to use Chirpy but I highly recommend you stick with it for this build and then explore other themes once you have built this site out for yourself. Many refrences and videos online refer to being able to make a GitHub pages repo and use the theme builder button that use to be backed into the settings > pages > Build and Deployment section. This was depreciated in 2022 for security concerns. 
 
+https://github.com/orgs/community/discussions/32750
+
+https://github.blog/changelog/2022-08-22-github-pages-deprecating-the-theme-picker/
+
+https://github.com/orgs/community/discussions/33924
+
 A list of Jekyll themes can be found here:
 
 	https://jekyllrb.com/docs/themes/
+
+Additional Resources for Jekyll Themes and building Jekyll sites:
+https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll
+
+https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-a-theme-to-your-github-pages-site-using-jekyll
+
+https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll
+
+[(547) How To Build A Website | Github Pages | Jekyll | Template - YouTube](https://www.youtube.com/watch?v=g6AJ9qPPoyc)
+- How To Build A Website | Github Pages | Jekyll | Template
+  
+  
+
 
 ### Modifying \_config.yml
 
@@ -187,5 +206,206 @@ Now commit the changes to your remote repo using GitHub commands from the termin
 yes
 
 ![[Pasted image 20230507123713.png]]
+Then sync
+
+![[Pasted image 20230507123751.png]]
+
+Yes, push & pull
+
+Open your remote images GitHub repo in your web browser and find the file. 
+
+![[Pasted image 20230507124002.png]]
+
+Click into the your image file and the right click on the image and open in new tab.
+
+![[Pasted image 20230507124121.png]]
+
+This is the cdn content path for your stored images on GitHub CDN.
+
+https://raw.githubusercontent.com/Your_GitHub_Path
+
+You will then copy that path and use that path as your avatar url path. 
+
+This method will also be used as an alternative to storing screenshots into GitHub CDN so we can embed images into or blog posts. 
+
+if your intrested in how this works check out this video on Cross-Origin Resource Sharing (CORS). 
+
+[CORS in 100 Seconds - YouTube](https://www.youtube.com/watch?v=4KHiSt0oLJ0)
+- CORS in 100 Seconds
+  
+Also check out emeding images into markdown as I will briefly go over this again later. 
+
+[GitHub Pages: Images with Markdown - YouTube](https://www.youtube.com/watch?v=_1vmtqnKQew)
+- GitHub Pages: Images with Markdown
+
+Better video by same Web Craftie Creator.
+
+[GitHub Pages: Image as Links - YouTube](https://www.youtube.com/watch?v=iDUuTmnH-0A)
+- GitHub Pages: Image as Links
+  
+Now that you have setup your config file you can check your local site and see if its updated those changes. If it has not then you may need to ctrl+c, Y, Y and just redeploy the site once more.  
+
+You are now ready to start creating content. 
+
+## Creating Posts via Markdown files
+
+Your website is all stood up and somewhat configured and now your eager to start posting. The next section is about markdown and posting content. 
+
+Make sure you have preinstalled Obsidian and created a vault within the same directory as our github.io local workspace where our jekyll site is being written. 
+
+Open the vault in the root directory of the GitHub pages repo. 
+
+Add the .obsidian path to the .gitignore file.
+
+![[Pasted image 20230507131405.png]]
+
+Okey, Obsidian will come into play later at the end of this section for know focus on just building our first post using VSCode. 
+
+Navigate to \_posts 
+
+Right click and add file to this folder. 
+
+Title the file: 
+	YYYY-MM-DD-post-info.md
+
+Like below
+
+	2023-05-07-My-First-Post.md
+
+If you dont use this method your posts wont show up bc chirpy looks for the date prepended unlike some online tutorials I found. This was a real pain in the ass bc I thought it was my build that jacked up but no really it was syntax match for the date. 
+
+The first thing Jekyll and Chirpy are going to look for is the Front Matter at the beginning of the post. See Writing a New Post by chirpy for more info:
+
+https://chirpy.cotes.page/posts/write-a-new-post/
+
+The Front Matter you will need on every post:
+
+```YAML
+---
+title: TITLE
+date: YYYY-MM-DD HH:MM:SS +/-TTTT
+categories: [TOP_CATEGORIE, SUB_CATEGORIE]
+tags: [TAG]     # TAG names should always be lowercase
+---
+```
+
+My Front Matter looks like this and I use this as my template in Obsidian which I will go into in a moment. 
+
+```YAML
+---
+title: 
+date: 2023-05-06 12:00:00 -500
+categories: [,] # Can only be two categories
+tags: [,] # Must not have any open commas and use lowercase
+---
+```
+
+I have this saved in Obsidian using Templater by SilentVoid
+
+![[Pasted image 20230507132849.png]]
+
+For now we wont worry about setting that up. Just add your title your date and timezone select categories. Example:
+
+```YAML
+---
+title: My First Post 
+date: 2023-05-06 12:00:00 -500
+categories: [Posts,GitHub.io]
+tags: [Jekyll,Website,GitHub,Code]
+---
+```
+
+Now your ready to start exploring the markdown language. 
+
+There are many guides on the internet for markdown. I recommend getting a quick rundown from the Techno Tim Video I posted above.  Ctrl + F > Techno Tim
+
+Slap together some headers using # and add some code by using tab or \`\`\` Python
+make sure to close it with \`\`\` and also add the code.
+
+You can also search my posts on this website for more tips and tricks about markdown.
+
+Now that you have written your post you need to save it in the VScode. 
+
+You should now be able to refresh and see your post on the local instance of VSCode.
+
+Know all we need to do is push commit our changes locally and push the code to the main repo and GitHub actions will be run on GitHub pages repo to Build and Deploy our site. This is bc the Chirpy template has a workflow prebuilt in the file .github/workflows/pages-deploy.yml 
+
+This deploy yml basically just specifies GitHub actions configs. I went down a rabbit hole hear but this should all be setup and not necessary to modify anything for our site to work. If your intrested in GitHub actions check out some resources I found that really helped me understand what was going on when we pushed our code to the remote repo for GitHub actions to auto Build and Deploy. 
+
+[GitHub Action Workflows on Mac, Windows and Linux - YouTube](https://www.youtube.com/watch?v=oW5MOjv6kBo)
+- GitHub Action Workflows on Mac, Windows and Linux
+  
+Troubleshooting actions or checking actions status can be found under the Actions tab in your GitHub pages repo. 
+
+![[Pasted image 20230507134450.png]]
+
+Once the Repo Builds and Deploys navigate to your site URL and take a look. You have just created a website that you can now upload posts about yourself and the work you do. This is a fundemental step in giving back to your community. 
+
+Its also a good place to showcase your skills and even place your CV/Resume here as well. More on this to come. 
+
+# Obsidian Enhancements
+
+There are three main bonuses to using Obsidian and VSCode in tamdum to create your content. 
+
+1- Obsidian is way to good at helping you create markdown
+1- Obsidian is way to good at templating and commiting code GitHub using plugins
+1- Obsidian is a killer notetaking app in general
+
+Here is a rundown of how to quickly get up and running with Obsidian.
+
+As stated before you should have created a vault in the root directory of your GitHub pages repo locally. 
+
+Before we use the tool we need to make some config changes and also add some plugins. 
+
+Navigate to Settings (The cog wheel on the bottom left.) > then navigate to File and Links > then scroll down and add a defualt location for attachements. Change the dropdown to, "In the folder specified below." > Type folder path, "images", for the folder you created to store files so github cdn can be used. 
+
+![[Pasted image 20230507135348.png]]
+
+Now navigate to Community Plugins and Enable them and then click browse.
+
+![[Pasted image 20230507135607.png]]
+
+now browse to, Obsidian Git by Vinzent
+
+![[Pasted image 20230507135756.png]]
+
+Select it. 
+
+Now browse to templater by SilentVoid 
+
+![[Pasted image 20230507135811.png]]
+
+Now enable those Plugins here.
+
+![[Pasted image 20230507135841.png]]
+
+
+Okey, one last step. Configuring and setting up the plugins.
+
+To setup Obsidian Git all you need to do is create shortcuts for Commit, Push and Pull. This is becuase we already setup GIT, and did our initial commits via VSCode. So obsidian detects the .git and .gitignor files that were created when we cloned the repo down to our local machine.
+
+see my blog post about 
+
+
+
+
+
+
+
+#end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
