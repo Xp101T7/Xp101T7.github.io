@@ -49,7 +49,7 @@ https://github.com/cotes2020/chirpy-starter#installation
 
 You must have a GitHub account, and Git installed so we can pull down the remote repo after its created. 
 
-![[Pasted image 20230507112805.png](../images/Pasted%20image%2020230507112805.png)
+![Pasted image 20230507112805.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230507112805.png)
 
 Make the Repo Public and Create repo from template.
 
@@ -59,13 +59,13 @@ Once we build the GitHub pages site template files we will want to pull that rep
 
 Navigate to the Code drop down and copy the Repo URL.
 
-![[Pasted image 20230507113038.png](../images/Pasted%20image%2020230507113038.png)
+![Pasted image 20230507113038.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230507113038.png)
 
 Now navigate to your VSCode instance and open your Code folder.
 
 If you dont have a folder created already I recommend using the Terminal in VScode to mkdir.
 
-![[Pasted image 20230507113340.png](../images/Pasted%20image%2020230507113340.png)
+![Pasted image 20230507113340.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230507113340.png)
 
 navigate to your C drive or whatever Drive you store Code. 
 
@@ -74,7 +74,7 @@ navigate to your C drive or whatever Drive you store Code.
 Now access and create a workspace for that folder from the start menu in VScode or by using the terminal. 
 
 Use Open Folder and find the Prog folder.
-![[Pasted image 20230507113604.png](../images/Pasted%20image%2020230507113604.png)
+![Pasted image 20230507113604.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230507113604.png)
 
 Or in the Terminal 
 
@@ -179,7 +179,7 @@ https://stock.adobe.com/
 
 Open another terminal window another terminal cd to downloads
 
-![[Pasted image 20230507123105.png](../images/Pasted%20image%2020230507123105.png)
+![Pasted image 20230507123105.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230507123105.png)
 
 Type cd to get to the system root directory
 
@@ -199,26 +199,26 @@ The cp command will copy the image in the downloads folder to your workspace ima
 
 Now commit the changes to your remote repo using GitHub commands from the terminal or by using VScode source control.
 
-![[Pasted image 20230507123639.png](../images/Pasted%20image%2020230507123639.png)
+![Pasted image 20230507123639.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230507123639.png)
 
-![[Pasted image 20230507123706.png](../images/Pasted%20image%2020230507123706.png)
+![Pasted image 20230507123706.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230507123706.png)
 
 yes
 
-![[Pasted image 20230507123713.png](../images/Pasted%20image%2020230507123713.png)
+![Pasted image 20230507123713.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230507123713.png)
 Then sync
 
-![[Pasted image 20230507123751.png](../images/Pasted%20image%2020230507123751.png)
+![Pasted image 20230507123751.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230507123751.png)
 
 Yes, push & pull
 
 Open your remote images GitHub repo in your web browser and find the file. 
 
-![[Pasted image 20230507124002.png](../images/Pasted%20image%2020230507124002.png)
+![Pasted image 20230507124002.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230507124002.png)
 
 Click into the your image file and the right click on the image and open in new tab.
 
-![[Pasted image 20230507124121.png](../images/Pasted%20image%2020230507124121.png)
+![Pasted image 20230507124121.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230507124121.png)
 
 This is the cdn content path for your stored images on GitHub CDN.
 
@@ -257,7 +257,7 @@ Open the vault in the root directory of the GitHub pages repo.
 
 Add the .obsidian path to the .gitignore file.
 
-![[Pasted image 20230507131405.png](../images/Pasted%20image%2020230507131405.png)
+![Pasted image 20230507131405.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230507131405.png)
 
 Okey, Obsidian will come into play later at the end of this section for know focus on just building our first post using VSCode. 
 
@@ -302,7 +302,7 @@ tags: [,] # Must not have any open commas and use lowercase
 
 I have this saved in Obsidian using Templater by SilentVoid
 
-![[Pasted image 20230507132849.png](../images/Pasted%20image%2020230507132849.png)
+![Pasted image 20230507132849.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230507132849.png)
 
 For now we wont worry about setting that up. Just add your title your date and timezone select categories. Example:
 
@@ -337,7 +337,7 @@ This deploy yml basically just specifies GitHub actions configs. I went down a r
   
 Troubleshooting actions or checking actions status can be found under the Actions tab in your GitHub pages repo. 
 
-![[Pasted image 20230507134450.png](../images/Pasted%20image%2020230507134450.png)
+![Pasted image 20230507134450.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230507134450.png)
 
 Once the Repo Builds and Deploys navigate to your site URL and take a look. You have just created a website that you can now upload posts about yourself and the work you do. This is a fundemental step in giving back to your community. 
 
@@ -359,25 +359,25 @@ Before we use the tool we need to make some config changes and also add some plu
 
 Navigate to Settings (The cog wheel on the bottom left.) > then navigate to File and Links > then scroll down and add a defualt location for attachements. Change the dropdown to, "In the folder specified below." > Type folder path, "images", for the folder you created to store files so github cdn can be used. 
 
-![[Pasted image 20230507135348.png](../images/Pasted%20image%2020230507135348.png)
+![Pasted image 20230507135348.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230507135348.png)
 
 Now navigate to Community Plugins and Enable them and then click browse.
 
-![[Pasted image 20230507135607.png](../images/Pasted%20image%2020230507135607.png)
+![Pasted image 20230507135607.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230507135607.png)
 
 now browse to, Obsidian Git by Vinzent
 
-![[Pasted image 20230507135756.png](../images/Pasted%20image%2020230507135756.png)
+![Pasted image 20230507135756.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230507135756.png)
 
 Select it. 
 
 Now browse to templater by SilentVoid 
 
-![[Pasted image 20230507135811.png](../images/Pasted%20image%2020230507135811.png)
+![Pasted image 20230507135811.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230507135811.png)
 
 Now enable those Plugins here.
 
-![[Pasted image 20230507135841.png](../images/Pasted%20image%2020230507135841.png)
+![Pasted image 20230507135841.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230507135841.png)
 
 
 Okey, one last step. Configuring and setting up the plugins.
@@ -389,11 +389,11 @@ For more info on, "# Initialiaze Git Repo and Set Obsidian Git Auto Backup on al
 
 Go into Settings> Hotkeys > and add shorcuts as follows
 
-![[Pasted image 20230507140507.png](../images/Pasted%20image%2020230507140507.png)
+![Pasted image 20230507140507.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230507140507.png)
 
-![[Pasted image 20230507140500.png](../images/Pasted%20image%2020230507140500.png)
+![Pasted image 20230507140500.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230507140500.png)
 
-![[Pasted image 20230507140503.png](../images/Pasted%20image%2020230507140503.png)
+![Pasted image 20230507140503.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230507140503.png)
 
 Now test Commit first, then do a Push. Pull will come in handy when you need to pull changes from your remote repo that have not been synced yet downstream. 
 
@@ -403,13 +403,13 @@ One last change needs to be done with Templetar configs.
 
 Go to settings > community plugins > Templater 
 
-![[Pasted image 20230507140754.png](../images/Pasted%20image%2020230507140754.png)
+![Pasted image 20230507140754.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230507140754.png)
 
 Create a templates folder using mkdir or by adding a new folder to the root directory using vscode or obsidian. 
 
 now add that templates folder to the Templater config. 
 
-![[Pasted image 20230507140914.png](../images/Pasted%20image%2020230507140914.png)
+![Pasted image 20230507140914.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230507140914.png)
 
 Now any files you create under this folder can be accessed as templates. I just templated the Front Matter so i could quickly add a new post template under \_posts. 
 
@@ -417,7 +417,7 @@ You can access the templates using command pallete or by pressing, ALT+N to open
 
 When you select a template it will appear at the bottom of obsidian as Untitled.
 
-![[Pasted image 20230507141203.png](../images/Pasted%20image%2020230507141203.png)
+![Pasted image 20230507141203.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230507141203.png)
 
 You just need to drag that into the \_posts folder and then your ready to use Obsidians power auto markdown creation to write blog posts and then commit them to GitHub with the shortcuts we set above. #Note Remember that you first need to commit before you push or pull. 
 
@@ -445,28 +445,28 @@ https://raw.githubusercontent.com/yourgithubusername/yoursite.github.io/main/ima
 
 We can do this after we have commited the files using VSCode and some multi line cursor shortcuts and another plugin called, "Update relative links".
 
-![[Pasted image 20230507142426.png](../images/Pasted%20image%2020230507142426.png)
+![Pasted image 20230507142426.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230507142426.png)
 After adding the plugin you need to make a quick modification to the configs 
-![[Pasted image 20230507143034.png](../images/Pasted%20image%2020230507143034.png)
+![Pasted image 20230507143034.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230507143034.png)
 
 The links should work well with Relative links updater with shortes path when possible.
 
-![[Pasted image 20230507143039.png](../images/Pasted%20image%2020230507143039.png)
+![Pasted image 20230507143039.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230507143039.png)
 
 
 So add this plugin and then open command pallete, ctrl+p > Type Update and click 
-![[Pasted image 20230507142618.png](../images/Pasted%20image%2020230507142618.png)
-![[Pasted image 20230507142623.png](../images/Pasted%20image%2020230507142623.png)
+![Pasted image 20230507142618.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230507142618.png)
+![Pasted image 20230507142623.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230507142623.png)
 
 Now push these changes to the remote repository using the Git Obsidian shortcuts. #Note this could have been done proir to the push of the images as well. Also the changing of the files path to the remote repo can be done before pushing the files as well but they will not CORS without them being pushed remote first.
 
 So now that the links are updated we can mass change the embeded links in the posts markdown file in VScode quickly.
 
 Find the first instance of an image link being refrenced. 
-![[Pasted image 20230507143256.png](../images/Pasted%20image%2020230507143256.png)
+![Pasted image 20230507143256.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230507143256.png)
 Copy the first portion of the local shortest path refrence. ../images
 
-![[Pasted image 20230507143403.png](../images/Pasted%20image%2020230507143403.png)
+![Pasted image 20230507143403.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230507143403.png)
 
 Then press ctrl+shift+l to highlight all the instances of that varaible in your code. 
 
@@ -480,9 +480,9 @@ Now click anywhere to remove the multiline cursor and then commit and push using
 
 The final link should look like 
 
-![[Pasted image 20230507143955.png](../images/Pasted%20image%2020230507143955.png)
+![Pasted image 20230507143955.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230507143955.png)
 
-Test
+
 
 #end
 
