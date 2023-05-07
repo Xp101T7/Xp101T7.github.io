@@ -482,7 +482,12 @@ The final link should look like
 
 ![Pasted image 20230507143955.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230507143955.png)
 
+If you commit your post before changing the relative links you will break the build process in GitHub actions bc the files cannot be found. You first need to mass update the pointers to the CDN of your choosing then commit and the GitHub actions will be able to find the Image files and the site will build. 
 
+![[Pasted image 20230507145503.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230507145503.png)
+
+
+You are now all finished and can look in your remote repo to see your posts get rapily built out. 
 
 #end
 
