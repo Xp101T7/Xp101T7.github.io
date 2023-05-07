@@ -29,6 +29,7 @@ Right click > image resizer
 
 ![](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted image 20230506223841.png)
 
+See https://chirpy.cotes.page/posts/customize-the-favicon/ for what I believe to be the local instance favicon fix. Still working on the build fix for github pages. 
 
 
 
