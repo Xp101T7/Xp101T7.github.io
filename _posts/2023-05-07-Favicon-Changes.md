@@ -45,7 +45,8 @@ Finally found the solution here:
 
 https://github.com/cotes2020/jekyll-theme-chirpy/issues/325
 
-Closed on 
+Closed on May 7th 2023
+
 
 
 
