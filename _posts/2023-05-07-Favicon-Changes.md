@@ -5,4 +5,4 @@ categories: [Favicon,GitHub.io]
 tags: [Website,Github.io,Favicon,jekyll]
 ---
 
-![[Pasted image 20230506213738.png](../images/Pasted%20image%2020230506213738.png)
+![[](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230506213738.png)
