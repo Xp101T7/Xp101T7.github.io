@@ -446,7 +446,12 @@ https://raw.githubusercontent.com/yourgithubusername/yoursite.github.io/main/ima
 We can do this after we have commited the files using VSCode and some multi line cursor shortcuts and another plugin called, "Update relative links".
 
 ![Pasted image 20230507142426.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230507142426.png)
+
+
 After adding the plugin you need to make a quick modification to the configs 
+
+
+
 ![Pasted image 20230507143034.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230507143034.png)
 
 The links should work well with Relative links updater with shortes path when possible.
@@ -463,7 +468,11 @@ Now push these changes to the remote repository using the Git Obsidian shortcuts
 So now that the links are updated we can mass change the embeded links in the posts markdown file in VScode quickly.
 
 Find the first instance of an image link being refrenced. 
+
+
 ![Pasted image 20230507143256.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230507143256.png)
+
+
 Copy the first portion of the local shortest path refrence. ../images
 
 ![Pasted image 20230507143403.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230507143403.png)
@@ -489,7 +498,7 @@ If you commit your post before changing the relative links you will break the bu
 
 You are now all finished and can look in your remote repo to see your posts get rapily built out. 
 
-#end
+
 
 
 
