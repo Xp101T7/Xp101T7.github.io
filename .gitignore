@@ -21,4 +21,7 @@ package-lock.json
 # Misc
 assets/js/dist
 
+# Ignore obsidian configs this doesn't have to be done and if your sharing your repo this is handy to let others auto config 
+# there obsidian instance with the configs and shortcuts you have already setup.
+# Im ignoring so this is not out on the internet bc remember your repo is public.
 .obsidian
