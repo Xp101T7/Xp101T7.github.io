@@ -5,7 +5,7 @@ categories: [Favicon,GitHub.io]
 tags: [Website,Github.io,Favicon,jekyll]
 ---
 
-![[](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230506213738.png)
+![](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230506213738.png)
 
 Bc the _site > assets > img > favicons pull the gem bundle assets > img > favicons files the files on the Jekyll site do not perisist. You must change the favicons in the gem bundle gem files location for the files to persist the load.  
 
@@ -21,11 +21,14 @@ https://manytools.org/http-html-text/apple-touch-icon-generator/
 
 https://favicon.io/favicon-converter/
 
+https://realfavicongenerator.net/ 
+
 Or convert the Favicons using the power toys image resizer tool.  
 
 Right click > image resizer
 
-![[](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted image 20230506223841.png]]
+![](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted image 20230506223841.png)
+
 
 
 
