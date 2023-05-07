@@ -274,11 +274,15 @@ Like below
 
 If you dont use this method your posts wont show up bc chirpy looks for the date prepended unlike some online tutorials I found. This was a real pain in the ass bc I thought it was my build that jacked up but no really it was syntax match for the date. 
 
+https://stackoverflow.com/questions/30625044/jekyll-post-not-generated
+
 The first thing Jekyll and Chirpy are going to look for is the Front Matter at the beginning of the post. See Writing a New Post by chirpy for more info:
 
 https://chirpy.cotes.page/posts/write-a-new-post/
 
 The Front Matter you will need on every post:
+
+https://jekyllrb.com/docs/front-matter/
 
 ```YAML
 ---
@@ -303,6 +307,11 @@ tags: [,] # Must not have any open commas and use lowercase
 I have this saved in Obsidian using Templater by SilentVoid
 
 ![Pasted image 20230507132849.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230507132849.png)
+
+Check out this article by TrustedSec which dropped me in on the use of Obsidians Templater Plugin:
+
+https://www.trustedsec.com/blog/obsidian-taming-a-collective-consciousness/
+
 
 For now we wont worry about setting that up. Just add your title your date and timezone select categories. Example:
 
@@ -342,6 +351,12 @@ Troubleshooting actions or checking actions status can be found under the Action
 Once the Repo Builds and Deploys navigate to your site URL and take a look. You have just created a website that you can now upload posts about yourself and the work you do. This is a fundemental step in giving back to your community. 
 
 Its also a good place to showcase your skills and even place your CV/Resume here as well. More on this to come. 
+
+https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/setting-a-markdown-processor-for-your-github-pages-site-using-jekyll
+
+
+---
+
 
 # Obsidian Enhancements
 
@@ -498,6 +513,9 @@ If you commit your post before changing the relative links you will break the bu
 
 You are now all finished and can look in your remote repo to see your posts get rapily built out. 
 
+https://stackoverflow.com/questions/40197197/jekyll-how-to-display-an-image-in-a-post
+
+
 ---
 
 ## Adding Linked-in Links
@@ -511,6 +529,9 @@ Also add the code snippet for username same as github and twitter. This will hel
 ## Additional Value Adds Coming In Future Blog Posts
 
 - Adding your resume to the Site. 
+	- [Create a Free Website Using Jekyll and Host on Github - Very Fast and Secure DIY EASY - YouTube](https://www.youtube.com/watch?v=GEunDyG_C54)
+	- https://www.alteredtech.io/posts/resume/
+	- https://carolstran.github.io/cv/
 - Adding a domain name to the site.
 - Linking DynDNS or Static IP to the site.
 - Setting up a better CDN for images.
@@ -532,6 +553,42 @@ Check out my post, "Favicon Changes for Jekyll Site", to find out how I changed 
 https://xp101t7.github.io/posts/Favicon-Changes/
 
 
+---
+
+Links and Resources
+
+* [cotes2020/jekyll-theme-chirpy: A minimal, responsive and feature-rich Jekyll theme for technical writing.](https://github.com/cotes2020/jekyll-theme-chirpy#documentation)
+* [Getting Started | Chirpy](https://chirpy.cotes.page/posts/getting-started/)
+* [Jekyll on Windows | Jekyll • Simple, blog-aware, static sites](https://jekyllrb.com/docs/installation/windows/)
+* [Installation | Jekyll • Simple, blog-aware, static sites](https://jekyllrb.com/docs/installation/)
+* [Downloads](https://rubyinstaller.org/downloads/)
+* [cotes2020/chirpy-starter: The startup template for the Chirpy.](https://github.com/cotes2020/chirpy-starter#installation)
+* [Creating a GitHub Pages site with Jekyll - GitHub Docs](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll)
+* [Github pages wizard, where is the theme chooser? · community · Discussion #32750](https://github.com/orgs/community/discussions/32750)
+* [Jekyll post not generated - Stack Overflow](https://stackoverflow.com/questions/30625044/jekyll-post-not-generated)
+* [Writing a New Post | Chirpy](https://chirpy.cotes.page/posts/write-a-new-post/)
+* [Front Matter | Jekyll • Simple, blog-aware, static sites](https://jekyllrb.com/docs/front-matter/)
+* [(548) How To Build A Website | Github Pages | Jekyll | Template - YouTube](https://www.youtube.com/watch?v=g6AJ9qPPoyc)
+* [Testing your GitHub Pages site locally with Jekyll - GitHub Docs](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll)
+* [Adding a theme to your GitHub Pages site using Jekyll - GitHub Docs](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-a-theme-to-your-github-pages-site-using-jekyll)
+* [where has the theme-chooser gone !? is it still in use !? · community · Discussion #33924](https://github.com/orgs/community/discussions/33924)
+* [GitHub Pages: Deprecating the theme picker | GitHub Changelog](https://github.blog/changelog/2022-08-22-github-pages-deprecating-the-theme-picker/)
+* [(548) GitHub Pages: Image as Links - YouTube](https://www.youtube.com/watch?v=iDUuTmnH-0A)
+* [(548) GitHub Pages: Images with Markdown - YouTube](https://www.youtube.com/watch?v=_1vmtqnKQew)
+* [(548) CORS in 100 Seconds - YouTube](https://www.youtube.com/watch?v=4KHiSt0oLJ0)
+* [(548) Meet Jekyll - The Static Site Generator - YouTube](https://www.youtube.com/watch?v=F8iOU1ci19Q&t=248s)
+* [Stock photos, royalty-free images, graphics, vectors & videos | Adobe Stock](https://stock.adobe.com/)
+* [(548) GitHub Action Workflows on Mac, Windows and Linux - YouTube](https://www.youtube.com/watch?v=oW5MOjv6kBo)
+* [Obsidian, Taming a Collective Consciousness - TrustedSec](https://www.trustedsec.com/blog/obsidian-taming-a-collective-consciousness/)
+* [(548) Create a Free Website Using Jekyll and Host on Github - Very Fast and Secure DIY EASY - YouTube](https://www.youtube.com/watch?v=GEunDyG_C54)
+* [(548) Go Go gh-pages! Build a website with GitHub Pages and Jekyll (workshop) - YouTube](https://www.youtube.com/watch?v=SWVjQsvQocA)
+* [Favicon Generator for perfect icons on all browsers](https://realfavicongenerator.net/)
+* [Creating a Jekyll resume with a theme | AlteredTech](https://www.alteredtech.io/posts/resume/)
+* [(548) Getting Started with GitHub Pages - YouTube](https://www.youtube.com/watch?v=QyFcl_Fba-k)
+* [Jekyll how to display an image in a post - Stack Overflow](https://stackoverflow.com/questions/40197197/jekyll-how-to-display-an-image-in-a-post)
+* [Carolyn Stransky | 💻✒️📄🌟](https://carolstran.github.io/cv/)
+* [Setting a Markdown processor for your GitHub Pages site using Jekyll - GitHub Docs](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/setting-a-markdown-processor-for-your-github-pages-site-using-jekyll)
+* [Troubleshooting Jekyll build errors for GitHub Pages sites - GitHub Docs](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/troubleshooting-jekyll-build-errors-for-github-pages-sites)
 
 
 

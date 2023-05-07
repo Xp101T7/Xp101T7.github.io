@@ -47,6 +47,11 @@ https://github.com/cotes2020/jekyll-theme-chirpy/issues/325
 
 Closed on May 7th 2023
 
+https://github.com/orgs/community/discussions/23990
+
+https://github.com/orgs/community/discussions/22625
+
+https://github.com/cotes2020/jekyll-theme-chirpy/issues/325
 
 
 
