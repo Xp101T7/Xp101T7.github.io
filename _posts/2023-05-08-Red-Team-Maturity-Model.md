@@ -14,3 +14,4 @@ LOB = Line of Business
 
 https://scythe.io/library/building-an-internal-red-team-go-purple-first
 
+#Mentees
