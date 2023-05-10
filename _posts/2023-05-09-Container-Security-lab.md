@@ -381,7 +381,6 @@ In order to sign the image, we will:
 Check out docker CLI 
 https://docs.docker.com/engine/reference/commandline/cli/
 
-
 ```bash
 docker pull cgr.dev/chainguard/cosign
 
@@ -409,16 +408,6 @@ Our image is signed!!!
 In the above command, we generated a public and private keypair, signed the manifest digest of the `localhost:443/example-secure` image, and pushed that signature to our local registry to live alongside the image.
 
 We also added an annotation of `tag` with the value of `latest` to describe what we are signing at the moment, which is the `latest` tag. These annotations provide valuable additional context, and it is very common to add annotations such as the `git` commit hash, details about the CI/CD pipeline that built and signed the image, etc.
-
-<div> 
-<p>Although the private key is encrypted, many secret scanning tools don’t have exclusions for encrypted cosign private
-keys and will still flag them as insecure.</p>
-<p>For instance, <a class="reference external" href="https://github.com/gitleaks/gitleaks">gitleaks</a> (one of my favourite secret scanning tools) will flag an
-encrypted cosign private key, and doesn’t have a straightforward workaround due to the Go programming language’s regex
-library’s choice not to support negative lookaheads (see the issue I opened on this
-<a class="reference external" href="https://github.com/gitleaks/gitleaks/issues/1034">here</a>). The best approach in most cases, albeit imperfect, is to
-exclude the specific <code class="docutils literal notranslate"><span class="pre">.key</span></code> file from your secret scanning tool.</p>
-</div>
 
 <div>
 <p>Although the private key is encrypted, many secret scanning tools don’t have exclusions for encrypted cosign private
