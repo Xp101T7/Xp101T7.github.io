@@ -10,7 +10,7 @@ tags: [Adverserial Simulation,Purple,Red,Blue]
 
 LOB = Line of Business
 
-![[Pasted image 20230508191007.png](../images/Pasted%20image%2020230508191007.png)
+![[Pasted image 20230508191007.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230508191007.png)
 
 https://scythe.io/library/building-an-internal-red-team-go-purple-first
 
