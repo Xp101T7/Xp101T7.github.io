@@ -1,6 +1,6 @@
 ---
 title: Container Security Basics - A SANS Workshop addition
-date: 2023-05-09 12:00:00 -500
+date: 2023-05-06 12:00:00 -500
 categories: [Containers, Cloud]
 tags: [Ubuntu,Docker,SANS,Containers]
 ---
@@ -28,23 +28,17 @@ System Requirements:
 Use the Stack config file attached below:
 
 
-![Pasted image 20230509191408.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/
-Pasted%20image%2020230509191408.png)
+![Pasted image 20230509191408.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230509191408.png)
 
-![Pasted image 20230509191321.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/
-Pasted%20image%2020230509191321.png)
+![Pasted image 20230509191321.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230509191321.png)
 
-![Pasted image 20230509191509.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/
-Pasted%20image%2020230509191509.png)
+![Pasted image 20230509191509.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230509191509.png)
 
-![Pasted image 20230509192515.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/
-Pasted%20image%2020230509192515.png)
+![Pasted image 20230509192515.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230509192515.png)
 
-![Pasted image 20230509192518.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/
-Pasted%20image%2020230509192518.png)
+![Pasted image 20230509192518.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230509192518.png)
 
-![Pasted image 20230509192521.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/
-Pasted%20image%2020230509192521.png)
+![Pasted image 20230509192521.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230509192521.png)
 
 Connect to SSH client
 
@@ -72,8 +66,7 @@ Can only run docker as root
 
 	docker ps
 
-![Pasted image 20230509193613.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/
-Pasted%20image%2020230509193613.png)
+![Pasted image 20230509193613.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230509193613.png)
 
 Add User to Docker Group 
 
@@ -92,8 +85,7 @@ If no pass exit and reconnect to SSH sesh.
 
 	docker ps
 
-![Pasted image 20230509193832.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/
-Pasted%20image%2020230509193832.png)
+![Pasted image 20230509193832.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230509193832.png)
 
 Time to Get Started
 
@@ -177,19 +169,14 @@ docker inspect example-secure | jq -r '.[].Config.User'
 ```
 
 
-![Pasted image 20230509195804.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/
-Pasted%20image%2020230509195804.png)
+![Pasted image 20230509195804.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230509195804.png)
 
-![Pasted image 20230509195832.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/
-Pasted%20image%2020230509195832.png)
-![Pasted image 20230509195927.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/
-Pasted%20image%2020230509195927.png)
+![Pasted image 20230509195832.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230509195832.png)
+![Pasted image 20230509195927.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230509195927.png)
 
-![Pasted image 20230509195936.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/
-Pasted%20image%2020230509195936.png)
+![Pasted image 20230509195936.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230509195936.png)
 
-![Pasted image 20230509195942.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/
-Pasted%20image%2020230509195942.png)
+![Pasted image 20230509195942.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230509195942.png)
 
 You can still run container insecurely though by telling it to use root.
 
@@ -226,8 +213,7 @@ Didnt work so we try a few other ways.
 
 	docker images --digests example-secure
 
-![Pasted image 20230509201135.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/
-Pasted%20image%2020230509201135.png)
+![Pasted image 20230509201135.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230509201135.png)
 
 No Digest here. So we are seeing another docker specific implementation detail. A Digest will not be created for new images until its pushed to a registry(manifest digest, and V2 reg.) or if it was pulled from V2 reg.
 
@@ -272,26 +258,19 @@ popd
 
 ```
 
-![Pasted image 20230509201914.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/
-Pasted%20image%2020230509201914.png)
+![Pasted image 20230509201914.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230509201914.png)
 
-![Pasted image 20230509202506.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/
-Pasted%20image%2020230509202506.png)
+![Pasted image 20230509202506.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230509202506.png)
 
-![Pasted image 20230509202517.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/
-Pasted%20image%2020230509202517.png)
+![Pasted image 20230509202517.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230509202517.png)
 
-![Pasted image 20230509202530.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/
-Pasted%20image%2020230509202530.png)
+![Pasted image 20230509202530.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230509202530.png)
 
-![Pasted image 20230509202540.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/
-Pasted%20image%2020230509202540.png)
+![Pasted image 20230509202540.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230509202540.png)
 
-![Pasted image 20230509202546.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/
-Pasted%20image%2020230509202546.png)
+![Pasted image 20230509202546.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230509202546.png)
 
-Wat is the ![[Pasted image 20230509202922.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/
-Pasted%20image%2020230509202922.png)
+Wat is the ![[Pasted image 20230509202922.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230509202922.png)
 
 <div class="dropdown hint admonition toggle" id="toggle-1">
 <p class="admonition-title" data-target="toggle-1" data-button="button-toggle-1">Answer
@@ -373,15 +352,13 @@ now we push the fully qualified image name to the local registry and not the doc
 
 	docker push localhost:443/example-secure
 
-![Pasted image 20230509203720.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/
-Pasted%20image%2020230509203720.png)
+![Pasted image 20230509203720.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230509203720.png)
 
 Yay, we have an image digest. 🚀🚀🚀
 
 	docker inspect --format='{{index .RepoDigests 0}}' example-secure
 
-![Pasted image 20230509203745.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/
-Pasted%20image%2020230509203745.png)
+![Pasted image 20230509203745.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230509203745.png)
 
 ---
 
@@ -427,14 +404,11 @@ docker run -e COSIGN_PASSWORD -u 0 --network workshop -v "$(pwd):/app" -w /app c
 
 ```
 
-![Pasted image 20230509204734.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/
-Pasted%20image%2020230509204734.png)
+![Pasted image 20230509204734.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230509204734.png)
 
-![Pasted image 20230509204747.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/
-Pasted%20image%2020230509204747.png)
+![Pasted image 20230509204747.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230509204747.png)
 
-![Pasted image 20230509204756.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/
-Pasted%20image%2020230509204756.png)
+![Pasted image 20230509204756.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230509204756.png)
 
 Our image is signed!!!
 
@@ -478,11 +452,9 @@ docker run -e COSIGN_PASSWORD -u 0 --network workshop -v "$(pwd):/app" -w /app c
 echo $?
 ```
 
-![Pasted image 20230509205440.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/
-Pasted%20image%2020230509205440.png)
+![Pasted image 20230509205440.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230509205440.png)
 
-![Pasted image 20230509205449.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/
-Pasted%20image%2020230509205449.png)
+![Pasted image 20230509205449.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230509205449.png)
 
 <p>If you looked carefully, you may have seen the <code class="docutils literal notranslate"><span class="pre">--allow-insecure-registry</span></code> argument. This is only for our test
 environment, where we are using a self-signed certificate for the registry. In production this should <strong>not</strong> ever be
@@ -495,8 +467,7 @@ And in addition, evidence of this signing process was added to a public, softwar
 	curl https://rekor.sigstore.dev/api/v1/log/entries/24296fb24b8ad77ad9ca41820f93cdbef2264692ced5c142d19e2ba859ab9f2b500d1917afe8ef30
 
 
-![Pasted image 20230509205620.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/
-Pasted%20image%2020230509205620.png)
+![Pasted image 20230509205620.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230509205620.png)
 
 View also in web browser
 https://search.sigstore.dev/?logIndex=18624203
@@ -547,8 +518,7 @@ monitor for/prevent, but something to be aware of.</p>
 ![[Pasted image 20230509210833.png]]
 ![[Pasted image 20230509210841.png]]
 
-![Pasted image 20230509210848.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/
-Pasted%20image%2020230509210848.png)
+![Pasted image 20230509210848.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230509210848.png)
 
 
 This creates an new file called example-secure.sbom.json with an SBOM of the image finding 143 artifacts. 
@@ -569,10 +539,8 @@ ls -sh example-secure.vulns.json
 jq '.matches | length' < example-secure.vulns.json
 ```
 
-![Pasted image 20230509211744.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/
-Pasted%20image%2020230509211744.png)
-![Pasted image 20230509211751.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/
-Pasted%20image%2020230509211751.png)
+![Pasted image 20230509211744.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230509211744.png)
+![Pasted image 20230509211751.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230509211751.png)
 
 
 
@@ -598,17 +566,13 @@ jq '.matches | length' < chainguard-nginx.vulns.json
 ```
 
 
-![Pasted image 20230509211943.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/
-Pasted%20image%2020230509211943.png)
+![Pasted image 20230509211943.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230509211943.png)
 
-![Pasted image 20230509212010.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/
-Pasted%20image%2020230509212010.png)
+![Pasted image 20230509212010.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230509212010.png)
 
-![Pasted image 20230509212017.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/
-Pasted%20image%2020230509212017.png)
+![Pasted image 20230509212017.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230509212017.png)
 
-![Pasted image 20230509212022.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/
-Pasted%20image%2020230509212022.png)
+![Pasted image 20230509212022.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230509212022.png)
 
 0 vulns  not a joke 
 
@@ -626,8 +590,7 @@ Do we even need example-secure ? Check the nginx image user...
 
 	docker inspect cgr.dev/chainguard/nginx:latest | jq -r '.[].Config.User'
 
-![Pasted image 20230509212156.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/
-Pasted%20image%2020230509212156.png)
+![Pasted image 20230509212156.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230509212156.png)
 
 Not root UID 0 
 
@@ -637,8 +600,7 @@ To get you pointed in the right direction for some additional investigation, you
 
 	docker run cgr.dev/chainguard/cosign tree cgr.dev/chainguard/nginx
 
-![Pasted image 20230509212712.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/
-Pasted%20image%2020230509212712.png)
+![Pasted image 20230509212712.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230509212712.png)
 
  In addition to a signature and SBOM, there are 4 other attestations available for this image that we could use to evaluate and make policy decisions about whether or not we’re comfortable using it in our environment.
 
@@ -660,11 +622,9 @@ curl -s -k https://localhost:443/v2/example-secure/manifests/$mdigest | sha256su
 curl -s -k https://localhost:443/v2/example-secure/manifests/$mdigest | head -14
 ```
 
-![Pasted image 20230509212730.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/
-Pasted%20image%2020230509212730.png)
+![Pasted image 20230509212730.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230509212730.png)
 
-![Pasted image 20230509212743.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/
-Pasted%20image%2020230509212743.png)
+![Pasted image 20230509212743.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230509212743.png)
 
 
 The sha256 sum is the same in many outputs bc its a content addressable store. Contents returned by the API are the same as its SHA 256 sum.
@@ -680,8 +640,7 @@ curl -s -k https://localhost:443/v2/example-secure/blobs/$ldigest | tar -tvzf - 
 ```
 
 
-![Pasted image 20230509213126.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/
-Pasted%20image%2020230509213126.png)
+![Pasted image 20230509213126.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230509213126.png)
 
 We can investigate the files that are in this layer.
 
@@ -707,11 +666,9 @@ curl -s -k https://localhost:443/v2/example-secure/blobs/$cdigest | jq -r '.hist
 
 ```
 
-![Pasted image 20230509213345.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/
-Pasted%20image%2020230509213345.png)
+![Pasted image 20230509213345.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230509213345.png)
 
-![Pasted image 20230509213353.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/
-Pasted%20image%2020230509213353.png)
+![Pasted image 20230509213353.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230509213353.png)
 
 (Im Getting Tired so Im cheating and Copy Pasting from the Lab Design.)
 
@@ -756,8 +713,7 @@ mount /dev/xvda1 /mnt
 chroot /mnt
 ```
 
-![Pasted image 20230509213846.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/
-Pasted%20image%2020230509213846.png)
+![Pasted image 20230509213846.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230509213846.png)
 
 Now that we’ve `chroot`ed into that filesystem, we are effectively on the host computer. Let’s see see if we can find anything juicy, and maybe drop a quick backdoor for ourselves later:
 
@@ -769,13 +725,11 @@ sudo useradd hacker
 sudo passwd hacker
 ```
 
-![Pasted image 20230509214110.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/
-Pasted%20image%2020230509214110.png)
+![Pasted image 20230509214110.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230509214110.png)
 
 Finally, let’s drop our public key into the `ubuntu` user’s `~/.ssh/authorized_keys` file so there’s another way back in.
 
-![Pasted image 20230509214203.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/
-Pasted%20image%2020230509214203.png)
+![Pasted image 20230509214203.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230509214203.png)
 
 Back on the host, we can see evidence of the break-in:
 
@@ -785,8 +739,7 @@ tail -3 /etc/passwd
 tail -1 /home/ubuntu/.ssh/authorized_keys
 ```
 
-![Pasted image 20230509214246.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/
-Pasted%20image%2020230509214246.png)
+![Pasted image 20230509214246.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230509214246.png)
 
 ### Fix it!!
 
@@ -794,8 +747,7 @@ How do we prevent these sort of issues? Specific to this breakout, even if we co
 
 	docker run -it -u 1001 --privileged ubuntu:20.04
 
-![Pasted image 20230509214400.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/
-Pasted%20image%2020230509214400.png)
+![Pasted image 20230509214400.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230509214400.png)
 
 ---
 
@@ -819,16 +771,13 @@ docker volume rm workshop-certs
 rm -f cosign.key cosign.pub
 ```
 
-![Pasted image 20230509214802.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/
-Pasted%20image%2020230509214802.png)
+![Pasted image 20230509214802.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230509214802.png)
 
-![Pasted image 20230509214827.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/
-Pasted%20image%2020230509214827.png)
+![Pasted image 20230509214827.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230509214827.png)
 
 Just Delete !!!
 
-![Pasted image 20230509214929.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/
-Pasted%20image%2020230509214929.png)
+![Pasted image 20230509214929.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230509214929.png)
 
 Thanks, https://jonzeolla.com/
 
@@ -837,7 +786,6 @@ Thanks, https://jonzeolla.com/
 ## Links and Resources
 
 * [Container Security 101 — Jon Zeolla documentation](https://jonzeolla.com/labs/container-security-101.html#image-signing)
-* [Jon Zeolla — Jon Zeolla documentation](https://jonzeolla.com/#)
 * [(99+) Jon Zeolla | LinkedIn](https://www.linkedin.com/in/jonzeolla/)
 * [Rekor Search](https://search.sigstore.dev/?logIndex=18624203)
 * [Implement import & export functionality for volumes · Issue #1436 · docker/cli](https://github.com/docker/cli/issues/1436)
@@ -855,4 +803,3 @@ Thanks, https://jonzeolla.com/
 * [(563) ChatGPT Changed How I Write Code... - YouTube](https://www.youtube.com/watch?v=gW92DcU1s-U)
 * [(563) Using SSH keys on Windows - YouTube](https://www.youtube.com/watch?v=q9YA5H53IHQ)
 * [What Are Docker Image Layers? · vsupalov.com](https://vsupalov.com/docker-image-layers/)
-
