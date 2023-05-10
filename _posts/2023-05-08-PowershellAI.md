@@ -1,6 +1,6 @@
 ---
 title: Building Powershell AI
-date: 2023-05-06 12:00:00 -500
+date: 2023-05-09 12:00:00 -500
 categories: [PowershellAI,AI]
 tags: [AI,PowershellAI,Terminal,Code]
 ---
