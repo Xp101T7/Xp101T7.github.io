@@ -396,7 +396,6 @@ docker run -e COSIGN_PASSWORD -u 0 --network workshop -v "$(pwd):/app" -w /app c
 image_digest="$(docker inspect --format='{{index .RepoDigests 0}}' localhost:443/example-secure | cut -f2 -d@ )"
 
 docker run -e COSIGN_PASSWORD -u 0 --network workshop -v "$(pwd):/app" -w /app cgr.dev/chainguard/cosign sign --yes --key cosign.key -a tag=latest registry:443/example-secure@"${image_digest}" --allow-insecure-registry
-
 ```
 
 ![Pasted image 20230509204734.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230509204734.png)
