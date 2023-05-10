@@ -832,3 +832,29 @@ Pasted%20image%2020230509214929.png)
 
 Thanks, https://jonzeolla.com/
 
+---
+
+## Links and Resources
+
+* [Container Security 101 — Jon Zeolla documentation](https://jonzeolla.com/labs/container-security-101.html#image-signing)
+* [Jon Zeolla — Jon Zeolla documentation](https://jonzeolla.com/#)
+* [(99+) Jon Zeolla | LinkedIn](https://www.linkedin.com/in/jonzeolla/)
+* [Rekor Search](https://search.sigstore.dev/?logIndex=18624203)
+* [Implement import & export functionality for volumes · Issue #1436 · docker/cli](https://github.com/docker/cli/issues/1436)
+* [Use the Docker command line | Docker Documentation](https://docs.docker.com/engine/reference/commandline/cli/)
+* [Share the application | Docker Documentation](https://docs.docker.com/get-started/04_sharing_app/)
+* [What is a Container? | Docker](https://www.docker.com/resources/what-container/)
+* [hadolint/hadolint: Dockerfile linter, validate inline bash, written in Haskell](https://github.com/hadolint/hadolint)
+* [Isolate containers with a user namespace | Docker Documentation](https://docs.docker.com/engine/security/userns-remap/)
+* [nginx Tags | Docker Hub](https://hub.docker.com/_/nginx/tags)
+* [Docker Registry | Docker Documentation](https://docs.docker.com/registry/)
+* [Jon Zeolla — Jon Zeolla documentation](https://jonzeolla.com/index.html)
+* [Jon Zeolla — Jon Zeolla documentation](https://jonzeolla.com/ref/jon-zeolla.html)
+* [Welcome — Sphinx documentation](https://www.sphinx-doc.org/en/master/)
+* [readthedocs/sphinx_rtd_theme: Sphinx theme for readthedocs.org](https://github.com/readthedocs/sphinx_rtd_theme)
+* [Home | Read the Docs](https://readthedocs.org/)
+* [Specifying stack name and parameters - AWS CloudFormation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-using-console-create-stack-parameters.html)
+* [(563) ChatGPT Changed How I Write Code... - YouTube](https://www.youtube.com/watch?v=gW92DcU1s-U)
+* [(563) Using SSH keys on Windows - YouTube](https://www.youtube.com/watch?v=q9YA5H53IHQ)
+* [What Are Docker Image Layers? · vsupalov.com](https://vsupalov.com/docker-image-layers/)
+
