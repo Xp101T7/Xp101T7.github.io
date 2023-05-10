@@ -1,6 +1,6 @@
 ---
 title: InfiniteGPT No more limitations with Prompt token limits 
-date: 2023-05-06 12:00:00 -500
+date: 2023-05-08 12:00:00 -500
 categories: [Chatgpt,AI]
 tags: [Chatgpt,AI,GPT,Prompts]
 ---

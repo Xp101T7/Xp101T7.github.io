@@ -1,6 +1,6 @@
 ---
 title: Installing Ruby
-date: 2023-05-06 12:00:00 -500
+date: 2023-05-07 12:00:00 -500
 categories: [Coding,Ruby]
 tags: [Ruby,Coding,Gem,Bundle]
 ---

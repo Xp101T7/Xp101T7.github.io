@@ -1,6 +1,6 @@
 ---
 title: Fireship - 13 Advanced useful Git Techniques
-date: 2023-05-06 12:00:00 -500
+date: 2023-05-08 12:00:00 -500
 categories: [GitHub,GIT]
 tags: [GIT,GIT,Commit,Main]
 ---
