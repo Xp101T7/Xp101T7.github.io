@@ -385,11 +385,6 @@ https://docs.docker.com/engine/reference/commandline/cli/
 ```bash
 docker pull cgr.dev/chainguard/cosign
 
-
-
-
-
-
 docker network create workshop
 
 docker network connect workshop registry
