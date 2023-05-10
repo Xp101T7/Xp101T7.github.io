@@ -848,8 +848,6 @@ Thanks, https://jonzeolla.com/
 * [Isolate containers with a user namespace | Docker Documentation](https://docs.docker.com/engine/security/userns-remap/)
 * [nginx Tags | Docker Hub](https://hub.docker.com/_/nginx/tags)
 * [Docker Registry | Docker Documentation](https://docs.docker.com/registry/)
-* [Jon Zeolla — Jon Zeolla documentation](https://jonzeolla.com/index.html)
-* [Jon Zeolla — Jon Zeolla documentation](https://jonzeolla.com/ref/jon-zeolla.html)
 * [Welcome — Sphinx documentation](https://www.sphinx-doc.org/en/master/)
 * [readthedocs/sphinx_rtd_theme: Sphinx theme for readthedocs.org](https://github.com/readthedocs/sphinx_rtd_theme)
 * [Home | Read the Docs](https://readthedocs.org/)
