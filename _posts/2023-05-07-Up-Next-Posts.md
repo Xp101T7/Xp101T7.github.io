@@ -5,7 +5,7 @@ categories: [UpNext]
 tags: [Ideas,ComingSoon]
 ---
 
--  Powershell AI 
+-  Powershell AI - Completed
 	- https://github.com/dfinke/PowerShellAI
 	- https://twitter.com/dfinke/status/1651954117072257024
 - Finish post on Oh-my-posh
