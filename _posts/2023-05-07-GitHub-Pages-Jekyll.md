@@ -74,6 +74,7 @@ navigate to your C drive or whatever Drive you store Code.
 Now access and create a workspace for that folder from the start menu in VScode or by using the terminal. 
 
 Use Open Folder and find the Prog folder.
+
 ![Pasted image 20230507113604.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230507113604.png)
 
 Or in the Terminal 
@@ -136,11 +137,11 @@ Additional Resources for Jekyll Themes and building Jekyll sites:
 
 [https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll)
 
-[(547) How To Build A Website | Github Pages | Jekyll | Template - YouTube](https://www.youtube.com/watch?v=g6AJ9qPPoyc)
-- How To Build A Website | Github Pages | Jekyll | Template
-  
-  
+|How To Build A Website | Github Pages | Jekyll | Template
 
+[(547) How To Build A Website Github Pages  Jekyll Template - YouTube](https://www.youtube.com/watch?v=g6AJ9qPPoyc)
+
+---
 
 ### Modifying \_config.yml
 
@@ -206,7 +207,10 @@ Now commit the changes to your remote repo using GitHub commands from the termin
 yes
 
 ![Pasted image 20230507123713.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230507123713.png)
+
+
 Then sync
+
 
 ![Pasted image 20230507123751.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230507123751.png)
 
@@ -557,17 +561,17 @@ Check out my post, "Favicon Changes for Jekyll Site", to find out how I changed 
 # Links and Resources
 
 * [cotes2020/jekyll-theme-chirpy: A minimal, responsive and feature-rich Jekyll theme for technical writing.](https://github.com/cotes2020/jekyll-theme-chirpy#documentation)
-* [Getting Started | Chirpy](https://chirpy.cotes.page/posts/getting-started/)
-* [Jekyll on Windows | Jekyll • Simple, blog-aware, static sites](https://jekyllrb.com/docs/installation/windows/)
-* [Installation | Jekyll • Simple, blog-aware, static sites](https://jekyllrb.com/docs/installation/)
+* [Getting Started Chirpy](https://chirpy.cotes.page/posts/getting-started/)
+* [Jekyll on Windows Jekyll • Simple, blog-aware, static sites](https://jekyllrb.com/docs/installation/windows/)
+* [Installation Jekyll • Simple, blog-aware, static sites](https://jekyllrb.com/docs/installation/)
 * [Downloads](https://rubyinstaller.org/downloads/)
 * [cotes2020/chirpy-starter: The startup template for the Chirpy.](https://github.com/cotes2020/chirpy-starter#installation)
 * [Creating a GitHub Pages site with Jekyll - GitHub Docs](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll)
 * [Github pages wizard, where is the theme chooser? · community · Discussion #32750](https://github.com/orgs/community/discussions/32750)
 * [Jekyll post not generated - Stack Overflow](https://stackoverflow.com/questions/30625044/jekyll-post-not-generated)
-* [Writing a New Post | Chirpy](https://chirpy.cotes.page/posts/write-a-new-post/)
-* [Front Matter | Jekyll • Simple, blog-aware, static sites](https://jekyllrb.com/docs/front-matter/)
-* [(548) How To Build A Website | Github Pages | Jekyll | Template - YouTube](https://www.youtube.com/watch?v=g6AJ9qPPoyc)
+* [Writing a New Post Chirpy](https://chirpy.cotes.page/posts/write-a-new-post/)
+* [Front Matter Jekyll • Simple, blog-aware, static sites](https://jekyllrb.com/docs/front-matter/)
+* [(548) How To Build A Website  Github Pages Jekyll Template - YouTube](https://www.youtube.com/watch?v=g6AJ9qPPoyc)
 * [Testing your GitHub Pages site locally with Jekyll - GitHub Docs](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll)
 * [Adding a theme to your GitHub Pages site using Jekyll - GitHub Docs](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-a-theme-to-your-github-pages-site-using-jekyll)
 * [where has the theme-chooser gone !? is it still in use !? · community · Discussion #33924](https://github.com/orgs/community/discussions/33924)
@@ -582,10 +586,10 @@ Check out my post, "Favicon Changes for Jekyll Site", to find out how I changed 
 * [(548) Create a Free Website Using Jekyll and Host on Github - Very Fast and Secure DIY EASY - YouTube](https://www.youtube.com/watch?v=GEunDyG_C54)
 * [(548) Go Go gh-pages! Build a website with GitHub Pages and Jekyll (workshop) - YouTube](https://www.youtube.com/watch?v=SWVjQsvQocA)
 * [Favicon Generator for perfect icons on all browsers](https://realfavicongenerator.net/)
-* [Creating a Jekyll resume with a theme | AlteredTech](https://www.alteredtech.io/posts/resume/)
+* [Creating a Jekyll resume with a theme AlteredTech](https://www.alteredtech.io/posts/resume/)
 * [(548) Getting Started with GitHub Pages - YouTube](https://www.youtube.com/watch?v=QyFcl_Fba-k)
 * [Jekyll how to display an image in a post - Stack Overflow](https://stackoverflow.com/questions/40197197/jekyll-how-to-display-an-image-in-a-post)
-* [Carolyn Stransky | 💻✒️📄🌟](https://carolstran.github.io/cv/)
+* [Carolyn Stransky  💻✒️📄🌟](https://carolstran.github.io/cv/)
 * [Setting a Markdown processor for your GitHub Pages site using Jekyll - GitHub Docs](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/setting-a-markdown-processor-for-your-github-pages-site-using-jekyll)
 * [Troubleshooting Jekyll build errors for GitHub Pages sites - GitHub Docs](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/troubleshooting-jekyll-build-errors-for-github-pages-sites)
 
