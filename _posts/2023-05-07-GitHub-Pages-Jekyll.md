@@ -9,11 +9,11 @@ tags: [Website,Jekyll,GitHub.io,Favicon]
 
 There are several tools needed to build a GitHub pages site using jekyll themes. The following list are things I believe need to be understood and installed prior to building the site. 
 
-1- VSCode installation
- 1- A Path setup to build the environment in locally. 
-1- A GitHub account
-1- Installation of Obsidian (Not Necessary for Build but is a big part of easy blog creation and note taking.)
-1- Git installed
+1. VSCode installation 
+2. A Path setup to build the environment in locally. 
+3. A GitHub account 
+4. Installation of Obsidian (Not Necessary for Build but is a big part of easy blog creation and note taking.)
+5. Git installed
 
 Once those items are installed you should be well setup to begin rolling out your GitHub pages website using Chirpy in no time. 
 
@@ -24,20 +24,20 @@ Once those items are installed you should be well setup to begin rolling out you
 
 Go to the Chirpy Github page and follow the instructions in the readme. 
 
-https://github.com/cotes2020/jekyll-theme-chirpy#documentation
+[https://github.com/cotes2020/jekyll-theme-chirpy#documentation](https://github.com/cotes2020/jekyll-theme-chirpy#documentation)
 
 In the ReadMe there is a link to the Wiki pages that you will need to follow to install this build. 
 
-https://github.com/cotes2020/jekyll-theme-chirpy/wiki
+[https://github.com/cotes2020/jekyll-theme-chirpy/wiki](https://github.com/cotes2020/jekyll-theme-chirpy/wiki)
 
 The first step is to make sure you have the initial setup to install Jekyll. First we need to install ruby and Jekyll.
 
 Follow these guides from the Jekyllrb.com site.
 
-https://jekyllrb.com/docs/installation/
+[https://jekyllrb.com/docs/installation/](https://jekyllrb.com/docs/installation/)
 
 I'm using windows for this build but Options are available for all OS's
-https://jekyllrb.com/docs/installation/windows/
+[https://jekyllrb.com/docs/installation/windows/](https://jekyllrb.com/docs/installation/windows/)
 
 Once you have installed Ruby and Jekyll its now time to begin creating the site. 
 
@@ -45,7 +45,7 @@ I went with the Chirpy starter method bc I wanted to have freedom of breaking an
 
 Scroll down to Prerequisites and double check that you have completted these items. Once confirmed preq's move to Installations and begin to create the clone of the Chirpy starter using there template. Click the use the template link in the below README.md
 
-https://github.com/cotes2020/chirpy-starter#installation
+[https://github.com/cotes2020/chirpy-starter#installation](https://github.com/cotes2020/chirpy-starter#installation)
 
 You must have a GitHub account, and Git installed so we can pull down the remote repo after its created. 
 
@@ -119,22 +119,22 @@ Great work your playground is now built. Now its time to break things.
 
 One quick statement here that needs be addressed is, you dont have to use Chirpy but I highly recommend you stick with it for this build and then explore other themes once you have built this site out for yourself. Many refrences and videos online refer to being able to make a GitHub pages repo and use the theme builder button that use to be backed into the settings > pages > Build and Deployment section. This was depreciated in 2022 for security concerns. 
 
-https://github.com/orgs/community/discussions/32750
+[https://github.com/orgs/community/discussions/32750](https://github.com/orgs/community/discussions/32750)
 
-https://github.blog/changelog/2022-08-22-github-pages-deprecating-the-theme-picker/
+[https://github.blog/changelog/2022-08-22-github-pages-deprecating-the-theme-picker/](https://github.blog/changelog/2022-08-22-github-pages-deprecating-the-theme-picker/)
 
-https://github.com/orgs/community/discussions/33924
+[https://github.com/orgs/community/discussions/33924](https://github.com/orgs/community/discussions/33924)
 
 A list of Jekyll themes can be found here:
 
-	https://jekyllrb.com/docs/themes/
+[https://jekyllrb.com/docs/themes/](https://jekyllrb.com/docs/themes/)
 
 Additional Resources for Jekyll Themes and building Jekyll sites:
-https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll
+[https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll)
 
-https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-a-theme-to-your-github-pages-site-using-jekyll
+[https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-a-theme-to-your-github-pages-site-using-jekyll](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-a-theme-to-your-github-pages-site-using-jekyll)
 
-https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll
+[https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll)
 
 [(547) How To Build A Website | Github Pages | Jekyll | Template - YouTube](https://www.youtube.com/watch?v=g6AJ9qPPoyc)
 - How To Build A Website | Github Pages | Jekyll | Template
@@ -274,15 +274,15 @@ Like below
 
 If you dont use this method your posts wont show up bc chirpy looks for the date prepended unlike some online tutorials I found. This was a real pain in the ass bc I thought it was my build that jacked up but no really it was syntax match for the date. 
 
-https://stackoverflow.com/questions/30625044/jekyll-post-not-generated
+[https://stackoverflow.com/questions/30625044/jekyll-post-not-generated](https://stackoverflow.com/questions/30625044/jekyll-post-not-generated)
 
 The first thing Jekyll and Chirpy are going to look for is the Front Matter at the beginning of the post. See Writing a New Post by chirpy for more info:
 
-https://chirpy.cotes.page/posts/write-a-new-post/
+[https://chirpy.cotes.page/posts/write-a-new-post/](https://chirpy.cotes.page/posts/write-a-new-post/)
 
 The Front Matter you will need on every post:
 
-https://jekyllrb.com/docs/front-matter/
+[https://jekyllrb.com/docs/front-matter/](https://jekyllrb.com/docs/front-matter/)
 
 ```YAML
 ---
@@ -310,8 +310,7 @@ I have this saved in Obsidian using Templater by SilentVoid
 
 Check out this article by TrustedSec which dropped me in on the use of Obsidians Templater Plugin:
 
-https://www.trustedsec.com/blog/obsidian-taming-a-collective-consciousness/
-
+[https://www.trustedsec.com/blog/obsidian-taming-a-collective-consciousness/](https://www.trustedsec.com/blog/obsidian-taming-a-collective-consciousness/)
 
 For now we wont worry about setting that up. Just add your title your date and timezone select categories. Example:
 
@@ -352,7 +351,7 @@ Once the Repo Builds and Deploys navigate to your site URL and take a look. You 
 
 Its also a good place to showcase your skills and even place your CV/Resume here as well. More on this to come. 
 
-https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/setting-a-markdown-processor-for-your-github-pages-site-using-jekyll
+[https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/setting-a-markdown-processor-for-your-github-pages-site-using-jekyll](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/setting-a-markdown-processor-for-your-github-pages-site-using-jekyll)
 
 
 ---
@@ -362,9 +361,9 @@ https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/sett
 
 There are three main bonuses to using Obsidian and VSCode in tamdum to create your content. 
 
-1- Obsidian is way to good at helping you create markdown
-1- Obsidian is way to good at templating and commiting code GitHub using plugins
-1- Obsidian is a killer notetaking app in general
+1. Obsidian is way to good at helping you create markdown
+2. Obsidian is way to good at templating and commiting code GitHub using plugins
+3. Obsidian is a killer notetaking app in general
 
 Here is a rundown of how to quickly get up and running with Obsidian.
 
@@ -399,7 +398,7 @@ Okey, one last step. Configuring and setting up the plugins.
 
 To setup Obsidian Git all you need to do is create shortcuts for Commit, Push and Pull. This is becuase we already setup GIT, and did our initial commits via VSCode. So obsidian detects the .git and .gitignor files that were created when we cloned the repo down to our local machine.
 
-See my blog post about, https://xp101t7.github.io/posts/Init-Git-Repo-Obsidian/
+See my blog post about, [ https://xp101t7.github.io/posts/Init-Git-Repo-Obsidian/](https://xp101t7.github.io/posts/Init-Git-Repo-Obsidian/)
 For more info on, "# Initialiaze Git Repo and Set Obsidian Git Auto Backup on already".
 
 Go into Settings> Hotkeys > and add shorcuts as follows
@@ -513,7 +512,7 @@ If you commit your post before changing the relative links you will break the bu
 
 You are now all finished and can look in your remote repo to see your posts get rapily built out. 
 
-https://stackoverflow.com/questions/40197197/jekyll-how-to-display-an-image-in-a-post
+[https://stackoverflow.com/questions/40197197/jekyll-how-to-display-an-image-in-a-post](https://stackoverflow.com/questions/40197197/jekyll-how-to-display-an-image-in-a-post)
 
 
 ---
@@ -530,8 +529,8 @@ Also add the code snippet for username same as github and twitter. This will hel
 
 - Adding your resume to the Site. 
 	- [Create a Free Website Using Jekyll and Host on Github - Very Fast and Secure DIY EASY - YouTube](https://www.youtube.com/watch?v=GEunDyG_C54)
-	- https://www.alteredtech.io/posts/resume/
-	- https://carolstran.github.io/cv/
+	- [https://www.alteredtech.io/posts/resume/](https://www.alteredtech.io/posts/resume/)
+	- [https://carolstran.github.io/cv/](https://carolstran.github.io/cv/)
 - Adding a domain name to the site.
 - Linking DynDNS or Static IP to the site.
 - Setting up a better CDN for images.
@@ -550,7 +549,7 @@ Everything is now complete except for those pisky favicons on the remote repo th
 
 Check out my post, "Favicon Changes for Jekyll Site", to find out how I changed the favicons for my site. 
 
-https://xp101t7.github.io/posts/Favicon-Changes/
+[https://xp101t7.github.io/posts/Favicon-Changes/](https://xp101t7.github.io/posts/Favicon-Changes/)
 
 
 ---
