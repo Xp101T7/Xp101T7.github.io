@@ -28,7 +28,9 @@ I've seen a lot of 'lists' floating around about content creators you should fol
 - Rana Khalil – [https://lnkd.in/gDZyJmqt](https://lnkd.in/gDZyJmqt?- trk=public_post_embed-text)
 - Luke Stephens – [https://lnkd.in/g-MCS8-w](https://lnkd.in/g-MCS8-w?- trk=public_post_embed-text) 
 
-- Honorable Mentions / Inactive Channels (good content, please come back and make videos): - STÖK – [https://lnkd.in/gpR4hm8G](https://lnkd.in/gpR4hm8G?trk=public_post_embed-text) 
+Honorable Mentions / Inactive Channels (good content, please come back and make videos): 
+
+- STÖK – [https://lnkd.in/gpR4hm8G](https://lnkd.in/gpR4hm8G?trk=public_post_embed-text) 
 - Codingo – [https://lnkd.in/g-EUz-dC](https://lnkd.in/g-EUz-dC?trk=public_post_embed-text) 
 - Joe Helle – [https://lnkd.in/gWNeJPyT](https://lnkd.in/gWNeJPyT?- trk=public_post_embed-text) 
 - Conda – [https://lnkd.in/gYxPSypQ](https://lnkd.in/gYxPSypQ?trk=public_post_embed-text) 
