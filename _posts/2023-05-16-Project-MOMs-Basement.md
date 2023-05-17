@@ -24,3 +24,5 @@ Here are the setup links we will be using today:
 * [Best VS Code Extensions 2022-23](https://www.gitkraken.com/blog/best-vs-code-extensions)
 * [Using VS Code Pets - VS Code Pets documentation](https://tonybaloney.github.io/vscode-pets/usage.html#removing-a-single-pet-or-multiple-pets)
 
+If you get stuck dont worry, I can help you later at any point to get everything to square one. 
+
