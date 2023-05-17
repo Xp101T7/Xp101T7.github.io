@@ -13,7 +13,7 @@ We will follow the Guide I developed for todays meeting:
 
 Here are the setup links we will be using today:
 
-* [How to Build a GitHub Pages website using jekyll and Chirpy | Heckin Techin](https://xp101t7.github.io/posts/GitHub-Pages-Jekyll/)
+* [How to Build a GitHub Pages website using jekyll and Chirpy Heckin Techin](https://xp101t7.github.io/posts/GitHub-Pages-Jekyll/)
 * [Download - Obsidian](https://obsidian.md/download)
 * [Download Ruby](https://www.ruby-lang.org/en/downloads/)
 * [Download Python Python.org](https://www.python.org/downloads/)
@@ -23,3 +23,4 @@ Here are the setup links we will be using today:
 * [Top 10 AI Extensions for Visual Studio Code -- Visual Studio Magazine](https://visualstudiomagazine.com/articles/2023/03/08/vs-code-ai-tools.aspx)
 * [Best VS Code Extensions 2022-23](https://www.gitkraken.com/blog/best-vs-code-extensions)
 * [Using VS Code Pets - VS Code Pets documentation](https://tonybaloney.github.io/vscode-pets/usage.html#removing-a-single-pet-or-multiple-pets)
+
