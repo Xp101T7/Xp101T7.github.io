@@ -19,7 +19,7 @@ Here are the setup links we will be using today:
 * [Download Python Python.org](https://www.python.org/downloads/)
 * [Visual Studio Code - Code Editing. Redefined](https://code.visualstudio.com/)
 * [Git - Downloads](https://git-scm.com/downloads)
-* [10 Best VSCode Extensions by Rajesh Chittampally | Medium | CodeX](https://medium.com/codex/10-best-vscode-extensions-8fbe4cc7a71)
+* [10 Best VSCode Extensions by Rajesh Chittampally Medium CodeX](https://medium.com/codex/10-best-vscode-extensions-8fbe4cc7a71)
 * [Top 10 AI Extensions for Visual Studio Code -- Visual Studio Magazine](https://visualstudiomagazine.com/articles/2023/03/08/vs-code-ai-tools.aspx)
 * [Best VS Code Extensions 2022-23](https://www.gitkraken.com/blog/best-vs-code-extensions)
 * [Using VS Code Pets - VS Code Pets documentation](https://tonybaloney.github.io/vscode-pets/usage.html#removing-a-single-pet-or-multiple-pets)
