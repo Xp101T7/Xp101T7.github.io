@@ -14,9 +14,8 @@ This talk touches on some juicy info about modern rasomware trends. Intrestingly
 
 Check out the extracted links from this Talk and also give it a watch. 
 
-[Stay Ahead of Ransomware Livestream Series - Episode 2 - YouTube](https://www.youtube.com/watch?v=UIbmwHUQxTc)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/UIbmwHUQxTc?start=1722" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-  
   ---
 
 ## Episode 2 Links
