@@ -1,6 +1,6 @@
 ---
 title: <%tp.system.prompt("Title")%>
-date: <%tp.date.now("YYYY-MM-DD")%>
+date: <%tp.date.now("YYYY-MM-DD")%> 12:00:00 -500
 categories: [<%tp.system.prompt("Category1")%>,<%tp.system.prompt("Category2")%>]
 tags: [<%tp.system.prompt("Tag1")%>,<%tp.system.prompt("Tag2")%>,<%tp.system.prompt("Tag3")%>,<%tp.system.prompt("Tag4")%>]
 <%* let qcFileName = await tp.system.prompt("Note Title")

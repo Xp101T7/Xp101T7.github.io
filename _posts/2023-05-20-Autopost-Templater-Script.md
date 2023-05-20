@@ -1,6 +1,6 @@
 ---
 title: Creating Automated Template for Swift Blog Posting 
-date: 2023-05-20
+date: 2023-05-20 12:00:00 -500
 categories: [Templater,Obsidian]
 tags: [Code,Templater,Obsidian,GitHub]
 ---
