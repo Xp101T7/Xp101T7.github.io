@@ -1,8 +1,8 @@
 ---
-title: 
-date: 2023-05-06 12:00:00 -500
-categories: [,]
-tags: [,,,]
+title:  SANS DFIR - # Stay Ahead of Ransomware Livestream Series - Episode 2
+date: 2023-05-20 12:00:00 -500
+categories: [SANS, Ransomware]
+tags: [Ransomware,SANS,VX-Underground,Threats]
 ---
 
 ## SANS DFIR - # Stay Ahead of Ransomware Livestream Series - Episode 2
