@@ -1,23 +1,4 @@
 ---
-title: Temp Post
-date: 2023-05-05 12:00:00 -500
-categories: [Template,Temp]
-tags: [Template,Temp,Tem,Te]
----
-
-This is only a test of the emergency broadcast system.
-
-![](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Screenshot%202023-05-06%20194421.png)
-
-
-https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/
-
----
-
-My Templater Command for Jekyll Chirpy auto post creator.
-
-```bash
----
 title: <%tp.system.prompt("Title")%>
 date: <%tp.date.now("YYYY-MM-DD")%>
 categories: [<%tp.system.prompt("Category1")%>,<%tp.system.prompt("Category2")%>]
@@ -27,8 +8,8 @@ text = qcFileName.replace(":", " -")
 titleName = tp.date.now("YYYY-MM-DD") + "-" + text 
 await tp.file.rename(titleName);-%>
 <%await tp.file.move("/_posts/" + titleName)%>
+
 ---
 
 <% tp.web.daily_quote() %>
-```
 
