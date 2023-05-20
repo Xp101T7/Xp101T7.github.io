@@ -60,10 +60,16 @@ Follow these youtubes about templater setups in obsidian for more information:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/5j9fAvJCaig" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9V5stavM5qQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/QpJbeP8f55A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ---
 
-## Links and resources
+## Links and Resources
 
 
+* [Create new note, use template, automactically add to folder, groups vs. folders vs. tags : r/ObsidianMD](https://www.reddit.com/r/ObsidianMD/comments/w2z155/create_new_note_use_template_automactically_add/)
+* [(626) Using the Obsidian Templater Plugin - YouTube](https://www.youtube.com/watch?v=5j9fAvJCaig)
+* [(626) How to Use Templater Plugin to Automatically Move Files on Creation on Obsidian - YouTube](https://www.youtube.com/watch?v=9V5stavM5qQ)
+* [(626) Automate Your Vault With Templater - How to Use Templater in Obsidian - YouTube](https://www.youtube.com/watch?v=QpJbeP8f55A)
