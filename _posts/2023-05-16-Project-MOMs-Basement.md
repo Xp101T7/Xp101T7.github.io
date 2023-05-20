@@ -1,6 +1,6 @@
 ---
 title: Project Mom's Basement Dwellers setup
-date: 2023-05-16 12:00:00 -500
+date: 2023-05-17 12:00:00 -500
 categories: [Lab,Coding]
 tags: [VScode,Ruby,Python,Obsidian,GIT,Extensions]
 ---
@@ -26,3 +26,6 @@ Here are the setup links we will be using today:
 
 If you get stuck dont worry, I can help you later at any point to get everything to square one. 
 
+---
+
+Bonus Content Coming next week, stay tuned
