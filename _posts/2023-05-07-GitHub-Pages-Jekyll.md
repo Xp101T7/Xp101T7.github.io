@@ -1,5 +1,5 @@
 ---
-title: How to Build a GitHub Pages website using jekyll and Chirpy
+title: How to Build a GitHub Pages website using Jekyll and Chirpy
 date: 2023-05-07 12:00:00 -500
 categories: [GitHub.io,Jekyll]
 tags: [Website,Jekyll,GitHub.io,Favicon]
@@ -19,7 +19,7 @@ Once those items are installed you should be well setup to begin rolling out you
 
 ---
 
-# Getting Chirpy linked to GitHub.io
+## Getting Chirpy linked to GitHub.io
 
 
 Go to the Chirpy Github page and follow the instructions in the readme. 
@@ -116,7 +116,7 @@ It will serve out the webserver using localhost address on port 4000
 Great work your playground is now built. Now its time to break things. 
 
 
-# Customizing Your GitHub Pages Site
+## Customizing Your GitHub Pages Site
 
 One quick statement here that needs be addressed is, you dont have to use Chirpy but I highly recommend you stick with it for this build and then explore other themes once you have built this site out for yourself. Many refrences and videos online refer to being able to make a GitHub pages repo and use the theme builder button that use to be backed into the settings > pages > Build and Deployment section. This was depreciated in 2022 for security concerns. 
 
@@ -143,7 +143,7 @@ Additional Resources for Jekyll Themes and building Jekyll sites:
 
 ---
 
-### Modifying \_config.yml
+## Modifying \_config.yml
 
 I followed the amazing guide by Techno Tim for a good portion of my initial build. Check out the following video especially the customizing your site section of the video Linked below.
 
@@ -360,8 +360,7 @@ Its also a good place to showcase your skills and even place your CV/Resume here
 
 ---
 
-
-# Obsidian Enhancements
+## Obsidian Enhancements
 
 There are three main bonuses to using Obsidian and VSCode in tamdum to create your content. 
 
@@ -441,7 +440,7 @@ You just need to drag that into the \_posts folder and then your ready to use Ob
 
 ---
 
-# Images Embedding
+## Images Embedding
 
 We discussed this ealier but this is one way to how we will add images using GitHub CDN and then use VScode to auto update the links.
 
@@ -547,7 +546,7 @@ Also add the code snippet for username same as github and twitter. This will hel
 
 ---
 
-# F***\*in Favicons
+## F***\*in Favicons
 
 Everything is now complete except for those pisky favicons on the remote repo that need to be changed to reflect your creative image. 
 
@@ -558,7 +557,7 @@ Check out my post, "Favicon Changes for Jekyll Site", to find out how I changed 
 
 ---
 
-# Links and Resources
+## Links and Resources
 
 * [cotes2020/jekyll-theme-chirpy: A minimal, responsive and feature-rich Jekyll theme for technical writing.](https://github.com/cotes2020/jekyll-theme-chirpy#documentation)
 * [Getting Started Chirpy](https://chirpy.cotes.page/posts/getting-started/)
