@@ -50,6 +50,12 @@ social:
     # - https://www.facebook.com/username
     - https://www.linkedin.com/in/username
 
+plugins:
+  - jekyll-feed
+title: HeckinTechin.tech blog
+description: Welcome to my blog
+author: Hack3dlazy
+
 google_site_verification: # fill in to your verification string
 
 # ↑ --------------------------
