@@ -1,10 +1,8 @@
 ---
 title: SANS Workshops and Other Goodies
 date: 2023-07-08 12:00:00 -500
-categories: [Blue Team,Red Team]
-tags: [Red Team,Training,Workshops,SANS]
-
-
+categories: [BlueTeam,RedTeam]
+tags: [RedTeam,Training,Workshops,SANS]
 ---
 
 > He is no fool who gives what he cannot keep to gain what he cannot lose.
