@@ -90,7 +90,7 @@ Devices.
 
 29. [Public WWW](https://publicwww.com/) :~ Source code search engine  
 
-30. SearchCode :~ Search 75 billion lines of code from 40 million projects.
+30. [searchcode](https://searchcode.com/) :~ Search 75 billion lines of code from 40 million projects.
 
 
 ---
