@@ -10,4 +10,4 @@ tags: [document,pdf,usecase,siem]
 > Life is a succession of moments. To live each one is to succeed.
 > — <cite>Corita Kent</cite>
 
-![[1688998456406.pdf]]
+![[https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/1688998456406.pdf]]
