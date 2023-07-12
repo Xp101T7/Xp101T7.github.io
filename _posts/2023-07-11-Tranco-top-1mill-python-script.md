@@ -104,5 +104,5 @@ Verify the data in SIEM: Once the data has been sent to the SIEM Relay, it shoul
 Create your lookup table in SIEM: Once the data is in SIEM, you can create a lookup table from it. Go to the "Data Search" section, select "Lookup Tables" from the drop-down menu, and follow the prompts to create a new lookup table using the data you sent to the SIEM Relay.
 
 
-<span style="color:transparent; text-decoration:none">[Hidden Link](https://chat.openai.com/share/db63415c-48a1-421c-b88f-f0412064fe6c)</span>
+<span style="color:transparent; text-decoration:none">[](https://chat.openai.com/share/db63415c-48a1-421c-b88f-f0412064fe6c)</span>
 
