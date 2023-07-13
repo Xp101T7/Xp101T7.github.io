@@ -1,5 +1,5 @@
 ---
-title: siem use case document
+title: SIEM Use Cases
 date: 2023-07-12 12:00:00 -500
 categories: [usecase,siem]
 tags: [document,pdf,usecase,siem]
