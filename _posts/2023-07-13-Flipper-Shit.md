@@ -25,8 +25,22 @@ tags: [Hacking,Hardware,Firmware,Flipper]
 [3 Flipper Zero Hacks to Wow Your Friends (and How They Work) | HackerNoon](https://hackernoon.com/3-flipper-zero-hacks-to-wow-your-friends-and-how-they-work)
 
 
-
 [Flipper Zero Documentation - Flipper Zero - Documentation](https://docs.flipperzero.one/)
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/aqHXPLtDtiU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+#### Finally 
+
+[Flipper Zero Official](https://www.reddit.com/r/flipperzero/)
+
+
+#### Banned Gadgets
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wq_KaCy8bN8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+
 
 
 
