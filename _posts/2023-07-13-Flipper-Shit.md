@@ -39,6 +39,12 @@ tags: [Hacking,Hardware,Firmware,Flipper]
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/wq_KaCy8bN8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">You can emulate NFC business card on Flipper Zero in a few simple steps:<br><br>1. Create an empty dummy NTAG215/216 (NFC&gt; Add Manually)<br>2. Run emulation on a newly created card<br>2. Write any NDEF message to it. It can be an HTTP link, phone number, email, or any other link<br>3. Run… <a href="https://t.co/f1hFmGeJIV">pic.twitter.com/f1hFmGeJIV</a></p>&mdash; Flipper Zero (@flipper_zero) <a href="https://twitter.com/flipper_zero/status/1679192536223559680?ref_src=twsrc%5Etfw">July 12, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<script>
+alert("Hello, world!");
+</script>
+
 
 
 
