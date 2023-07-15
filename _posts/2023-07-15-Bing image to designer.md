@@ -23,3 +23,6 @@ https://designerapp.officeapps.live.com/designerapp/Media.ashx/?id=35ea400c-e9ce
 
 ![Dragon](https://th.bing.com/th/id/OIG.fmjl4N.BOwJyCXbXlQso?pid=ImgGn)
 
+Storing in the GitHub CDN > copy and paste the image then ctrl+p update relative links > replace relative path with CDN path.
+
+![Pasted image 20230715124734.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230715124734.png)
