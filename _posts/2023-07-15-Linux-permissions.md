@@ -12,7 +12,7 @@ tags: [Terminal,ACL,Permissions,Linux]
 
 ---
 
-![[Pasted image 20230715104758.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230715104758.png)
+![Pasted image 20230715104758.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230715104758.png)
 
 ### Linux File Permissions
 
