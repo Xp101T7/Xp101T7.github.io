@@ -23,7 +23,7 @@ title: Heckin Techin # the main title
 tagline: Heckin all the Techin # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
-  A place to understand the mis-understood
+  Cybersecurity Blog
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: "https://heckintechin.tech"
@@ -52,8 +52,8 @@ social:
 
 plugins:
   - jekyll-feed
-title: HeckinTechin.tech blog
-description: Welcome to my blog
+title: HeckinTechin.tech Cyber Space
+description: Heckin all the Techin
 author: Hack3dlazy
 
 google_site_verification: # fill in to your verification string
