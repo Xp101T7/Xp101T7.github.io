@@ -52,3 +52,10 @@ The `1024` in the output represents the file size in bytes. In this case, the fi
 The remaining information in the output includes the date and time of the last modification of the file (`Jan 1 10:00`) and the file name (`myfile.txt`).
 
 By using the `ls -l` command, you can easily view the permissions of files in a directory and understand the level of access granted to different users and groups.`
+
+
+I  SSH to app 2 then chmod +x on the .sh file and the execute failed but It had x priv by all users. 
+
+The lab is in review. 
+
+---
