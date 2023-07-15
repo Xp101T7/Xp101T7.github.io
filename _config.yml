@@ -89,7 +89,7 @@ theme_mode: # [light|dark]
 img_cdn: https://raw.githubusercontent.com/Xp101T7/
 
 # the avatar on sidebar, support local or CORS resources
-avatar: https://th.bing.com/th/id/OIG.fmjl4N.BOwJyCXbXlQso?pid=ImgGn
+avatar: https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230715124734.png
 
 # boolean type, the global switch for TOC in posts.
 toc: true
