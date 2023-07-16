@@ -14,6 +14,8 @@ tags: [Automation,Faker,Python,Word]
 
 ## Word Doc Automation
 
+[Word Doc](https://docxtpl.readthedocs.io/en/latest/)
+
 We can generate data into pandas dataframes by using faker data to generate the dataset.
 
 We can also use the docxtpl library to handle the data from our dataframe and autofill any word doc in bulk replacing the elements with the key value you set from faker to docxtpl word documents.
