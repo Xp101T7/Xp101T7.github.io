@@ -18,7 +18,7 @@ tags: [regex101,Python,Automation,Regex]
 
 [pemistahl/grex: A command-line tool and Rust library for generating regular expressions from user-provided test cases](https://github.com/pemistahl/grex)
 
-[Regular Expressions Cheat Sheet | DataCamp](https://www.datacamp.com/cheat-sheet/regular-expresso)
+[Regular Expressions Cheat Sheet DataCamp](https://www.datacamp.com/cheat-sheet/regular-expresso)
 
 [Regex101](https://regex101.com/)
 
