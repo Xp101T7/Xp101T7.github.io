@@ -1,5 +1,5 @@
 ---
-title: Work Document Automation
+title: Word Doc Automation via Docxtpl
 date: 2023-07-15 12:00:00 -500
 categories: [Python,Automation]
 tags: [Automation,Faker,Python,Word]
