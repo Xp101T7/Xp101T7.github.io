@@ -51,7 +51,7 @@ tags: [regex101,Python,Automation,Regex]
 
 
 
-![[../Media/Regular_Expressions_Cheat_Sheet.pdf]]
+![[https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Regular_Expressions_Cheat_Sheet.pdf]]
 
 ## Regex examples[#](https://www.keycdn.com/support/regex-cheat-sheet#regex-examples)
 
