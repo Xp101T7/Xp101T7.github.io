@@ -605,7 +605,7 @@ Not getting output hmmm????
 
 
 
-Open Task Scheduler > Create Basic Task > name and descreption > Daily > Select Time and Start time > Action - Start a program - Select the bat file > finish > Right Click job and test `Run` 
+Open Task Scheduler > Create Basic Task > name and descreptio > Daily > Select Time and Start time > Action - Start a program - Select the bat file > finish > Right Click job and test `Run` 
 
 	chat "how to schedule a python exe to run on a scheduled task using a bat file on windows"
 
