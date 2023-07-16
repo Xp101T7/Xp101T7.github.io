@@ -13,3 +13,5 @@ await tp.file.rename(titleName);-%>
 
 <% tp.web.daily_quote() %>
 
+## <%tp.system.prompt("Title")%>
+
