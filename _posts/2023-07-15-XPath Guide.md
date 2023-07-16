@@ -50,7 +50,7 @@ Can use and or
 
 Can test you html code and scrape it as examples.
 
-![[Pasted image 20230715205028.png]]
+![Pasted image 20230715205028.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230715205028.png)
 
 Here are some other examples of Xpath
 
@@ -71,7 +71,7 @@ Here are some other examples of Xpath
 
 ## XPath Special Characters and Syntax
 
-![[Pasted image 20230715205544.png]]
+![Pasted image 20230715205544.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230715205544.png)
 
 	//article/h1
 	//article/p
@@ -80,7 +80,7 @@ Here are some other examples of Xpath
 	//article/h1/text()
 	//article//text() NOTE- Double // access any element at any position
 
-![[Pasted image 20230715205804.png]]
+![Pasted image 20230715205804.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230715205804.png)
 
 If you found a children element then you can look for hard to find parent element
 
@@ -91,12 +91,12 @@ inspect page ctrl+f
 
 	//h1/..
 
-![[Pasted image 20230715210207.png]]
+![Pasted image 20230715210207.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230715210207.png)
 
 	//article/*
 	//article/*/text()
 
-![[Pasted image 20230715210310.png]]
+![Pasted image 20230715210310.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230715210310.png)
 
 
 

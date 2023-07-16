@@ -14,7 +14,7 @@ tags: [Automation,Faker,Python,Word]
 
 ## Word Doc Automation
 
-[Word Doc](https://docxtpl.readthedocs.io/en/latest/)
+[Word Doc Automation](https://docxtpl.readthedocs.io/en/latest/)
 
 We can generate data into pandas dataframes by using faker data to generate the dataset.
 
@@ -87,8 +87,8 @@ for index, row in df.iterrows():
     doc.save(f"generated_doc_{index}.docx")
 ```
 
-![[Pasted image 20230715195739.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230715195739.png)
+![Pasted image 20230715195739.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230715195739.png)
 
-![[Pasted image 20230715200452.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230715200452.png)
+![Pasted image 20230715200452.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230715200452.png)
 
 
