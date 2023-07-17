@@ -490,7 +490,7 @@ Find the first instance of an image link being refrenced.
 ![Pasted image 20230507143256.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230507143256.png)
 
 
-Copy the first portion of the local shortest path refrence. ../images
+Copy the first portion of the local shortest path refrence. https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images
 
 ![Pasted image 20230507143403.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230507143403.png)
 
