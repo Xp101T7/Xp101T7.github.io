@@ -14,7 +14,7 @@ tags: [Pentesting,Hacking,RedTeam,EDR]
 
 ## EDR and AV Bypass Part 1
 
-<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7010705180786585600" height="1371" width="504" frameborder="0" title="Embedded post" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7010705180786585600" height="540" width="504" frameborder="0" title="Embedded post" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 
 [AV Bypass](https://www.linkedin.com/embed/feed/update/urn:li:share:7010705180786585600)
