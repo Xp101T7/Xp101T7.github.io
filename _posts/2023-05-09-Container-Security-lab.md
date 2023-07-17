@@ -270,7 +270,7 @@ popd
 
 ![Pasted image 20230509202546.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230509202546.png)
 
-Wat is the ![[Pasted image 20230509202922.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230509202922.png)
+Wat is the ![Pasted image 20230509202922.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230509202922.png)
 
 <div class="dropdown hint admonition toggle" id="toggle-1">
 <p class="admonition-title" data-target="toggle-1" data-button="button-toggle-1">Answer
@@ -498,8 +498,8 @@ jq '.artifacts | length' < example-secure.sbom.json
 additional dependencies or make other changes at runtime. In practice, it is significantly less popular and easier to
 monitor for/prevent, but something to be aware of.</p>
 </div>
-![[Pasted image 20230509210833.png]]
-![[Pasted image 20230509210841.png]]
+![Pasted image 20230509210833.png]]
+![Pasted image 20230509210841.png]]
 
 ![Pasted image 20230509210848.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020230509210848.png)
 

@@ -51,7 +51,7 @@ tags: [regex101,Python,Automation,Regex]
 
 
 
-![[https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Regular_Expressions_Cheat_Sheet.pdf]]
+![https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Regular_Expressions_Cheat_Sheet.pdf]]
 
 ## Regex examples[#](https://www.keycdn.com/support/regex-cheat-sheet#regex-examples)
 
@@ -133,94 +133,94 @@ Copy the raw data and drop into Regex101 excluding the header
 ## Quantifiers
 
 
-![[Pasted image 20230716184723.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230716184723.png)
+![Pasted image 20230716184723.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230716184723.png)
 
-![[Pasted image 20230716184736.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230716184736.png)
+![Pasted image 20230716184736.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230716184736.png)
 
-![[Pasted image 20230716184754.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230716184754.png)
+![Pasted image 20230716184754.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230716184754.png)
 
-![[Pasted image 20230716184430.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230716184430.png)
+![Pasted image 20230716184430.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230716184430.png)
 
-![[Pasted image 20230716184434.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230716184434.png)
+![Pasted image 20230716184434.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230716184434.png)
 
-![[Pasted image 20230716184517.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230716184517.png)
+![Pasted image 20230716184517.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230716184517.png)
 
 3 or more
 
-![[Pasted image 20230716184558.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230716184558.png)
+![Pasted image 20230716184558.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230716184558.png)
 
 {min,max}
 
-![[Pasted image 20230716184632.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230716184632.png)
+![Pasted image 20230716184632.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230716184632.png)
 
 ---
 
 ## Metacharacters
 
-![[Pasted image 20230716185006.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230716185006.png)
+![Pasted image 20230716185006.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230716185006.png)
 
-![[Pasted image 20230716185030.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230716185030.png)
+![Pasted image 20230716185030.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230716185030.png)
 
-![[Pasted image 20230716185039.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230716185039.png)
+![Pasted image 20230716185039.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230716185039.png)
 
-![[Pasted image 20230716185100.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230716185100.png)
+![Pasted image 20230716185100.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230716185100.png)
 
 Grouping can allow you to extract certain info from whole text data. You have a DF and you have column only info on date you can capture the date and then extract only years and create new column on only that year.  Below are three captures.
 
-![[Pasted image 20230716185447.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230716185447.png)
+![Pasted image 20230716185447.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230716185447.png)
 
-![[Pasted image 20230716185517.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230716185517.png)
+![Pasted image 20230716185517.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230716185517.png)
 
 Can range it with hyphen
 
-![[Pasted image 20230716185546.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230716185546.png)
+![Pasted image 20230716185546.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230716185546.png)
 
 a-z matches not uppercase though
 
-![[Pasted image 20230716185618.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230716185618.png)
+![Pasted image 20230716185618.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230716185618.png)
 
-![[Pasted image 20230716185633.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230716185633.png)
+![Pasted image 20230716185633.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230716185633.png)
 
 Match characters not in brackets `[^ ]`
 
-![[Pasted image 20230716185739.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230716185739.png)
-![[Pasted image 20230716185813.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230716185813.png)
+![Pasted image 20230716185739.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230716185739.png)
+![Pasted image 20230716185813.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230716185813.png)
 
 | or same as python
 
-![[Pasted image 20230716190003.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230716190003.png)
+![Pasted image 20230716190003.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230716190003.png)
 
 Match string 9 or 8 followed by 2 digits this doesn't work  
 
-![[Pasted image 20230716190157.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230716190157.png)
+![Pasted image 20230716190157.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230716190157.png)
 
 So we need use capture group
 
-![[Pasted image 20230716190226.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230716190226.png)
+![Pasted image 20230716190226.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230716190226.png)
 
 You can also use square brackets
 
-![[Pasted image 20230716190338.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230716190338.png)
+![Pasted image 20230716190338.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230716190338.png)
 
 `\b` word boundary matches the first character in a string if the first character is a  word character. digits are words
 
-![[Pasted image 20230716190800.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230716190800.png)
+![Pasted image 20230716190800.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230716190800.png)
 
 `\B` matches all No word boundries
 
-![[Pasted image 20230716190821.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230716190821.png)
+![Pasted image 20230716190821.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230716190821.png)
 
 `\1` back refrences
 
-![[Pasted image 20230716191030.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230716191030.png)
+![Pasted image 20230716191030.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230716191030.png)
 
 Capture the (123-) and add `\1` to reference the same expression twice or use it as a shortcut or reduce the capture group
 
-![[Pasted image 20230716191150.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230716191150.png)
+![Pasted image 20230716191150.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230716191150.png)
 
 This would be sequence (123-) 3x
 
-![[Pasted image 20230716191429.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230716191429.png)
+![Pasted image 20230716191429.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230716191429.png)
 
 You can reuse a capture group by its position in groups
 
@@ -231,35 +231,35 @@ You can reuse a capture group by its position in groups
 
 Check regex flags on regex101
 
-![[Pasted image 20230716193209.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230716193209.png)
+![Pasted image 20230716193209.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230716193209.png)
 
-![[Pasted image 20230716193217.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230716193217.png)
+![Pasted image 20230716193217.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230716193217.png)
 
-![[Pasted image 20230716193320.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230716193320.png)
+![Pasted image 20230716193320.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230716193320.png)
 
 Access Flags using the flags= 
 
-![[Pasted image 20230716193430.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230716193430.png)
+![Pasted image 20230716193430.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230716193430.png)
 
 no result bc the string is not uppercase H but multiline is turned on
 
-![[Pasted image 20230716193818.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230716193818.png)
+![Pasted image 20230716193818.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230716193818.png)
 
-![[Pasted image 20230716194616.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230716194616.png)
+![Pasted image 20230716194616.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230716194616.png)
 
-![[Pasted image 20230716194624.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230716194624.png)
+![Pasted image 20230716194624.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230716194624.png)
 
 ---
 
 ## Practice
 
-![[Pasted image 20230716195508.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230716195508.png)
+![Pasted image 20230716195508.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230716195508.png)
 
-![[Pasted image 20230716195526.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230716195526.png)
+![Pasted image 20230716195526.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230716195526.png)
 
-![[Pasted image 20230716195731.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230716195731.png)
+![Pasted image 20230716195731.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230716195731.png)
 
-![[Pasted image 20230716200020.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230716200020.png)
+![Pasted image 20230716200020.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230716200020.png)
 
 
 
