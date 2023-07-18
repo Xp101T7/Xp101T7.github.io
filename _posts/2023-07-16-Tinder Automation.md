@@ -223,7 +223,7 @@ now find the chrome.exe application default location is at:
 
 Here is the powershell terminal code we need to use 
 
-	 & "C:\Program Files\Google\Chrome\Application\chrome.exe" --remote-debugging-port=9222 --user-data-dir="C:\Users\hecki\Prog\chrome_profile"
+	 & "C:\Program Files\Google\Chrome\Application\chrome.exe" --remote-debugging-port=9222 --user-data-dir="C:\Users\you\project\chrome_profile"
 
 	chat "im getting this error when trying to use chrome debugger mode,Unexpected token 'remote-debugging-port=9222' in expression or statement."
 
@@ -260,7 +260,7 @@ number_of_swipes = 20
 
 #Define website to open and start driver object
 web = 'https://www.tinder.com'
-path = 'C:/Users/hecki/Downloads/chromedriver_win32'  # introduce path here
+path = 'C:/Users/you/Downloads/chromedriver_win32'  # introduce path here
 
 #Open the browser driver at this service path, use chorme and then navigate to the web address stored in the we variable
 # Connecting Selenium to an existing browser
