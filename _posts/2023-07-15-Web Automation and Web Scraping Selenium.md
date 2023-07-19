@@ -171,7 +171,7 @@ import pandas as pd
 
 # Define website to open
 web = 'https://www.thesun.co.uk/sport/football/'
-path = 'C:/Users/hecki/Downloads/chromedriver_win32'  # introduce path here
+path = 'C:/Users/you/Downloads/chromedriver_win32'  # introduce path here
 
 #Set exe path to the chromedriver path
 service = Service(executable_path=path)
@@ -231,7 +231,7 @@ import pandas as pd
 
 # Define website to open
 web = 'https://www.thesun.co.uk/sport/football/'
-path = 'C:/Users/hecki/Downloads/chromedriver_win32'  # introduce path here
+path = 'C:/Users/you/Downloads/chromedriver_win32'  # introduce path here
 
 #Set exe path to the chromedriver path
 service = Service(executable_path=path)
@@ -307,7 +307,7 @@ import pandas as pd
 
 # Define website to open
 web = 'https://www.thesun.co.uk/sport/football/'
-path = 'C:/Users/hecki/Downloads/chromedriver_win32'  # introduce path here
+path = 'C:/Users/you/Downloads/chromedriver_win32'  # introduce path here
 
 #add headless mode
 options = Options()
@@ -396,7 +396,7 @@ month_day_year =  now.strftime("%m%d%y")
 
 # Define website to open
 web = 'https://www.thesun.co.uk/sport/football/'
-path = 'C:/Users/hecki/Downloads/chromedriver_win32'  # introduce path here
+path = 'C:/Users/you/Downloads/chromedriver_win32'  # introduce path here
 
 #add headless mode
 options = Options()
@@ -496,7 +496,7 @@ month_day_year =  now.strftime("%m%d%y") #String from time so we can format
 
 # Define website to open
 web = 'https://www.bleepingcomputer.com/'
-path = 'C:/Users/hecki/Downloads/chromedriver_win32'  # introduce path here
+path = 'C:/Users/you/Downloads/chromedriver_win32'  # introduce path here
 
 #add headless mode
 options = Options()

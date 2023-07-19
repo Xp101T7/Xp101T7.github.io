@@ -1,6 +1,6 @@
 ---
 title: Finding Text Patterns via Regex Automation
-date: 2023-07-16 12:00:00 -500
+date: 2023-07-17 12:00:00 -500
 categories: [Automation,Regex]
 tags: [regex101,Python,Automation,Regex]
 
