@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-07-30T19:11:57.679Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="VPxq5p_5894qtLeyCVPG" version="21.6.6" type="github">
+<mxfile host="app.diagrams.net" modified="2023-07-30T20:37:07.578Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="cFw0Zp0Zo5WtpbJ2IBuU" version="21.6.6" type="github">
   <diagram name="Page-1" id="EU7mkMxYQjOe7KNHwiMg">
     <mxGraphModel dx="1561" dy="841" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -153,7 +153,7 @@
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="420" y="580" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="430" y="460" />
+              <mxPoint x="430" y="470" />
               <mxPoint x="430" y="580" />
             </Array>
           </mxGeometry>
@@ -233,6 +233,36 @@
         </mxCell>
         <mxCell id="yiasOX3T3ys98GaFYwfp-80" value="Centralized Incident Management System" style="rounded=0;whiteSpace=wrap;html=1;container=0;fillColor=#fad9d5;strokeColor=#ae4132;" vertex="1" parent="1">
           <mxGeometry x="570" y="350" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yiasOX3T3ys98GaFYwfp-96" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fillColor=#008a00;strokeColor=#005700;" edge="1" parent="1" source="yiasOX3T3ys98GaFYwfp-88" target="yiasOX3T3ys98GaFYwfp-92">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yiasOX3T3ys98GaFYwfp-88" value="VPN" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;gradientColor=#7ea6e0;" vertex="1" parent="1">
+          <mxGeometry x="590" y="660" width="210" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="yiasOX3T3ys98GaFYwfp-93" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fillColor=#6a00ff;strokeColor=#3700CC;" edge="1" parent="1" source="yiasOX3T3ys98GaFYwfp-89" target="yiasOX3T3ys98GaFYwfp-88">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yiasOX3T3ys98GaFYwfp-89" value="Heck Ya" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" vertex="1" parent="1">
+          <mxGeometry x="560" y="750" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="yiasOX3T3ys98GaFYwfp-94" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fillColor=#6a00ff;strokeColor=#3700CC;" edge="1" parent="1" source="yiasOX3T3ys98GaFYwfp-90" target="yiasOX3T3ys98GaFYwfp-88">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yiasOX3T3ys98GaFYwfp-90" value="Heck Yep" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;" vertex="1" parent="1">
+          <mxGeometry x="655" y="750" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="yiasOX3T3ys98GaFYwfp-95" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fillColor=#6a00ff;strokeColor=#3700CC;" edge="1" parent="1" source="yiasOX3T3ys98GaFYwfp-91" target="yiasOX3T3ys98GaFYwfp-88">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yiasOX3T3ys98GaFYwfp-91" value="Heck Sure" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#d5e8d4;strokeColor=#82b366;gradientColor=#97d077;" vertex="1" parent="1">
+          <mxGeometry x="750" y="750" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="yiasOX3T3ys98GaFYwfp-97" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.979;entryY=0.592;entryDx=0;entryDy=0;entryPerimeter=0;fillColor=#008a00;strokeColor=#005700;" edge="1" parent="1" source="yiasOX3T3ys98GaFYwfp-92" target="yiasOX3T3ys98GaFYwfp-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yiasOX3T3ys98GaFYwfp-92" value="Jump Server" style="whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;gradientColor=#ea6b66;" vertex="1" parent="1">
+          <mxGeometry x="590" y="520" width="210" height="110" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
