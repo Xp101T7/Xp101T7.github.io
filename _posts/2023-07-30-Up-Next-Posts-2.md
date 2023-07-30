@@ -1,6 +1,6 @@
 ---
 title: Up Next Blog Ideas 
-date: 2023-07-30 12:00:00 -500
+date: 2023-07-30 11:00:00 -500
 categories: [UpNext]
 tags: [Ideas,ComingSoon]
 ---
