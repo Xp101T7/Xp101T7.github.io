@@ -1,35 +1,53 @@
-<mxfile host="app.diagrams.net" modified="2023-07-30T18:11:35.260Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="-FHjxDs1sIfPGs2CNrq6" version="21.6.6" type="github">
+<mxfile host="app.diagrams.net" modified="2023-07-30T18:22:10.961Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="d6xekJnMntSgw7FuvYLx" version="21.6.6" type="github">
   <diagram name="Page-1" id="EU7mkMxYQjOe7KNHwiMg">
     <mxGraphModel dx="1561" dy="841" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="yiasOX3T3ys98GaFYwfp-1" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="60" y="80" width="480" height="480" as="geometry" />
+        <mxCell id="yiasOX3T3ys98GaFYwfp-1" value="" style="whiteSpace=wrap;html=1;container=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="60" width="490" height="870" as="geometry" />
         </mxCell>
         <mxCell id="yiasOX3T3ys98GaFYwfp-3" value="Servers/NUC/Main Computers" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="260" y="90" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="yiasOX3T3ys98GaFYwfp-4" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="100" y="130" width="380" height="380" as="geometry" />
+        <mxCell id="yiasOX3T3ys98GaFYwfp-4" value="" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="130" width="380" height="760" as="geometry" />
         </mxCell>
         <mxCell id="yiasOX3T3ys98GaFYwfp-6" value="Proxmox Type 1 Hypervisor" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="220" y="150" width="140" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="yiasOX3T3ys98GaFYwfp-7" value="Ubuntu (Zeek)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="yiasOX3T3ys98GaFYwfp-7" value="Ubuntu (Zeek)" style="rounded=0;whiteSpace=wrap;html=1;container=0;" vertex="1" parent="1">
           <mxGeometry x="170" y="190" width="240" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="yiasOX3T3ys98GaFYwfp-8" value="Win 11" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="yiasOX3T3ys98GaFYwfp-8" value="Win 11" style="rounded=0;whiteSpace=wrap;html=1;container=0;" vertex="1" parent="1">
           <mxGeometry x="170" y="250" width="240" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="yiasOX3T3ys98GaFYwfp-9" value="Parrot" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="yiasOX3T3ys98GaFYwfp-9" value="Parrot" style="rounded=0;whiteSpace=wrap;html=1;container=0;" vertex="1" parent="1">
           <mxGeometry x="170" y="310" width="240" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="yiasOX3T3ys98GaFYwfp-10" value="WinServer IIS/DC/DNS/SQL" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="yiasOX3T3ys98GaFYwfp-10" value="WinServer IIS/DC/DNS/SQL" style="rounded=0;whiteSpace=wrap;html=1;container=0;" vertex="1" parent="1">
           <mxGeometry x="170" y="370" width="240" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="yiasOX3T3ys98GaFYwfp-11" value="Linux Servers RedHat/SELinux/Ubuntu" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="yiasOX3T3ys98GaFYwfp-11" value="Linux Servers RedHat/SELinux/Ubuntu" style="rounded=0;whiteSpace=wrap;html=1;container=0;" vertex="1" parent="1">
           <mxGeometry x="170" y="430" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yiasOX3T3ys98GaFYwfp-12" value="Containers" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;container=0;" vertex="1" parent="1">
+          <mxGeometry x="170" y="490" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yiasOX3T3ys98GaFYwfp-14" value="ELK Stack" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;container=0;" vertex="1" parent="1">
+          <mxGeometry x="170" y="550" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yiasOX3T3ys98GaFYwfp-15" value="NAS" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;container=0;" vertex="1" parent="1">
+          <mxGeometry x="170" y="610" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yiasOX3T3ys98GaFYwfp-16" value="Cloud Apps/Apps" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;container=0;" vertex="1" parent="1">
+          <mxGeometry x="170" y="670" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yiasOX3T3ys98GaFYwfp-17" value="Security Onion" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;container=0;" vertex="1" parent="1">
+          <mxGeometry x="170" y="730" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yiasOX3T3ys98GaFYwfp-18" value="Automation" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;container=0;" vertex="1" parent="1">
+          <mxGeometry x="170" y="790" width="240" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
