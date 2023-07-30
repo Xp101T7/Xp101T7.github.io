@@ -43,6 +43,8 @@ Iframe Embeding for better blog posts
 	- https://mayfly277.github.io/posts/GOAD-on-proxmox-part1-install/
 - Look into 7Min Security Lite pentest lite
 	- Git this from my laptop.
+- Refresh Domain Controller from the 7 min sec videos. 
+	- [(1096) 7MS #556: How to Build a Vulnerable Pentest Lab - YouTube](https://www.youtube.com/watch?v=uQQufyfThdQ&t=2408s)
 - Look into finishing installing the scripts at 
 	- [Proxmox VE Helper Scripts Scripts for Streamlining Your Homelab with Proxmox VE](https://tteck.github.io/Proxmox/)
 	- Install automation and a dashboard
