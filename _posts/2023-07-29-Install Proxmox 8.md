@@ -181,5 +181,8 @@ Then before firing it up 🔥
 
 You need to mount the virtio driver disk to the VM
 
+![[Pasted image 20230730002309.png](../Media/Pasted%20image%2020230730002309.png)
 
+Click into the VM QEMU window > make sure you press any key ASAP. If the machine is hung click side panel and novnc ctrl+alt+del to restart and make sure you catch the press any key. 
 
+when you hit drive install hit Custom > load driver > find virtio > amd folder > find server or host and load driver.
