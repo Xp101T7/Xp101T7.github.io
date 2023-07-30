@@ -49,13 +49,13 @@ Login to MobaXterm and open ssh sessions to all your nodes.
 
 Run the MultiExec feature to perform the same tasks across all your servers. 
 
-![[Pasted image 20230729212802.png](../Media/Pasted%20image%2020230729212802.png)
+![[Pasted image 20230729212802.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230729212802.png)
 
 
 I selected yes to all except test repo and no to disabling High Availability 
 
-![[Pasted image 20230729213034.png](../Media/Pasted%20image%2020230729213034.png)
-![[Pasted image 20230729213055.png](../Media/Pasted%20image%2020230729213055.png)
+![[Pasted image 20230729213034.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230729213034.png)
+![[Pasted image 20230729213055.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230729213055.png)
 
 Once rebooted its time to setup drives and cluster. 
 
@@ -149,13 +149,13 @@ rm /etc/corosync/authkey
 
 Once done recreate cluster and join the others. 
 
-![[Pasted image 20230729223927.png](../Media/Pasted%20image%2020230729223927.png)
+![[Pasted image 20230729223927.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230729223927.png)
 
 Okey after reboot the nodes clustered and joined. I had to refresh browser on each node and relogin. Use a password manager in browser to make life easier for you when logging into local services or any site. 
 
 All is well and fresh install of network storage replicating across the datacenter with all nodes conneted.
 
-![[Pasted image 20230729225100.png](../Media/Pasted%20image%2020230729225100.png)
+![[Pasted image 20230729225100.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230729225100.png)
 
 ---
 
