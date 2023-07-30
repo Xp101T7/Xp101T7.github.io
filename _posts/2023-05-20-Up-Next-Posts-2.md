@@ -1,6 +1,6 @@
 ---
 title: Up Next Blog Ideas 
-date: 2023-05-20 12:00:00 -500
+date: 2023-07-30 12:00:00 -500
 categories: [UpNext]
 tags: [Ideas,ComingSoon]
 ---
@@ -32,5 +32,38 @@ Iframe Embeding for better blog posts
  <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Zero Trust User Access <a href="https://t.co/ZEm8jHcH64">pic.twitter.com/ZEm8jHcH64</a></p>&mdash; LetsDefend (@LetsDefendIO) <a href="https://twitter.com/LetsDefendIO/status/1654499449295581189?ref_src=twsrc%5Etfw">May 5, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
   
+---
+
+## 7/29/23
+
+- Finish installing TrueNas on Server
+- Install all the VM's for the TCM Detection Engineering Guide. 
+	- Finish this whole series
+- Look into GOAD see proxmox install guide
+	- https://mayfly277.github.io/posts/GOAD-on-proxmox-part1-install/
+- Look into 7Min Security Lite pentest lite
+	- Git this from my laptop.
+- Look into finishing installing the scripts at 
+	- [Proxmox VE Helper Scripts Scripts for Streamlining Your Homelab with Proxmox VE](https://tteck.github.io/Proxmox/)
+	- Install automation and a dashboard
+- Finish the automate your life course
+- Finish the python micro degree
+- Start learning Azure OpenAI and get powershell ai hooked into it
+- Learn and build polyglot notebooks using powershellai and pandas python scripting leveraging pulling in csv files and created data analytics on them with pandas.
+- Learn API coding and look at the list of API's 
+	- [public-apis/public-apis: A collective list of free APIs](https://github.com/public-apis/public-apis)
+	- [awesome-apisec](https://github.com/arainho/awesome-apisec)
+
+Create To-do list and commit to github in this repo
+
+
+
+---
+
+
+
+
+
+
 
 
