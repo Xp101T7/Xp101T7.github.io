@@ -64,7 +64,11 @@ Setup Connections on MobaXterm your in.
 
 Change the default port to not 22 and add fail2ban to the server if you really want to up the game on your SSH enabled host. 
 
-See my other blog article for Blue and Red MSFT Defender disabling commands. Tamper protection essentially locks Microsoft Defender Antivirus to its secure, default values, and prevents your security settings from being changed through apps and methods such as:  
+See my other blog article for Blue and Red MSFT Defender disabling commands. 
+
+[Blue and Red MSFT Defender Commands](https://heckintechin.tech/posts/BandR-MSFT-Defender/)
+
+Tamper protection essentially locks Microsoft Defender Antivirus to its secure, default values, and prevents your security settings from being changed through apps and methods such as:  
 
 - Configuring settings in Registry Editor on your Windows device
 - Changing settings through PowerShell cmdlets
@@ -103,6 +107,7 @@ SSH into your box using MobaXterm
 Install curl
 
 Might have to kill the lock bc if its held by a process you need to kill that process to unlock the lock
+
 	kill -9 \<pid\>
 
 Go to quick start 
@@ -113,7 +118,7 @@ cd to $PREFIX location
 
 	cd /opt/zeek/etc/
 
-Change networks.cfg to monitor whatever network range we want we want. 
+Change networks.cfg to monitor whatever network range we want. 
 
 Change node.cfg this is where we specify interface but first grab the interface 
 
