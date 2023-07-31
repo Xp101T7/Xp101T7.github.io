@@ -52,7 +52,7 @@ If you want to virtualize your hosts install them using `Techno Tim's` guides.
 
 Once you install the Ubuntu Device go to VM > Hardware > Edit Memory > Check advanced > Check Ballooning > Set min memory to low end and then adjust high end memory max.
 
-![[Pasted image 20230730162417.png]]
+![Pasted image 20230730162417.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230730162417.png)
 
 Install openssh server if necessary 
 
@@ -63,4 +63,109 @@ Install openssh server if necessary
 Setup Connections on MobaXterm your in.
 
 Change the default port to not 22 and add fail2ban to the server if you really want to up the game on your SSH enabled host. 
+
+See my other blog article for Blue and Red MSFT Defender disabling commands. Tamper protection essentially locks Microsoft Defender Antivirus to its secure, default values, and prevents your security settings from being changed through apps and methods such as:  
+
+- Configuring settings in Registry Editor on your Windows device
+- Changing settings through PowerShell cmdlets
+- Editing or removing security settings through Group Policy
+
+[Turn-of-tamper-protection forum](https://www.elevenforum.com/t/turn-on-or-off-tamper-protection-for-microsoft-defender-antivirus-in-windows-11.3973/)
+
+![Pasted image 20230730194751.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230730194751.png)
+
+Got to manage settings
+
+Turn off Tamper Protection since win 11 its tough to disable via terminal
+
+![Pasted image 20230730194840.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230730194840.png)
+
+Now from terminal type gpedit.msc
+
+Computer config > admin templates > windows components > msft defender antivirus > turn off msft defender antivirus > enabled
+
+![Pasted image 20230730195157.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230730195157.png)
+
+Real time protection folder > turn off real time protection and behavoir monitoring
+
+![Pasted image 20230730195257.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230730195257.png)
+
+---
+
+## Installing Zeek
+
+[Installing Zeek](https://docs.zeek.org/en/master/install.html)
+
+SSH into your box using MobaXterm
+
+	su root
+
+Install curl
+
+Might have to kill the lock bc if its held by a process you need to kill that process to unlock the lock
+	kill -9 \<pid\>
+
+Go to quick start 
+
+[ZeekQuickStart](https://docs.zeek.org/en/master/quickstart.html)
+
+cd to $PREFIX location
+
+	cd /opt/zeek/etc/
+
+Change networks.cfg to monitor whatever network range we want we want. 
+
+Change node.cfg this is where we specify interface but first grab the interface 
+
+	ip a | grep -A 4 -B 4 192
+
+	sudo nano node.cfg
+
+Add the node to interfaces
+
+Can just type zeekctl so go to the PREFIX install location 
+
+Then go to the bin directory
+
+	sudo ./zeekctl
+
+Proxmox has promiscuous mode enabled by default.
+
+Add binary path to the shell
+
+	export PATH=$PATH:/opt/zeek/bin
+
+You will have to reload the profile before you run the command each time. 
+
+	. .bashrc
+
+Then set the zeek logs to ingest logs to the SIEM's parser using JSON
+
+	nano /opt/zeek/share/zeek/site/local.zeek
+
+Add the load policy if you are wanting to send these logs to your SIEM. JSON is easier to parse than most ingestion formats. 
+
+	@load policy/tuning/json-logs
+
+Save start zeek and run
+
+	zeekctl
+	deploy
+	status
+
+Need to turn off json-logs policy if we want to use  zeek-cut 
+
+Will be coming back to setting up the configs to send zeek logs to the Splunk parsers in this video at a later date. 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Hdh4mOozsg8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+
+
+
+
+
+
+
+
 
