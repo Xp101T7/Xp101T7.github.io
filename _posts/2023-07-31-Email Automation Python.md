@@ -40,7 +40,7 @@ Also test print
 
 1337 C0d37
 
-![[Pasted image 20230731212549.png]]
+![Pasted image 20230731212549.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230731212549.png)
 
 If you have a sslcertverificationerror you need to find Install Certificates.command and then double click and install certs. 
 
