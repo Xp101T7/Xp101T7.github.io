@@ -314,6 +314,16 @@ for i  in range(number_of_swipes):
 
 ## Creating EXE and Setting Task to taskschd.msc
 
+First create the EXE using the following commands that leverage pyinstaller
+
+```python
+pip install pyinstaller
+```
+
+```python
+pyinstaller --onefile .\tinderauto1.1.0.py
+```
+
 	chat "how to schedule a python exe to run on a scheduled task using a bat file on windows"
 
 To schedule a Python executable to run on a scheduled task using a batch file on Windows, you can make use of the Task Scheduler utility. Here's an example of how you can do it:
