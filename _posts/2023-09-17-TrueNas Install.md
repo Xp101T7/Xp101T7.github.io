@@ -36,3 +36,4 @@ Awesome Homelab setup video that goes over Proxmox, TrueNAS, Portainer, and Wire
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/_sfddZHhOj4?si=9BQcFo9ttTf1tffj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=n36TKlw_5r25h-6L&amp;list=PLXJCC3PRO2aCDQStpAYt9_SzHnVAmhq3_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
