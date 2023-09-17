@@ -28,3 +28,11 @@ qm set <VMID> -virtio0 /dev/disk/by-id/nvme-driveserial#
 Also see:
 [An Introduction to ZFS A Place to Start - ServeTheHome](https://www.servethehome.com/an-introduction-to-zfs-a-place-to-start/)
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Fg8wlRvGkK4?si=i6IAKsZhsNjVuMG9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/M3pKprTdNqQ?si=A2puIm84D0R_6lan" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+Awesome Homelab setup video that goes over Proxmox, TrueNAS, Portainer, and Wireguard install.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_sfddZHhOj4?si=9BQcFo9ttTf1tffj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
