@@ -25,4 +25,6 @@ Also consider using this command instead if your using an NVME drive
 qm set <VMID> -virtio0 /dev/disk/by-id/nvme-driveserial#
 ```
 
+Also see:
+[An Introduction to ZFS A Place to Start - ServeTheHome](https://www.servethehome.com/an-introduction-to-zfs-a-place-to-start/)
 
