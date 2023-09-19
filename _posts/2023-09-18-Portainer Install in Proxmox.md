@@ -14,14 +14,14 @@ tags: [Home Lab,Proxmox,Container,Portainer]
 ## Portainer Install in Proxmox
 
 
-Link to the install location for community templates for containers for home labs
-https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Template/template.json
+Link to the install location for community templates for containers for home labs.
+[https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Template/template.json](https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Template/template.json)
 
 Default App Templates location for portainer
-https://raw.githubusercontent.com/portainer/templates/master/templates-2.0.json
+[https://raw.githubusercontent.com/portainer/templates/master/templates-2.0.json](https://raw.githubusercontent.com/portainer/templates/master/templates-2.0.json)
 
 Another great repo for portainer installs
-https://github.com/HomelabTim/YouTube-Code/blob/main/portanier
+[https://github.com/HomelabTim/YouTube-Code/blob/main/portanier](https://github.com/HomelabTim/YouTube-Code/blob/main/portanier)
 
 ---
 
@@ -60,8 +60,7 @@ Add png files over SFTP to the path
 /portainer/Files/AppData/Config/Homer/assets/icons/
 ```
 
-
-
 ---
+
 
 
