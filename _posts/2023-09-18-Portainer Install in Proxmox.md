@@ -53,6 +53,15 @@ Link is up now
 
 ![Pasted image 20230918193943.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230918193943.png)
 
+Change the config files and add SSH keys to the server
+
+Add png files over SFTP to the path
+```bash
+/portainer/Files/AppData/Config/Homer/assets/icons/
+```
+
+
+
 ---
 
 
