@@ -14,24 +14,30 @@ tags: [Ubuntu,Linux,XFCE,XRDP]
 ## Installing XRDP Linux
 
 1. **Update package lists and install the `xfce4` desktop environment (optional)**
-    
-    bashCopy code
-    
-    `sudo apt update sudo apt install xfce4 xfce4-goodies`
-    
-2. **Install `xrdp`**
+```bash
+sudo apt update sudo apt install xfce4 xfce4-goodies
+```
+
+Then auto switch to this at login.
+
+```
+sudo update-alternatives --config x-session-manager 
+```
+
+And choose `/usr/bin/startxfce4`
+
+1. **Install `xrdp`**
     
     bashCopy code
     
     `sudo apt install xrdp`
-    
 
 ### Configure xRDP
 
 3. **Allow xRDP to use your user's session**
-    
-    bashCopy code
-    
+
+This is an optional security command.
+
     `sudo adduser xrdp ssl-cert`
     
 4. **Configure `xrdp` to use `xfce4` (optional)**
