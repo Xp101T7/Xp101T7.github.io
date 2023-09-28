@@ -103,6 +103,44 @@ I modified the VBOX networking to map it to a separate subnet on my network so i
 
 GOAD is legit, but fuck is it not an easy setup on proxmox locally. 
 
+I love the Pentesting potential this lab has...
+
+The global technics available on the lab are: 
+(Copied this from Mayfly's GOADv2 Install Guide.)
+
+- Password reuse between computers (PTH)
+- Spray User = Password
+- Password in description
+- SMB share anonymous
+- SMB not signed
+- Responder
+- Zerologon
+- Windows defender
+- ASREPRoast
+- Kerberoasting
+- AD Acl abuse (forcechangepassword, genericall, genericwrite,…)
+- Unconstraint delegation
+- Ntlm relay
+- Constrained delegation
+- MSSQL exec
+- MSSQL trusted link
+- MSSQL impersonate
+- IIS service to Upload malicious asp
+- Multiples forest
+- Anonymous RPC user listing
+- Child parent domain escalation
+- Certificate and ldaps avaiable
+- ADCS - ESC 1/2/3/8
+- Certifry
+- Samaccountname/nopac
+- Petitpotam unauthent
+- Printerbug
+- Drop the mic
+- Shadow credentials
+- Printnightmare
+- Krbrelayup
+- …
+
 
 
 
