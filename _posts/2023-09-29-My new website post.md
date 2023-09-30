@@ -13,11 +13,14 @@ tags: [testtt,tes,te,test]
 
 ## My new website post
 
-![[Pasted image 20230929211459.png](../Media/Pasted%20image%2020230929211459.png)
+![[Pasted image 20230929211459.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230929211459.png)
 
-![[Pasted image 20230929211626.png](../Media/Pasted%20image%2020230929211626.png)
+![[Pasted image 20230929211626.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230929211626.png)
 
 
-**![[Pasted image 20230929211631.png](../Media/Pasted%20image%2020230929211631.png)**
+![[Pasted image 20230929211631.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230929211631.png)
 
+fuck around
+
+ok im oin vs code
 
