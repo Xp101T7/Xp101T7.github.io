@@ -102,7 +102,7 @@ To access System Properties from the Run menu, follow these steps:
 1. Press `Win + R` on your keyboard to open the Run dialog box.
 2. Type  ``` sysdm.cpl ``` into the text box, and then press `Enter` or click `OK`.  
 
-![[Pasted image 20231005193046.png]]
+![Pasted image 20231005193046.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020231005193046.png)
 
 ---
 
