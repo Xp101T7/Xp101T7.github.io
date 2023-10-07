@@ -15,7 +15,8 @@ tags: [ADSI,Admin,Pentesting,Recon]
 
 ## ADSISearcher
 
-![[Pasted image 20231007143347.png](../Media/Pasted%20image%2020231007143347.png)
+![Pasted image 20231007143347.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/
+Media/Pasted%20image%2020231007143347.png)
 
 
 ```powershell
@@ -47,7 +48,8 @@ $adsiSearcherObj.SearchRoot
 There are two functions of interest from the searcher objects. (FindOne(), FindAll())
 
 
-![[Pasted image 20231007144126.png](../Media/Pasted%20image%2020231007144126.png)
+![Pasted image 20231007144126.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/
+Media/Pasted%20image%2020231007144126.png)
 
 ```powershell
 $adsiSearcherObj.FindAll()
@@ -59,7 +61,8 @@ $adsiSearcherObj.FindOne()
 
 Narrow our focus to specific Objects
 
-![[Pasted image 20231007144355.png](../Media/Pasted%20image%2020231007144355.png)
+![Pasted image 20231007144355.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/
+Media/Pasted%20image%2020231007144355.png)
 
 ```powershell
 $adsiSearcherObj.Filter = "samAccountName=tywin.lannister"
