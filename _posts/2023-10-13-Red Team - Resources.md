@@ -16,7 +16,7 @@ tags:
 
 ---
 
-## Red Team - Resources
+## 🔥𝐑𝐞𝐝 𝐓𝐞𝐚𝐦𝐢𝐧𝐠 𝐑𝐞𝐬𝐨𝐮𝐫𝐜𝐞𝐬
 
 <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7118630074660126720" height="2554" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
 
@@ -24,7 +24,7 @@ tags:
 David Meece
 🔥I help people learn how to leverage LinkedIn to get a job in Cybersecurity / On a personal "Mission" to help 100k folks find Cybersecurity jobs before 2025 / Originator of #cybertechdave100daysofcyberchallenge
 
-2d
+🔥𝐑𝐞𝐝 𝐓𝐞𝐚𝐦𝐢𝐧𝐠 𝐑𝐞𝐬𝐨𝐮𝐫𝐜𝐞𝐬
 [𝐅𝐑𝐄𝐄 𝐑𝐄𝐒𝐎𝐔𝐑𝐂𝐄𝐒 - 𝐑𝐄𝐃 𝐓𝐄𝐀𝐌] 👇👇
 
 Pentesting is primarily concerned with identifying and exploiting vulnerabilities within a specific target system, striving to uncover as many weaknesses as possible. 
