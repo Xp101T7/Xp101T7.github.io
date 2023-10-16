@@ -9,7 +9,7 @@ tags: [Hacking,Content Creators,Youtubes,TCM]
 
 
 <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7064299178083971073" height="1258" width="504" frameborder="0" allowfullscreen="true" title="Embedded post"></iframe>
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">The gartner-like magic quadrant for... RANSOMWARE groups 👀 <a href="https://t.co/t6ls5UYnUO">https://t.co/t6ls5UYnUO</a> <a href="https://t.co/dp2f14s3dq">pic.twitter.com/dp2f14s3dq</a></p>&mdash; Jason Haddix (@Jhaddix) <a href="https://twitter.com/Jhaddix/status/1658588895012069377?ref_src=twsrc%5Etfw">May 16, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">The gartner-like magic quadrant for... RANSOMWARE groups 👀 <a href="https://t.co/t6ls5UYnUO">https://t.co/t6ls5UYnUO</a> <a href="https://t.co/dp2f14s3dq">pic.twitter.com/dp2f14s3dq</a></p>&mdash; Jason Haddix (@Jhaddix) <a href="https://twitter.com/Jhaddix/status/1658588895012069377?ref_src=twsrc%5Etfw">May 16, 2023</a></blockquote>
 
 I've seen a lot of 'lists' floating around about content creators you should follow for hacking only for those lists to honestly be filled with mostly non-hackers. Here are active (videos in the last month) hacking channels you should follow and don't sell any fluff/tell you to buy the CEH because they get an affiliate payout: General Hacking:
 
