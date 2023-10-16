@@ -25,7 +25,8 @@ tags: [Chat,Cheatsheets,AI,ChatGPT]
 [ChatGPT Prompting Cheat Sheet](https://www.joinsuperhuman.ai/c/prompts-cheat-sheet?utm_source=www.joinsuperhuman.ai&utm_medium=newsletter)
 
 
-![[Pasted image 20231013173417.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020231013173417.png)
+![Pasted image 20231013173417.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020231013173417.png)
 
 
 [AI + ChatGPT Job Search Cheat Sheet](https://www.joinsuperhuman.ai/c/ai-job-search?utm_source=www.joinsuperhuman.ai&utm_medium=newsletter)
+
