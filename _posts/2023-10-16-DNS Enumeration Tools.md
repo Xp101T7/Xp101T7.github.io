@@ -21,6 +21,12 @@ Then navigate to my repository and download the zip files > extract > run > allo
 
 [https://github.com/Xp101T7/DNSEnumpy](https://github.com/Xp101T7/DNSEnumpy)
 
+I will code sign these executables soon.
+
+\###WARNING NOTICE###
+The tools and products in this repository are for educational and testing purposes only. Unauthorized use of these tools for attacking targets without prior mutual consent is illegal. The repository owner is not responsible for any illegal use of these tools or products. Please use responsibly.
+ 
+
 ---
 
 ### DNS Enumerator
