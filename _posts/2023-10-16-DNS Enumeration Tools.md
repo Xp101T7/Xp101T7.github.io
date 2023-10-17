@@ -35,9 +35,9 @@ Navigate to `%USERPROFILE%\Downloads\DNSEnumpy-main\RedTeam\Recon\DNS`
 
 To Enumerate the DNS Records for a domain add the domain name to the text box labeled, "Enter domain here", Fetch DNS Records and save the file. 
 
-![[Pasted image 20231016211849.png]]
+![Pasted image 20231016211849.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020231016211849.png)
 
-![[Pasted image 20231016211923.png]]
+![Pasted image 20231016211923.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020231016211923.png)
 
 ---
 
@@ -47,9 +47,9 @@ Navigate to `%USERPROFILE%\Downloads\DNSEnumpy-main\RedTeam\Recon\SubDomain`
 
 To Enumerate the DNS Records for a domain add the domain name to the text box, labeled, "Enter Domain",  add the subdomain file you want to pass into the sub domain finder, Run, and Save the file. 
 
-![[Pasted image 20231016212436.png]]
+![Pasted image 20231016212436.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020231016212436.png)
 
-![[Pasted image 20231016212502.png]]
+![Pasted image 20231016212502.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020231016212502.png)
 
 ---
 
