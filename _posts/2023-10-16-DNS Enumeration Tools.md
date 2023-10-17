@@ -17,7 +17,7 @@ I have created some python DNS enumeration tools. There is a DNS recon tool and 
 
 In order to run these tools all you have to install python from python.org or from the Microsoft store.
 
-Then navigate to my repository and download the zip files > extract > run > allow the file to run.
+Then navigate to my repository and download the zip files > extract > run > allow the file to run > follow directions below > results.
 
 [https://github.com/Xp101T7/DNSEnumpy](https://github.com/Xp101T7/DNSEnumpy)
 
@@ -50,6 +50,10 @@ To Enumerate the DNS Records for a domain add the domain name to the text box, l
 ![Pasted image 20231016212436.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020231016212436.png)
 
 ![Pasted image 20231016212502.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020231016212502.png)
+
+If all sub domains are PWN_ABLE from your list then the domain is enumrating wonky!!! I'm looking into making the tools output errors when this is occuring... Future Release...
+
+Also adding a Completed Notification!!! Coming Soon...
 
 ---
 
