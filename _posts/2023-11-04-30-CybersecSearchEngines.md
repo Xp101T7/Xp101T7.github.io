@@ -13,4 +13,4 @@ tags: [Analyst,SOC,OSINT,Search]
 
 ## 30 Cybersec Search Engines
 
-![[Pasted image 20231104190114.png]]
+![Pasted image 20231104190114.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020231104190114.png)
