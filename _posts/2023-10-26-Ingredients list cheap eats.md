@@ -1,9 +1,14 @@
 ---
-title: Ingredients list cheap eats
+title: Ingredients List Cheap Healthy Eats
 date: 2023-10-26 12:00:00 -500
-categories: [Health,Food]
-tags: [Health,CheapEating,Recipe,Food]
-
+categories:
+  - Health
+  - Food
+tags:
+  - Health
+  - CheapEating
+  - Recipe
+  - Food
 ---
 
 > There is no great genius without some touch of madness.
@@ -11,7 +16,7 @@ tags: [Health,CheapEating,Recipe,Food]
 
 ---
 
-## Ingredients list cheap eats
+## Ingredients List Cheap Healthy Eats
 
 - [Taco Casserole](https://thecleaneatingcouple.com/taco-casserole/)
 - [Egg Hash Brown Casserole](https://thecleaneatingcouple.com/egg-hash-brown-casserole/)
