@@ -23,7 +23,7 @@ title: Heckin Techin # the main title
 tagline: Heckin all the Techin # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
-  A place to understand the mis-understood
+  Cybersecurity Blog
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: "https://heckintechin.tech"
@@ -40,8 +40,8 @@ linkedin:
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: HeckinTechin.Tech
-  email: Techin@heckintechin.tech # change to your email address
+  name: Xp101T7
+  email: Heckya@heckintechin.tech # change to your email address
   links:
     # The first element serves as the copyright owner's link
     - https://twitter.com/username # change to your twitter homepage
@@ -52,8 +52,8 @@ social:
 
 plugins:
   - jekyll-feed
-title: HeckinTechin.tech blog
-description: Welcome to my blog
+title: HeckinTechin.tech Cyber Space
+description: Heckin all the Techin
 author: Hack3dlazy
 
 google_site_verification: # fill in to your verification string
@@ -89,7 +89,7 @@ theme_mode: # [light|dark]
 img_cdn: https://raw.githubusercontent.com/Xp101T7/
 
 # the avatar on sidebar, support local or CORS resources
-avatar: https://t3.ftcdn.net/jpg/05/44/58/36/240_F_544583645_kg7ALxSGkhVgNV3lPP6oiZR5DpNrO3kw.jpg
+avatar: https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020230715124734.png
 
 # boolean type, the global switch for TOC in posts.
 toc: true
