@@ -144,6 +144,54 @@ In this updated script, the key changes are:
 - The loop iterates through each of these events, converts their time to UTC, formats the time, and outputs it along with the event ID.
 
 
+### Printing XML Data Output to Before Creating Scripting
+
+```powershell
+# Define the path to the EVTX file
+$evtxPath = "Sysmon\HuntingMimikatz.evtx"
+
+# Use the provided XPath filter
+$xPathFilter = '*/System/EventID=10 and */EventData/Data[@Name="TargetImage"] and */EventData/Data="C:\Windows\system32\lsass.exe"'
+
+# Retrieve the events based on the specified filter
+$events = Get-WinEvent -Path $evtxPath -FilterXPath $xPathFilter
+
+# Check if any events were found
+if ($events.Count -eq 0) {
+    Write-Host "No events found matching the criteria."
+} else {
+    # Process each event
+    foreach ($event in $events) {
+        Write-Host "Event Found - ID: $($event.Id), Time: $($event.TimeCreated)"
+        
+        # Convert the event to XML to access all its properties and data
+        $eventXml = [xml]$event.ToXml()
+
+        # Define an array to store objects in the current event
+        $objects = @{}
+
+        # Iterate through each EventData/Data element to extract objects
+        foreach ($dataNode in $eventXml.Event.EventData.Data) {
+            $objects[$dataNode.Name] = $dataNode.'#text'
+        }
+
+        # Print objects in the current event
+        foreach ($key in $objects.Keys) {
+            $value = $objects[$key]
+            Write-Host "${key}: $value"
+        }
+
+        Write-Host "-------------------------"
+    }
+}
+```
+
+OR File out to HTML with CSS 
+
+Also use the solution:
+- [FINAL_CODE](#FINAL_CODE)
+
+
 ---
 
 ## Hunting Metasploit
@@ -158,97 +206,270 @@ Get-WinEvent -Path <Path to Log> -FilterXPath '*/System/EventID=10 and */EventD
 
 Then custom display the logs, all common fields can be found in the below script.
 
-```powershell
-# Define the path to the EVTX file
-$evtxPath = "Sysmon\HuntingMetasploit.evtx"
-
-# Use the provided XPath filter
-$xPathFilter = '*/System/EventID=3 and */EventData/Data[@Name="DestinationPort"] and */EventData/Data=4444'
-
-# Retrieve the events based on the specified filter
-$events = Get-WinEvent -Path $evtxPath -FilterXPath $xPathFilter
-
-# Check if any events were found
-if ($events.Count -eq 0) {
-    Write-Host "No events found matching the criteria."
-} else {
-    # Process each event
-    foreach ($event in $events) {
-        Write-Host "Event Found - ID: $($event.Id), Time: $($event.TimeCreated)"
-        
-        # Convert the event to XML to access all its properties and data
-        $eventXml = [xml]$event.ToXml()
-
-        # Extracting general event metadata
-        $logName = $eventXml.Event.System.Channel.'#text'
-        $source = $eventXml.Event.System.Provider.Name.'#text'
-        $date = $eventXml.Event.System.TimeCreated.SystemTime.'#text'
-        $eventId = $eventXml.Event.System.EventID.'#text'
-        $taskCategory = $eventXml.Event.System.Task.'#text'
-        $level = $eventXml.Event.System.Level.'#text'
-        $keywords = $eventXml.Event.System.Keywords.'#text'
-        $user = $eventXml.Event.System.Security.UserID.'#text'
-        $computer = $eventXml.Event.System.Computer.'#text'
-        $description = $eventXml.Event.RenderingInfo.Message.'#text'
-
-        # Extracting specific event details
-        $utcTime = $eventXml.Event.EventData.Data | Where-Object { $_.Name -eq "UtcTime" } | Select-Object -ExpandProperty '#text'
-        $processGuid = $eventXml.Event.EventData.Data | Where-Object { $_.Name -eq "ProcessGuid" } | Select-Object -ExpandProperty '#text'
-        $processId = $eventXml.Event.EventData.Data | Where-Object { $_.Name -eq "ProcessId" } | Select-Object -ExpandProperty '#text'
-        $image = $eventXml.Event.EventData.Data | Where-Object { $_.Name -eq "Image" } | Select-Object -ExpandProperty '#text'
-        $protocol = $eventXml.Event.EventData.Data | Where-Object { $_.Name -eq "Protocol" } | Select-Object -ExpandProperty '#text'
-        $initiated = $eventXml.Event.EventData.Data | Where-Object { $_.Name -eq "Initiated" } | Select-Object -ExpandProperty '#text'
-        $sourceIsIpv6 = $eventXml.Event.EventData.Data | Where-Object { $_.Name -eq "SourceIsIpv6" } | Select-Object -ExpandProperty '#text'
-        $sourceIp = $eventXml.Event.EventData.Data | Where-Object { $_.Name -eq "SourceIp" } | Select-Object -ExpandProperty '#text'
-        $sourceHostname = $eventXml.Event.EventData.Data | Where-Object { $_.Name -eq "SourceHostname" } | Select-Object -ExpandProperty '#text'
-        $sourcePort = $eventXml.Event.EventData.Data | Where-Object { $_.Name -eq "SourcePort" } | Select-Object -ExpandProperty '#text'
-        $sourcePortName = $eventXml.Event.EventData.Data | Where-Object { $_.Name -eq "SourcePortName" } | Select-Object -ExpandProperty '#text'
-        $destinationIsIpv6 = $eventXml.Event.EventData.Data | Where-Object { $_.Name -eq "DestinationIsIpv6" } | Select-Object -ExpandProperty '#text'
-        $destinationIp = $eventXml.Event.EventData.Data | Where-Object { $_.Name -eq "DestinationIp" } | Select-Object -ExpandProperty '#text'
-        $destinationHostname = $eventXml.Event.EventData.Data | Where-Object { $_.Name -eq "DestinationHostname" } | Select-Object -ExpandProperty '#text'
-        $destinationPort = $eventXml.Event.EventData.Data | Where-Object { $_.Name -eq "DestinationPort" } | Select-Object -ExpandProperty '#text'
-        $destinationPortName = $eventXml.Event.EventData.Data | Where-Object { $_.Name -eq "DestinationPortName" } | Select-Object -ExpandProperty '#text'
-
-        # Output extracted details
-        Write-Host "Log Name: $logName"
-        Write-Host "Source: $source"
-        Write-Host "Date:$date"
-        Write-Host "Event ID: $eventId"
-        Write-Host "Task Category: $taskCategory"
-        Write-Host "Level: $level"
-        Write-Host "Keywords: $keywords"
-        Write-Host "User: $user"
-        Write-Host "Computer: $computer"
-        Write-Host "Description: $description"
-        Write-Host "UtcTime: $utcTime"
-        Write-Host "ProcessGuid: $processGuid"
-        Write-Host "ProcessId: $processId"
-        Write-Host "Image: $image"
-        Write-Host "Protocol: $protocol"
-        Write-Host "Initiated: $initiated"
-        Write-Host "SourceIsIpv6: $sourceIsIpv6"
-        Write-Host "SourceIp: $sourceIp"
-        Write-Host "SourceHostname: $sourceHostname"
-        Write-Host "SourcePort: $sourcePort"
-        Write-Host "SourcePortName: $sourcePortName"
-        Write-Host "DestinationIsIpv6: $destinationIsIpv6"
-        Write-Host "DestinationIp: $destinationIp"
-        Write-Host "DestinationHostname: $destinationHostname"
-        Write-Host "DestinationPort: $destinationPort"
-        Write-Host "DestinationPortName: $destinationPortName"
-        Write-Host "-------------------------"
-    }
-}
-```
+Also use the solution:
+- [FINAL_CODE](#FINAL_CODE)
 
 To Get limited results of only values that are present 
 
 ```powershell
+C:\Users\hecki\Labs\Sysmon\outfiles\Ratting.xml
+```
+
+---
+
+## Detecting File Creation
+
+Can look for file creation events specifically
+
+```xml
+<RuleGroup name="" groupRelation="or">  
+<FileCreate onmatch="include">  
+<TargetFileName condition="contains">mimikatz</TargetFileName>  
+</FileCreate>  
+</RuleGroup>
+```
+
+## Hunting Abnormal LSASS Behavior
+
+If LSASS is accessed by anything other than svchost.exe its SUS.
+
+Add in to the above xml config 
+```xml
+<TargetImage condition="image">lsass.exe</TargetImage>
+```
+
+
+Exclude where is svchost.e3xe
+
+```xml
+<RuleGroup name="" groupRelation="or">
+	<ProcessAccess onmatch="exclude">
+		<SourceImage condition="image">svchost.exe</SourceImage>
+	</ProcessAccess>
+	<ProcessAccess onmatch="include">
+		<TargetImage condition="image">lsass.exe</TargetImage>
+	</ProcessAccess>
+</RuleGroup>
+```
+
+```powershell
+Get-WinEvent -Path <Path to Log> -FilterXPath '*/System/EventID=10 and */EventData/Data[@Name="TargetImage"] and */EventData/Data="C:\Windows\system32\lsass.exe"'
+```
+
+Also use the solution:
+- [FINAL_CODE](#FINAL_CODE)
+
+
+---
+
+## Hunting Malware - Rats and C2
+
+Example Rats: RATs are `Xeexe` and `Quasar`
+
+Hypothesis based hunts work here, ID the malware you want to hunt or detect and ID ways that we can modify config files.  Look at open back connect ports example here. [MITRE Software](https://attack.mitre.org/software/)
+
+
+Look at SUS ports using your config files, look at 1034 and 1604 while excluding onedrive. [Malware Back Connect Ports](https://docs.google.com/spreadsheets/d/17pSTDNpa0sf6pHeRhusvWG6rThciE8CsXTSlDUAZDyo/edit#gid=0)
+
+The Ion-Storm config excludes 53 which malware now uses. So be careful to review configs and consider modern day exploits. Also Consider C2 over port 8080...
+
+```xml
+<RuleGroup name="" groupRelation="or">
+	<NetworkConnect onmatch="include">
+		<DestinationPort condition="is">1034</DestinationPort>
+		<DestinationPort condition="is">1604</DestinationPort>
+	</NetworkConnect>
+	<NetworkConnect onmatch="exclude">
+		<Image condition="image">OneDrive.exe</Image>
+	</NetworkConnect>
+</RuleGroup>
+```
+
+
+Open config for EventID=3 with event port needing to be changed for our case whatever the malware would be coming in on. 
+```powershell
+Get-WinEvent -Path <Path to Log> -FilterXPath '*/System/EventID=3 and */EventData/Data[@Name="DestinationPort"] and */EventData/Data=<Port>'
+```
+
+---
+
+## Hunting Persistence
+
+### StartUp Directory Logging
+
+Look at registry mods along with startup scripts. Can find persistence with reg mod and file create events. 
+
+Look for files placed in \\Startup\\ or \\Start Menu\\ 
+
+```xml
+<RuleGroup name="" groupRelation="or">
+	<FileCreate onmatch="include">
+		<TargetFilename name="T1023" condition="contains">\Start Menu</TargetFilename>
+		<TargetFilename name="T1165" condition="contains">\Startup\</TargetFilename>
+	</FileCreate>
+</RuleGroup>
+```
+
+Can filter on Rule Name as well. Rule Name T1023
+
+### Reg Key Modifications
+
+Look in the CurrentVersion\\Windows\\Run
+
+```xml
+<RuleGroup name="" groupRelation="or">
+	<RegistryEvent onmatch="include">
+		<TargetObject name="T1060,RunKey" condition="contains">CurrentVersion\Run</TargetObject>
+		<TargetObject name="T1484" condition="contains">Group Policy\Scripts</TargetObject>
+		<TargetObject name="T1060" condition="contains">CurrentVersion\Windows\Run</TargetObject>
+	</RegistryEvent>
+</RuleGroup>
+```
+
+Like startup technique can look at RuleName T1060.
+
+Look at File Registry and File Location as well. 
+
+---
+
+## Detection Evasion Techniques
+
+Alternate Data Streams, Injections, Masquerading, Packing/Compression, Recompiling, Obfuscation, Anti-Reversing Techniques. Alt Data streams hide streams apart from $DATA.
+
+Sysmon has event ID for alt streams. Injection techniques: Thread Hijacking, PE Injection, DLL Injection, and more.
+
+DLL Injection and Backdooring DLLs here, taking an already used DLL by an app and overwriting or including your malicious code with the DLL. 
+
+### Hunting ADS
+
+Event ID 15 will hash and log any NTFS streams included in the sysmon config. SOS sysmon conf does a good starter pack conf. Temp and Startup as well as .hta and .bat extensions.
+
+```xml
+<RuleGroup name="" groupRelation="or">
+	<FileCreateStreamHash onmatch="include">
+		<TargetFilename condition="contains">Downloads</TargetFilename>
+		<TargetFilename condition="contains">Temp\7z</TargetFilename>
+		<TargetFilename condition="ends with">.hta</TargetFilename>
+		<TargetFilename condition="ends with">.bat</TargetFilename>
+	</FileCreateStreamHash>
+</RuleGroup>
+```
+
+List Data streams `dir /r`
+
+### Detecting Remote Threads
+
+Remote threads are created using the Windows API `CreateRemoteThread` and can be accessed using `OpenThread` and `ResumeThread`. This is used in multiple evasion techniques including DLL Injection, Thread Hijacking, and Process Hollowing. We will be using the Sysmon event ID 8 from the SwiftOnSecurity configuration file.
+
+```xml
+<RuleGroup name="" groupRelation="or">
+	<CreateRemoteThread onmatch="exclude">
+		<SourceImage condition="is">C:\Windows\system32\svchost.exe</SourceImage>
+		<TargetImage condition="is">C:\Program Files (x86)\Google\Chrome\Application\chrome.exe</TargetImage>
+	</CreateRemoteThread>
+</RuleGroup>
+```
+
+Powershell.exe is creating a remote thread and accessing notepad.exe is Reflective PE Injection.
+
+Same as above but xPathFilter is changed. 
+
+- [FINAL_CODE](#FINAL_CODE)
+
+
+---
+
+## Real World Investigation 
+
+
+[EVTX-ATTACK-SAMPLES](https://github.com/sbousseaden/EVTX-ATTACK-SAMPLES/tree/master) and [SysmonResources](https://github.com/jymcheong/SysmonResources) Github repositories
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2xA5Sm0Xdd0?si=zA2tVn-lnpK_iih3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+### Bad USB
+
+A malicious file was dropped onto a host by a malicious USB.
+
+```powershell
+Get-WinEvent -Path .\\Investigation-1.evtx -FilterXPath ‘*/System/EventID=12 or */System/EventID=13 or */System/EventID=14’ -Oldest | Select-Object -Property *
+```
+
+or 
+
+```powershell
+Get-WinEvent -Path C:\Users\THM-Analyst\Desktop\Scenarios\Investigations\Investigation-1.evtx -FilterXPath '*/System/EventID=13' | fl
+```
+
+```powershell
+Get-WinEvent -Path Investigation-1.evtx -FilterXPath '*/System/EventID=10 and */EventData/Data[@Name='TargetImage']="C:\WINDOWS\system32\svchost.exe"' -MaxEvents 2 -Oldest | fl
+```
+
+or
+
+
+### RawAccessRead
+
+```powershell
+Get-WinEvent -Path Investigation-1.evtx -FilterXPath '*/System/EventID=9' -MaxEvents 3 -Oldest | fl -property *
+```
+
+### First EXE process
+```powershell
+Get-WinEvent -Path Investigation-1.evtx -FilterXPath '*/System/EventID=1' -MaxEvents 2 -Oldest | fl
+```
+
+### Malicious HTML Payload 
+```powershell
+Get-WinEvent -Path Investigation-2.evtx -FilterXPath '*/System/EventID=1' -MaxEvents 2 -Oldest | fl
+```
+
+
+
+### Full Path to Payload Mask
+
+Best working code solution so far doesn't truncate values from Key:Value pairs. Changed to write custom HTML output instead of convert-to-html. 
+
+- [FINAL_CODE](#FINAL_CODE)
+
+### Get Network Info 
+```powershell
+Get-WinEvent -Path Investigation-2.evtx -FilterXPath '*/System/EventID=3' -MaxEvents 3 -Oldest | fl
+```
+
+### Persistence and Foothold Investigation
+```powershell
+Get-WinEvent -Path Investigation-3.1.evtx -FilterXPath '*/System/EventID=3' -Oldest | fl
+```
+
+
+### Registry Settings for Payloads
+```powershell
+Get-WinEvent -Path Investigation-3.1.evtx -FilterXPath '*/System/EventID=13' -Oldest | fl
+```
+
+### IP Info for payloads
+
+```powershell
+Get-WinEvent -Path Investigation-3.2.evtx -FilterXPath '*/System/EventID=1' -Oldest | fl
+```
+
+
+```powershell
+Get-WinEvent -Path Investigation-3.2.evtx -FilterXPath '*/System/EventID=10 and */EventData/Data[@Name='TargetImage']="C:\WINDOWS\system32\schtasks.exe"' -MaxEvents 2 -Oldest | fl
+```
+
+### BOTNET 
+
+Final Code where events are delineated by green marker separators.  
+
+# FINAL_CODE
+
+```powershell
 # Define the path to the EVTX file
-$evtxPath = "Sysmon\HuntingMetasploit.evtx"
+$evtxPath = "C:\Users\hecki\Labs\Sysmon\Investigation-4.evtx"
 
 # Use the provided XPath filter
-$xPathFilter = '*/System/EventID=3 and */EventData/Data[@Name="DestinationPort"] and */EventData/Data=4444'
+$xPathFilter = '\*/System/EventID=3'
 
 # Retrieve the events based on the specified filter
 $events = Get-WinEvent -Path $evtxPath -FilterXPath $xPathFilter
@@ -256,54 +477,215 @@ $events = Get-WinEvent -Path $evtxPath -FilterXPath $xPathFilter
 # Check if any events were found
 if ($events.Count -eq 0) {
     Write-Host "No events found matching the criteria."
-} else {
-    # Process each event
-    foreach ($event in $events) {
-        Write-Host "Event Found - ID: $($event.Id), Time: $($event.TimeCreated)"
-        
-        # Convert the event to XML to access all its properties and data
-        $eventXml = [xml]$event.ToXml()
+}
+else {
+    # Prompt the user for output choice
+    $outputChoice = Read-Host "Do you want to output to a file? (Y/N)"
 
-        # Define all properties you're interested in
-        $properties = @{
-            "LogName" = $eventXml.Event.System.Channel.'#text';
-            "Source" = $eventXml.Event.System.Provider.Name.'#text';
-            "Date" = $eventXml.Event.System.TimeCreated.SystemTime.'#text';
-            "EventID" = $eventXml.Event.System.EventID.'#text';
-            "TaskCategory" = $eventXml.Event.System.Task.'#text';
-            "Level" = $eventXml.Event.System.Level.'#text';
-            "Keywords" = $eventXml.Event.System.Keywords.'#text';
-            "User" = $eventXml.Event.System.Security.UserID.'#text';
-            "Computer" = $eventXml.Event.System.Computer.'#text';
-            "Description" = $eventXml.Event.RenderingInfo.Message.'#text';
-            "UtcTime" = ($eventXml.Event.EventData.Data | Where-Object { $_.Name -eq "UtcTime" }).'#text';
-            "ProcessGuid" = ($eventXml.Event.EventData.Data | Where-Object { $_.Name -eq "ProcessGuid" }).'#text';
-            "ProcessId" = ($eventXml.Event.EventData.Data | Where-Object { $_.Name -eq "ProcessId" }).'#text';
-            "Image" = ($eventXml.Event.EventData.Data | Where-Object { $_.Name -eq "Image" }).'#text';
-            "Protocol" = ($eventXml.Event.EventData.Data | Where-Object { $_.Name -eq "Protocol" }).'#text';
-            "Initiated" = ($eventXml.Event.EventData.Data | Where-Object { $_.Name -eq "Initiated" }).'#text';
-            "SourceIsIpv6" = ($eventXml.Event.EventData.Data | Where-Object { $_.Name -eq "SourceIsIpv6" }).'#text';
-            "SourceIp" = ($eventXml.Event.EventData.Data | Where-Object { $_.Name -eq "SourceIp" }).'#text';
-            "SourceHostname" = ($eventXml.Event.EventData.Data | Where-Object { $_.Name -eq "SourceHostname" }).'#text';
-            "SourcePort" = ($eventXml.Event.EventData.Data | Where-Object { $_.Name -eq "SourcePort" }).'#text';
-            "SourcePortName" = ($eventXml.Event.EventData.Data | Where-Object { $_.Name -eq "SourcePortName" }).'#text';
-            "DestinationIsIpv6" = ($eventXml.Event.EventData.Data | Where-Object { $_.Name -eq "DestinationIsIpv6" }).'#text';
-            "DestinationIp" = ($eventXml.Event.EventData.Data | Where-Object { $_.Name -eq "DestinationIp" }).'#text';
-            "DestinationHostname" = ($eventXml.Event.EventData.Data | Where-Object { $_.Name -eq "DestinationHostname" }).'#text';
-            "DestinationPort" = ($eventXml.Event.EventData.Data | Where-Object { $_.Name -eq "DestinationPort" }).'#text';
-            "DestinationPortName" = ($eventXml.Event.EventData.Data | Where-Object { $_.Name -eq "DestinationPortName" }).'#text';
-        }
+    # Check user choice and proceed accordingly
+    if ($outputChoice -eq "Y" -or $outputChoice -eq "y") {
+        # Set the default output directory
+        $outputDirectory = "C:\Users\hecki\Labs\Sysmon\outfiles"
 
-        # Iterate through each property and check for null or empty values before printing
-        foreach ($key in $properties.Keys) {
-            $value = $properties[$key]
-            if (![string]::IsNullOrEmpty($value)) {
-                Write-Host "${key}: $value"  # Encapsulate variable in ${} for complex references
+        # Prompt user for output file name
+        $outputFileName = Read-Host "Enter the output file name (without extension)"
+
+        # Construct the full output file path
+        $outputFilePath = Join-Path -Path $outputDirectory -ChildPath "$($outputFileName).html"
+
+        # Create an empty HTML string to store the formatted output
+        $htmlOutput = "<html><head><style>body{font-family:Arial, sans-serif;}table{border-collapse:collapse;width:100%;}th, td{border:1px solid #ddd;padding:8px;text-align:left;}th{background-color:#f2f2f2;word-wrap:break-word;}</style></head><body><table>"
+
+        # Add table headers
+        $htmlOutput += "<tr><th>Key</th><th>Value</th></tr>"
+
+        # Process each event and format the output
+        foreach ($event in $events) {
+            # Convert the event to XML to access all its properties and data
+            $eventXml = [xml]$event.ToXml()
+
+            # Define an array to store objects in the current event
+            $objects = @{}
+
+            # Add a header to delineate the start of a new event
+            $htmlOutput += "<tr><th colspan='2' style='background-color:#4CAF50;color:white;'>Event: $($eventXml.Event.System.EventRecordID)</th></tr>"
+
+            # Iterate through each EventData/Data element to extract objects
+            foreach ($dataNode in $eventXml.Event.EventData.Data) {
+                $objects[$dataNode.Name] = $dataNode.'#text'
+            }
+
+            # Append the formatted objects to the HTML output
+            foreach ($key in $objects.Keys) {
+                $value = $objects[$key]
+                $htmlOutput += "<tr><td>$key</td><td>$value</td></tr>"
             }
         }
 
-        Write-Host "-------------------------"
+        # Close the HTML table and document
+        $htmlOutput += "</table></body></html>"
+
+        # Save the HTML output to the specified file
+        $htmlOutput | Out-File -FilePath $outputFilePath -Encoding utf8
+        Write-Host "Events have been successfully output to the file: $outputFilePath"
+    }
+    elseif ($outputChoice -eq "N" -or $outputChoice -eq "n") {
+        # Process each event and print to terminal
+        foreach ($event in $events) {
+            # Convert the event to XML to access all its properties and data
+            $eventXml = [xml]$event.ToXml()
+
+            # Define an array to store objects in the current event
+            $objects = @{}
+
+            # Print a header to delineate the start of a new event
+            Write-Host "Event: $($eventXml.Event.System.EventRecordID)"
+
+            # Iterate through each EventData/Data element to extract objects
+            foreach ($dataNode in $eventXml.Event.EventData.Data) {
+                $objects[$dataNode.Name] = $dataNode.'#text'
+            }
+
+            # Print objects in the current event to the terminal
+            foreach ($key in $objects.Keys) {
+                $value = $objects[$key]
+                Write-Host "${key}: $value"
+            }
+            Write-Host "-------------------------"
+        }
+    }
+    else {
+        Write-Host "Invalid input. Please enter 'Y' or 'N'."
     }
 }
 ```
+
+
+### Python Code Version For Extracting Sysmon Events
+
+
+
+```python
+import xml.etree.ElementTree as ET
+import os
+from pathlib import Path
+
+# Define the path to the EVTX file
+evtx_path = "C:\\Users\\hecki\\Labs\\Sysmon\\Investigation-2.evtx"
+
+# Use the provided XPath filter
+xpath_filter = '\*/System/EventID=3'
+
+# Import the required library for EVTX parsing
+import Evtx.Evtx as evtx
+import Evtx.Views as ev
+
+# Open the EVTX file
+with evtx.ElfFile(evtx_path) as elf:
+    # Apply the XPath filter
+    xpath_events = elf.get_record_xml(ev.XML(xpath=xpath_filter))
+
+    # Check if any events were found
+    if not xpath_events:
+        print("No events found matching the criteria.")
+    else:
+        # Prompt the user for output choice
+        output_choice = input("Do you want to output to a file? (Y/N) ").upper()
+
+        # Check user choice and proceed accordingly
+        if output_choice == "Y":
+            # Set the default output directory
+            output_directory = "C:\\Users\\hecki\\Labs\\Sysmon\\outfiles"
+            os.makedirs(output_directory, exist_ok=True)  # Create the directory if it doesn't exist
+
+            # Prompt user for output file name
+            output_filename = input("Enter the output file name (without extension): ")
+
+            # Construct the full output file path
+            output_file_path = os.path.join(output_directory, f"{output_filename}.html")
+
+            # Create an empty HTML string to store the formatted output
+            html_output = """
+                <html>
+                <head>
+                    <style>
+                        body {font-family: Arial, sans-serif;}
+                        table {border-collapse: collapse; width: 100%;}
+                        th, td {border: 1px solid #ddd; padding: 8px; text-align: left;}
+                        th {background-color: #f2f2f2; word-wrap: break-word;}
+                    </style>
+                </head>
+                <body>
+                    <table>
+                        <tr><th>Key</th><th>Value</th></tr>
+            """
+
+            # Process each event and format the output
+            for event_xml in xpath_events:
+                event = ET.fromstring(event_xml)
+                objects = {}
+
+                # Add a header to delineate the start of a new event
+                html_output += f"<tr><th colspan='2' style='background-color:#4CAF50;color:white;'>Event: {event.find('System/EventRecordID').text}</th></tr>"
+
+                # Iterate through each EventData/Data element to extract objects
+                for data_node in event.findall("EventData/Data"):
+                    objects[data_node.attrib["Name"]] = data_node.text
+
+                # Append the formatted objects to the HTML output
+                for key, value in objects.items():
+                    html_output += f"<tr><td>{key}</td><td>{value}</td></tr>"
+
+            # Close the HTML table and document
+            html_output += """
+                    </table>
+                </body>
+                </html>
+            """
+
+            # Save the HTML output to the specified file
+            with open(output_file_path, "w", encoding="utf-8") as output_file:
+                output_file.write(html_output)
+            print(f"Events have been successfully output to the file: {output_file_path}")
+
+        elif output_choice == "N":
+            # Process each event and print to terminal
+            for event_xml in xpath_events:
+                event = ET.fromstring(event_xml)
+                objects = {}
+
+                # Print a header to delineate the start of a new event
+                print(f"Event: {event.find('System/EventRecordID').text}")
+
+                # Iterate through each EventData/Data element to extract objects
+                for data_node in event.findall("EventData/Data"):
+                    objects[data_node.attrib["Name"]] = data_node.text
+
+                # Print objects in the current event to the terminal
+                for key, value in objects.items():
+                    print(f"{key}: {value}")
+                print("-------------------------")
+
+        else:
+            print("Invalid input. Please enter 'Y' or 'N'.")
+```
+
+
+## XPaths
+
+```powershell
+$xPathFilter = '*/System/EventID=10 and */EventData/Data[@Name="TargetImage"] and */EventData/Data="C:\Windows\system32\lsass.exe"'
+```
+
+```powershell
+$xPathFilter = '*/System/EventID=3 and */EventData/Data[@Name="DestinationPort"] and */EventData/Data=8080'
+```
+
+
+```powershell
+$xPathFilter = '*/System/EventID=3 and */EventData/Data[@Name="DestinationPort"] and */EventData/Data=4444'
+```
+
+
+
 
