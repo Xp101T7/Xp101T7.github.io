@@ -188,8 +188,7 @@ if ($events.Count -eq 0) {
 
 OR File out to HTML with CSS 
 
-Also use the solution:
-- [FINAL_CODE](#FINAL_CODE)
+Also use the solution: Scroll to End
 
 
 ---
@@ -207,7 +206,7 @@ Get-WinEvent -Path <Path to Log> -FilterXPath '*/System/EventID=10 and */EventD
 Then custom display the logs, all common fields can be found in the below script.
 
 Also use the solution:
-- [FINAL_CODE](#FINAL_CODE)
+Scroll to End
 
 To Get limited results of only values that are present 
 
@@ -257,7 +256,7 @@ Get-WinEvent -Path <Path to Log> -FilterXPath '*/System/EventID=10 and */EventD
 ```
 
 Also use the solution:
-- [FINAL_CODE](#FINAL_CODE)
+Scroll to End
 
 
 ---
@@ -374,7 +373,7 @@ Powershell.exe is creating a remote thread and accessing notepad.exe is Reflecti
 
 Same as above but xPathFilter is changed. 
 
-- [FINAL_CODE](#FINAL_CODE)
+Scroll to End
 
 
 ---
@@ -429,7 +428,7 @@ Get-WinEvent -Path Investigation-2.evtx -FilterXPath '*/System/EventID=1' -MaxEv
 
 Best working code solution so far doesn't truncate values from Key:Value pairs. Changed to write custom HTML output instead of convert-to-html. 
 
-- [FINAL_CODE](#FINAL_CODE)
+Scroll to End
 
 ### Get Network Info 
 ```powershell
