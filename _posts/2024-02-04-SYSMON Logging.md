@@ -671,6 +671,105 @@ with evtx.ElfFile(evtx_path) as elf:
 ```
 
 
+This is to read from local host log file path
+
+```powershell
+# Define the event log name and source
+$logName = "Microsoft-Windows-Sysmon/Operational"
+
+# Use the provided XPath filter
+$xPathFilter = '*[System[(EventID=3)]]'
+
+# Retrieve the events based on the specified filter
+$events = Get-WinEvent -LogName $logName -FilterXPath $xPathFilter
+
+# Check if any events were found
+if ($events.Count -eq 0) {
+    Write-Host "No events found matching the criteria."
+}
+else {
+    # Prompt the user for output choice
+    $outputChoice = Read-Host "Do you want to output to a file? (Y/N)"
+
+    # Check user choice and proceed accordingly
+    if ($outputChoice -eq "Y" -or $outputChoice -eq "y") {
+        # Set the default output directory
+        $outputDirectory = "C:\Users\hecki\Labs\Sysmon\outfiles"
+
+        # Prompt user for output file name
+        $outputFileName = Read-Host "Enter the output file name (without extension)"
+
+        # Construct the full output file path
+        $outputFilePath = Join-Path -Path $outputDirectory -ChildPath "$($outputFileName).html"
+
+        # Create an empty HTML string to store the formatted output
+        $htmlOutput = "<html><head><style>body{font-family:Arial, sans-serif;}table{border-collapse:collapse;width:100%;}th, td{border:1px solid #ddd;padding:8px;text-align:left;}th{background-color:#f2f2f2;word-wrap:break-word;}</style></head><body><table>"
+
+        # Add table headers
+        $htmlOutput += "<tr><th>Key</th><th>Value</th></tr>"
+
+        # Process each event and format the output
+        foreach ($event in $events) {
+            # Define an array to store objects in the current event
+            $objects = @{}
+
+            # Add a header to delineate the start of a new event
+            $htmlOutput += "<tr><th colspan='2' style='background-color:#4CAF50;color:white;'>Event: $($event.RecordId)</th></tr>"
+
+            # Iterate through each property in the event and extract objects
+            foreach ($property in $event.Properties) {
+                $objects[$property.Name] = $property.Value
+            }
+
+            # Append the formatted objects to the HTML output
+            foreach ($key in $objects.Keys) {
+                $value = $objects[$key]
+                $htmlOutput += "<tr><td>$key</td><td>$value</td></tr>"
+            }
+        }
+
+        # Close the HTML table and document
+        $htmlOutput += "</table></body></html>"
+
+        # Save the HTML output to the specified file
+        $htmlOutput | Out-File -FilePath $outputFilePath -Encoding utf8
+        Write-Host "Events have been successfully output to the file: $outputFilePath"
+    }
+    elseif ($outputChoice -eq "N" -or $outputChoice -eq "n") {
+        # Process each event and print to terminal
+        foreach ($event in $events) {
+            # Define an array to store objects in the current event
+            $objects = @{}
+
+            # Print a header to delineate the start of a new event
+            Write-Host "Event: $($event.RecordId)"
+
+            # Iterate through each property in the event and extract objects
+            foreach ($property in $event.Properties) {
+                $objects[$property.Name] = $property.Value
+            }
+
+            # Print objects in the current event to the terminal
+            foreach ($key in $objects.Keys) {
+                $value = $objects[$key]
+                Write-Host "${key}: $value"
+            }
+            Write-Host "-------------------------"
+        }
+    }
+    else {
+        Write-Host "Invalid input. Please enter 'Y' or 'N'."
+    }
+}
+```
+
+
+
+
+
+---
+
+
 ## XPaths
 
 ```powershell
@@ -687,5 +786,11 @@ $xPathFilter = '*/System/EventID=3 and */EventData/Data[@Name="DestinationPort"]
 ```
 
 
+
+---
+
+# Resources: 
+
+TryHackMe Room Sysmon: [Sysmon](https://tryhackme.com/room/sysmon)
 
 
