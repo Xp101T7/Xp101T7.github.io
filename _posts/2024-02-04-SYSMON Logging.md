@@ -222,9 +222,9 @@ Can look for file creation events specifically
 
 ```xml
 <RuleGroup name="" groupRelation="or">  
-<FileCreate onmatch="include">  
-<TargetFileName condition="contains">mimikatz</TargetFileName>  
-</FileCreate>  
+	<FileCreate onmatch="include">  
+		<TargetFileName condition="contains">mimikatz</TargetFileName>  
+	</FileCreate>  
 </RuleGroup>
 ```
 
