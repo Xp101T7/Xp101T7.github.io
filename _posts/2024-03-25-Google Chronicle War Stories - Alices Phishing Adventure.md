@@ -21,18 +21,18 @@ tags:
 
 When running searches there are options for UDM and Raw Log Searching.
 
-![[Pasted image 20240325114851.png](../images/Pasted%20image%2020240325114851.png)
+![Pasted image 20240325114851.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020240325114851.png)
 See all Assets which accessed this domain, VT Context, Relevant IOC's from threat intel, Resolved IP's, Sub-domains, and Sibling Domains and associated entities of internal assets. 
 
-![[Pasted image 20240325115641.png](../images/Pasted%20image%2020240325115641.png)
+![Pasted image 20240325115641.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020240325115641.png)
 
 IOC Domain matches are correlated by leveraging googles threat intel. It searching all the data for threat intel matching. IOC Ingest time displays First/Last seen 
 
 Alerts tab shows Rules Engine for creating custom rules.  
 
-![[Pasted image 20240325120022.png](../images/Pasted%20image%2020240325120022.png)
+![Pasted image 20240325120022.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020240325120022.png)
 
-![[Pasted image 20240325120229.png](../images/Pasted%20image%2020240325120229.png)
+![Pasted image 20240325120229.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020240325120229.png)
 
 Rules are written in YARA-L (Yara for Logs). Widely used detection languages.
 
@@ -96,13 +96,13 @@ rule suspicious_download_office {
 View Rule Detections will show you why a detection triggered off. There is a timeline which corresponds to detection trigger history. 
 
 
-![[Pasted image 20240325121031.png](../images/Pasted%20image%2020240325121031.png)
+![Pasted image 20240325121031.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020240325121031.png)
 
-![[Pasted image 20240325121024.png](../images/Pasted%20image%2020240325121024.png)
+![Pasted image 20240325121024.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020240325121024.png)
 
 Click on the Alert select raw logs:
 
-![[Pasted image 20240325122112.png](../images/Pasted%20image%2020240325122112.png)
+![Pasted image 20240325122112.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020240325122112.png)
 
 
 Tanium Stream Raw Logs
@@ -143,24 +143,24 @@ Zscaler Raw Logs
 
 Drill Into the Alice-Benjamin-PC
 
-![[Pasted image 20240325123048.png](../images/Pasted%20image%2020240325123048.png)
+![Pasted image 20240325123048.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020240325123048.png)
 
 Asset view > Events Tab displays all detections or events for this alert. Alerts are more context into this alerts fired for this asset.  Can also see overview and swap to legacy view.
 
-![[Pasted image 20240325123416.png](../images/Pasted%20image%2020240325123416.png)
+![Pasted image 20240325123416.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020240325123416.png)
 
 
 Low Prevalence domains are more interesting. Dig in by clicking the bubbles.
-![[Pasted image 20240325123652.png](../images/Pasted%20image%2020240325123652.png)
+![Pasted image 20240325123652.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020240325123652.png)
 
 
-![[Pasted image 20240325123855.png](../images/Pasted%20image%2020240325123855.png)
+![Pasted image 20240325123855.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020240325123855.png)
 
 Security Data Sources are fused together for robust enrichment. 
 
 Get to Raw Log View by clicking on the Timeline event and clicking the move to window on the right. 
 
-![[Pasted image 20240325124208.png](../images/Pasted%20image%2020240325124208.png)
+![Pasted image 20240325124208.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020240325124208.png)
 
 IP/MAC is fused with Hostname becuase DHCP logging is the dynamic source of truth. 
 
@@ -173,7 +173,7 @@ Within seconds of opening the sheet, a **network connection** downloaded an *
 
 It all makes sense now! It looks like this process opened and read from Chrome's **Login Data** file in order to **steal credentials**!
 
-![[Pasted image 20240325124626.png](../images/Pasted%20image%2020240325124626.png)
+![Pasted image 20240325124626.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020240325124626.png)
 
 Enrichment is done and more info can be seen on enriched data in the insight panels, 
 
@@ -185,7 +185,7 @@ Since SSO is enabled we can visualize timelines for suspicious activity.
 
 Filter down using add filter or drill into the events in timeline. 
 
-![[Pasted image 20240325130825.png](../images/Pasted%20image%2020240325130825.png)
+![Pasted image 20240325130825.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020240325130825.png)
 
 So there you have it we detected an attack using simple rules which checked for Excel downloading executables.
 
