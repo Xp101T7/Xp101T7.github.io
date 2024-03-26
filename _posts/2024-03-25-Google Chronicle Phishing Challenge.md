@@ -54,6 +54,18 @@ Drill into the domains... Notice the q in goo*q*le
 
 ![Pasted image 20240326095706.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020240326095706.png)
 
+We can also get visibility into this information by looking into the IOC Matches inside the IOC Matches dashboard. 
+
+The threat intel feeds are coming from **ET Intelligence** feed, we have feeds from the **US Department of Homeland Security**, **ESET**, an **OSINT Watchlist** currently.
+
+Zoom into IOC Ingest Times 
+
+![Pasted image 20240326101555.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020240326101555.png)
+
+![Pasted image 20240326101635.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020240326101635.png)
+
+Unlike other SIEM's there aren't **schedule searches** to look for retroactive matches. **Chronicle** does this for you **dynamically**.
+
 
 The summary of the information provided is as follows:
 
