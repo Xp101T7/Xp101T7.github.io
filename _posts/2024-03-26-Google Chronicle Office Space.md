@@ -16,7 +16,7 @@ tags: [Investigation,Google,Chronicle,SIEM]
 
 Entering the regex match for everything wildcard `.*` then selecting the Raw Log Dropdown, we can modify the start time and see the Scan Data amount for that range. 
 
-![[Pasted image 20240326114029.png]]
+![Pasted image 20240326114029.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020240326114029.png)
 
 We can limit the log sources by selecting the sources from the dropdown. 
 
@@ -32,7 +32,7 @@ GCP data sources allows a couple click GCP integration into chronicle. Found in 
 
 Search for **unexpected_connection_to_pci_environment** with severity of critical. 
 
-![[Pasted image 20240326114732.png]]
+![Pasted image 20240326114732.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020240326114732.png)
 
 Drill into the rule itself by clicking on it. 
 
@@ -40,11 +40,11 @@ Notice the rules description:
 
 `A successful low prevalence ssh connection from a non PCI environment to a PCI environment`
 
-![[Pasted image 20240326115130.png]]
+![Pasted image 20240326115130.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020240326115130.png)
 
 This would require network telemetry Corelight or Zeek logging is the solution here. 
 
-![[Pasted image 20240326115230.png]]
+![Pasted image 20240326115230.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020240326115230.png)
 
 Corelight Raw Log
 
@@ -88,7 +88,7 @@ See UDM Event and normalized fields for a better understanding.  Google consider
 
 Corelight has given us IP address (**principal.ip** and **target.ip)**, which is enriched with other sources to extract that data. Enriched fields are marked with an E. 
 
-![[Pasted image 20240326115848.png]]
+![Pasted image 20240326115848.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020240326115848.png)
 
 This enrichment allows for the creation of non-PCI to PCI activity Alerting.
 
@@ -96,9 +96,9 @@ This enrichment allows for the creation of non-PCI to PCI activity Alerting.
 
 Drill into the Rule Options > Edit Rules
 
-![[Pasted image 20240326122420.png]]
+![Pasted image 20240326122420.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020240326122420.png)
 
-![[Pasted image 20240326122450.png]]
+![Pasted image 20240326122450.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020240326122450.png)
 
 Rules are written with UDM so there is no mention of underlying data source fields. 
 
@@ -170,7 +170,7 @@ rule unexpected_connection_to_pci_environment {
 
 These lookup lists/reference lists can be used for positive or negative matching within an alert. 
 
-![[Pasted image 20240326123535.png]]
+![Pasted image 20240326123535.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020240326123535.png)
 
 They can be modified by drilling into the rule. 
 
@@ -179,7 +179,7 @@ Allow/Block lists of things like IP's, Domains, etc.
 But you can put in any plaintext you want and even update them programmatically!
 #DoThis
 
-![[Pasted image 20240326123934.png]]
+![Pasted image 20240326123934.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020240326123934.png)
 
 Pivot back to investigations by clicking `View Rule Detections`
 
@@ -189,7 +189,7 @@ Look into the Production VM asset an pivot by Selecting Columns in the UDM-enabl
 - Click on **Explore Fields within UDM**
 - Check the box for **target -> asset -> hostname**
 
-![[Pasted image 20240326124450.png]]
+![Pasted image 20240326124450.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020240326124450.png)
 
 Data Flexibility and Integration: Google Chronicle allows users to integrate any data source that provides the required information, as long as it aligns with our established data model. This flexibility enables organizations to leverage their existing data sources and seamlessly incorporate them into our system.
 
@@ -203,7 +203,7 @@ Again no data for 3 month timeframe at this point. Searched first seen time fram
 
 Find events of interest on the target host. 
 
-![[Pasted image 20240326125702.png]]
+![Pasted image 20240326125702.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020240326125702.png)
 
 
 ### Insider Threat
@@ -215,11 +215,11 @@ The enrichment of sensitive to non-sensitive actions in an environment shouldn't
 
  Dig into the **suspicious looking Python file** by looking for the hash. Click on the **File Move** event, then copy the **File Hash** within the embedded view as shown.
  
- ![[Pasted image 20240326130106.png]]
+ ![Pasted image 20240326130106.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020240326130106.png)
 
 Michael Bolton PC is seen when I search the event window of Oct 23 to Dec 23. 
 
-![[Pasted image 20240326130510.png]]
+![Pasted image 20240326130510.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020240326130510.png)
 
 File Mod > File Move > File Create
 
@@ -233,7 +233,7 @@ Here are some areas to focus on:
 
 - What data sources are used on this view?
 
-![[Pasted image 20240326143250.png]]
+![Pasted image 20240326143250.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020240326143250.png)
 
 
 - How did Peter transfer the file to the VM? SSH 
@@ -350,7 +350,7 @@ target.process.file.md5 = "ba6d3d2aecbd0d91b01dfa7828110d70"
 
 Drag the time range to narrow window. 
 
-![[Pasted image 20240326145638.png]]
+![Pasted image 20240326145638.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020240326145638.png)
 
 We can pivot to user view simply with 
 
@@ -380,8 +380,8 @@ Add in the MetaData and save it as a view.
 
 #DoThis 
 
-![[Pasted image 20240326145326.png]]
+![Pasted image 20240326145326.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020240326145326.png)
 
 
-![[Pasted image 20240326145406.png]]
+![Pasted image 20240326145406.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/images/Pasted%20image%2020240326145406.png)
 
