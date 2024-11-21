@@ -1,0 +1,243 @@
+{
+  "main": {
+    "id": "16f5c243d30cd053",
+    "type": "split",
+    "children": [
+      {
+        "id": "33d45346300ce3d5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e3f486da52d2b711",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_posts/2023-10-09-Exploiting M365 Vulns.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2023-10-09-Exploiting M365 Vulns"
+            }
+          },
+          {
+            "id": "f292e5fc38457e87",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_posts/2023-05-07-GitHub-Pages-Jekyll.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2023-05-07-GitHub-Pages-Jekyll"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "baf9cbac14c6563f",
+    "type": "split",
+    "children": [
+      {
+        "id": "9bfa2188032bf6a4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "cd4b79efc57003a3",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "addd2c4d193f6cc5",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "linkedin",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "0b36b85a626c05da",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "6408c211d4e4a10e",
+    "type": "split",
+    "children": [
+      {
+        "id": "2c8259e0a50b5638",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c8d5d71f238ec9d6",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "_posts/2023-05-07-GitHub-Pages-Jekyll.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for 2023-05-07-GitHub-Pages-Jekyll"
+            }
+          },
+          {
+            "id": "e3b9fd3968bf49df",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "_posts/2023-05-07-GitHub-Pages-Jekyll.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from 2023-05-07-GitHub-Pages-Jekyll"
+            }
+          },
+          {
+            "id": "a80ed8a967e7b0ad",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "746807fc295ff2be",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "_posts/2023-05-07-GitHub-Pages-Jekyll.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of 2023-05-07-GitHub-Pages-Jekyll"
+            }
+          },
+          {
+            "id": "26242afd8e02d995",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "templater-obsidian:Templater": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "obsidian-advanced-slides:Show Slide Preview": false
+    }
+  },
+  "active": "f292e5fc38457e87",
+  "lastOpenFiles": [
+    "_posts/2023-05-07-Installing-Ruby.md",
+    "_posts/2023-05-07-GitHub-Pages-Jekyll.md",
+    "_posts/2024-11-20-HHC24 Frosty's Beach.md",
+    "Media/Pasted image 20241120120126.png",
+    "Media/Pasted image 20241120115605.png",
+    "Media/Pasted image 20241120115530.png",
+    "Media/Pasted image 20241120115515.png",
+    "Media/Pasted image 20241120115447.png",
+    "Media/Pasted image 20241120115421.png",
+    "Media/Pasted image 20241120115409.png",
+    "_posts/2023-11-04-AI Side Hustle.md",
+    "Untitled.canvas",
+    "_posts/2023-05-05-Temp.md",
+    "_posts/2024-03-27-Yara-L Basics.md",
+    "Untitled.md",
+    "images/Pasted image 20240325123652.png",
+    "images/Pasted image 20240325123416.png",
+    "images/Pasted image 20240325123048.png",
+    "_posts/2024-03-26-Google Chronicle Office Space.md",
+    "_posts/2024-03-26-Google Chronicle Malware Challenge.md",
+    "_posts/2024-03-25-Google Chronicle War Stories - Alices Phishing Adventure.md",
+    "_posts/2024-03-25-Google Chronicle Phishing Challenge.md",
+    "_posts/2024-03-22-Aurora EDR.md",
+    "_posts/2024-03-14-Sysmon Install Guide.md",
+    "_posts/2024-02-04-SYSMON Logging.md",
+    "_posts/2024-02-03-Windows Event Logs.md",
+    "_posts/2024-02-03-Powershell Red Teaming.md",
+    "_posts/2023-11-04-Leadership.md",
+    "_posts/2023-11-04-30-CybersecSearchEngines.md",
+    "_posts/2023-10-26-Ingredients list cheap eats.md",
+    "_posts/2023-10-16-DNS Enumeration Tools.md",
+    "_posts/2023-10-13-Red Team - Resources.md",
+    "_posts/2023-10-09-Exploiting M365 Vulns.md",
+    "_posts/2023-05-16-Heath-Hackerslist.md",
+    "_posts/2023-10-13-ChatGPT Mastery Cheat Sheet.md",
+    "_posts/2023-10-07-ADSI - DC Recon.md",
+    "_posts/2023-10-07-Offensive Security Notes.md",
+    "images/Cory_Crook_05-14-23_CyberGeneralV01.pdf",
+    "images/DetectionLab.drawio",
+    "Draw",
+    "Media/Regular_Expressions_Cheat_Sheet.pdf",
+    "Day Planners",
+    "Media/1688998456406.pdf",
+    "1688998456406.pdf"
+  ]
+}
