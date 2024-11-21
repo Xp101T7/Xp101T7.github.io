@@ -58,27 +58,53 @@ function stackToPath(stack) {
 }
 
 // main.ts
+var ConfirmModal = class extends import_obsidian.Modal {
+  constructor(app, content, onConfirm) {
+    super(app);
+    this.content = content;
+    this.onConfirm = onConfirm;
+  }
+  onOpen() {
+    const { contentEl } = this;
+    contentEl.createEl("h1", { text: "Update Releate Links Plugin" });
+    contentEl.createEl("p", { text: this.content });
+    new import_obsidian.Setting(contentEl).addButton((btn) => btn.setButtonText("Yes").setCta().onClick(() => {
+      this.close();
+      this.onConfirm();
+    })).addButton((btn) => btn.setButtonText("No").onClick(() => {
+      this.close();
+    }));
+  }
+  onClose() {
+    this.contentEl.empty();
+  }
+};
 var UpdateRelativeLinksPlugin = class extends import_obsidian.Plugin {
   async onload() {
-    const { metadataCache, vault } = this.app;
+    const { app } = this;
+    const { metadataCache, vault } = app;
+    const message = "This command will modify all links in the entire vault (not just the current file) to relative paths, and this action cannot be undone. It is recommended that you back up the vault in advance. Please confirm whether you want to execute the command.";
     this.addCommand({
       id: "update-all-relative-links",
       name: "Update all relative links",
       callback() {
-        const promises = vault.getMarkdownFiles().map((file) => replace(file, false));
-        Promise.all(promises).then((linkCounts) => {
-          const updatedLinkCounts = linkCounts.filter((count) => count > 0);
-          const linkCount = updatedLinkCounts.reduce((sum, count) => sum + count, 0);
-          const fileCount = updatedLinkCounts.length;
-          new import_obsidian.Notice(`Update ${linkCount} links in ${fileCount} file${fileCount > 1 ? "s" : ""}.`);
-        }).catch((err) => {
-          new import_obsidian.Notice("Update links error, see console.");
-          console.error(err);
-        });
+        new ConfirmModal(app, message, () => {
+          const promises = vault.getMarkdownFiles().map((file) => replace(file, false));
+          Promise.all(promises).then((linkCounts) => {
+            const updatedLinkCounts = linkCounts.filter((count) => count > 0);
+            const linkCount = updatedLinkCounts.reduce((sum, count) => sum + count, 0);
+            const fileCount = updatedLinkCounts.length;
+            new import_obsidian.Notice(`Update ${linkCount} links in ${fileCount} file${fileCount > 1 ? "s" : ""}.`);
+          }).catch((err) => {
+            new import_obsidian.Notice("Update links error, see console.");
+            console.error(err);
+          });
+        }).open();
       }
     });
     this.registerEvent(vault.on("rename", (file, oldPath) => {
-      if (!oldPath || !file.path.toLocaleLowerCase().endsWith(".md") || file.parent.path === dirname(oldPath)) {
+      var _a;
+      if (!oldPath || !file.path.toLocaleLowerCase().endsWith(".md") || ((_a = file.parent) == null ? void 0 : _a.path) === dirname(oldPath)) {
         return;
       }
       if (file instanceof import_obsidian.TFile) {
@@ -90,15 +116,20 @@ var UpdateRelativeLinksPlugin = class extends import_obsidian.Plugin {
       const metadata = metadataCache.getFileCache(file);
       const links = [...(_a = metadata == null ? void 0 : metadata.links) != null ? _a : [], ...(_b = metadata == null ? void 0 : metadata.embeds) != null ? _b : []];
       const replacePairs = links.map(({ link, original }) => {
-        const linkFile = metadataCache.getFirstLinkpathDest(link, file.path);
+        var _a2;
+        const linkPath = link.replace(/#.*$/, "");
+        if (!linkPath) {
+          return null;
+        }
+        const linkFile = metadataCache.getFirstLinkpathDest(linkPath, file.path);
         if (!linkFile) {
           return null;
         }
-        const newLink = file.parent.path === "/" ? linkFile.path : relative(file.path, linkFile.path);
-        if (link === newLink) {
+        const newLinkPath = ((_a2 = file.parent) == null ? void 0 : _a2.path) === "/" ? linkFile.path : relative(file.path, linkFile.path);
+        if (linkPath === newLinkPath) {
           return null;
         }
-        const newOriginal = replaceOriginal(original, link, newLink);
+        const newOriginal = replaceOriginal(original, linkPath, newLinkPath);
         return [original, newOriginal];
       }).filter((pair) => pair);
       if (!(replacePairs == null ? void 0 : replacePairs.length)) {
@@ -139,3 +170,5 @@ var UpdateRelativeLinksPlugin = class extends import_obsidian.Plugin {
     }
   }
 };
+
+/* nosourcemap */

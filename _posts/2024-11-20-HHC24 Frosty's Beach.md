@@ -2,7 +2,7 @@
 title: HHC24 Frosty's Beach
 date: 2024-11-20 12:00:00 -500
 categories: [HHC24,SANS]
-tags: [,SANS,Hacking,HHC24]
+tags: [SANS,Hacking,HHC24]
 
 ---
 

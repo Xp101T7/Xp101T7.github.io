@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2023-05-07-GitHub-Pages-Jekyll.md",
+                "file": "_posts/2024-11-20-HHC24 Frosty's Beach.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2023-05-07-GitHub-Pages-Jekyll"
+              "title": "2024-11-20-HHC24 Frosty's Beach"
             }
           }
         ],
@@ -183,20 +183,22 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "templater-obsidian:Templater": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "obsidian-advanced-slides:Show Slide Preview": false
+      "templater-obsidian:Templater": false,
+      "obsidian-advanced-slides:Show Slide Preview": false,
+      "obsidian-git:Open Git source control": false
     }
   },
   "active": "f292e5fc38457e87",
   "lastOpenFiles": [
-    "_posts/2023-05-07-Installing-Ruby.md",
+    "_posts/2024-03-25-Google Chronicle Phishing Challenge.md",
     "_posts/2023-05-07-GitHub-Pages-Jekyll.md",
+    "_posts/2023-05-07-Installing-Ruby.md",
     "_posts/2024-11-20-HHC24 Frosty's Beach.md",
     "Media/Pasted image 20241120120126.png",
     "Media/Pasted image 20241120115605.png",
@@ -216,7 +218,6 @@
     "_posts/2024-03-26-Google Chronicle Office Space.md",
     "_posts/2024-03-26-Google Chronicle Malware Challenge.md",
     "_posts/2024-03-25-Google Chronicle War Stories - Alices Phishing Adventure.md",
-    "_posts/2024-03-25-Google Chronicle Phishing Challenge.md",
     "_posts/2024-03-22-Aurora EDR.md",
     "_posts/2024-03-14-Sysmon Install Guide.md",
     "_posts/2024-02-04-SYSMON Logging.md",
