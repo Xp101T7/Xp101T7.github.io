@@ -30,7 +30,7 @@ Once the host is rebooted and is in a fresh install state. Run the following com
 
 See my other article here:
 
-[LinkLater](LinkLater)
+#LinkLater
 
 If your interested search, "How to secure the RDP setup?"
 
