@@ -58,4 +58,38 @@ https://www.aboutamazon.com/news/workplace/amazon-apprenticeship-job-training-pr
 
 ![[Pasted image 20241120120126.png]]
 
+You have to set the score and force the round variable to be four then you can trigger the game status variable and you have a win sequence. 
+
+### Fix `roundComplete` and Trigger a Win
+Run the following commands in sequence in the browser console:
+
+```javascript
+// Set roundComplete to maximum
+// This forces the game to recognize all rounds as completed.
+sessionStorage.setItem('roundComplete', '4'); // Max rounds completed
+roundComplete = 4;
+
+// Set a high score
+// Ensures the score is above the high score threshold to trigger the win state.
+sessionStorage.setItem('score', '50001'); // Higher than highScore
+score = 50001;
+
+// Manually trigger gameStatus
+// Calls the function that checks for game completion and processes the win sequence.
+gameStatus();
+```
+
+## Elf Minder 9000
+
+![[Pasted image 20241121210040.png]]
+
+
+Can do all the levels without any game modification but the hidden end level is where I decided to explore into the console where i then navigated to the entitites vm guid.js scripts. 
+
+
+
+![[Pasted image 20241123171204.png]]
+
+For now im stuck on this one and need to think about how to access the games entities and something else.
+
 
