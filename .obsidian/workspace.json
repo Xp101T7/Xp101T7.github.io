@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2025-01-12-DevOps Pre-Reqs - Java, NodeJS, Python.md",
+                "file": "_posts/2025-03-22-KQL Time Series Anomaly Detection - bin or bucket.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-01-12-DevOps Pre-Reqs - Java, NodeJS, Python"
+              "title": "2025-03-22-KQL Time Series Anomaly Detection - bin or bucket"
             }
           }
         ]
@@ -40,7 +40,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -181,8 +182,13 @@
   },
   "active": "e3f486da52d2b711",
   "lastOpenFiles": [
-    "_posts/2025-01-09-KQL Dynamic Anomaly Detection.md",
     "_posts/2025-01-12-DevOps Pre-Reqs - Java, NodeJS, Python.md",
+    "_posts/2025-03-22-KQL Time Series Anomaly Detection - bin or bucket.md",
+    "_posts/2025-01-09-KQL Dynamic Anomaly Detection.md",
+    "_posts/2024-12-28-Dynamic Anomaly Detection.md",
+    "Media/Pasted image 20250204142523.png",
+    "Media/Pasted image 20250112180408.png",
+    "Media/Pasted image 20250112180347.png",
     "_posts/2025-01-08-DevOps Pre-Reqs - Networking, DNS.md",
     "_posts/2025-01-08-DevOps Pre-Reqs - linux, VI, Package Management, Services.md",
     "Media/Pasted image 20250111204352.png",
@@ -194,10 +200,6 @@
     "Media/Pasted image 20250105145044.png",
     "Media/Pasted image 20250105145024.png",
     "Media/Pasted image 20250105144921.png",
-    "Media/Pasted image 20250105144913.png",
-    "Media/Pasted image 20250105144859.png",
-    "Media/Pasted image 20250105144835.png",
-    "_posts/2024-12-28-Dynamic Anomaly Detection.md",
     "_posts/2023-10-09-Exploiting M365 Vulns.md",
     "Untitled 2.md",
     "_posts/2024-11-23-The Front Yard (act 1).md",
@@ -217,7 +219,6 @@
     "_posts/2024-03-22-Aurora EDR.md",
     "_posts/2024-03-14-Sysmon Install Guide.md",
     "_posts/2024-02-04-SYSMON Logging.md",
-    "_posts/2024-02-03-Windows Event Logs.md",
     "images/Cory_Crook_05-14-23_CyberGeneralV01.pdf",
     "images/DetectionLab.drawio",
     "Draw",
