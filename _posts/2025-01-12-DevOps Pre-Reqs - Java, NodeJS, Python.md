@@ -260,56 +260,162 @@ This command is typically run after compiling and packaging a Maven project to e
 For more detailed information on running Java applications from the command line, you can refer to the Apache Maven tutorial. 
 [https://cwiki.apache.org/confluence/display/MAVEN/Tutorial%3A%2BBuild%2Ba%2BJAR%2Bfile%2Bwith%2BMaven%2Bin%2B5%2Bminutes?utm_source=chatgpt.com](https://cwiki.apache.org/confluence/display/MAVEN/Tutorial%3A%2BBuild%2Ba%2BJAR%2Bfile%2Bwith%2BMaven%2Bin%2B5%2Bminutes?utm_source=chatgpt.com)
 
-```bash
+---
 
+## JavaScript
+
+
+list node version 
+
+```bash
+node -v
+```
+
+run files or scripts
+
+```bash
+node add.js
+```
+
+Install nodejs
+
+```bash
+sudo yum install nodejs
+```
+
+Add two numbers javascript
+
+```bash
+// Returns addition of two numbers
+let add = function (a, b) {
+  return a+b;
+};
+
+const a = 10, b = 5;
+console.log("Addition : "+ add(a,b));
+```
+
+Dependencies NPM
+
+NPM install files 
+
+```
+npm install file
+```
+
+Node looks under the node modules directory or in the global directory 
+
+```JSON
+node -e "console.log(module.paths)"
+```
+
+Install globally 
+
+```JSON
+npm install file -g
+```
+
+Modules Node JS
+
+Built in modules
+
+| fs     | Handle Filesystem     |
+| ------ | --------------------- |
+| http   | host http server      |
+| OS     | work with OS          |
+| events | handle events         |
+| tls    | implement tls and ssl |
+| url    | parse url strings     |
+
+```JSON
+ls /usr/lib/node_modules/npm/node_modules/
+```
+
+External Modules
+
+| express | Fast, unopinionated, minimalist web framework |
+| ------- | --------------------------------------------- |
+| react   | to create user interfaces                     |
+| debug   | dubug applications                            |
+| async   | work with asynchronous JS                     |
+| lodash  | work with arrays, objects, strings etc        |
+
+```JSON
+ls /usr/lib/node_modules/
 ```
 
 
+## Python
+
+Run python
+```bash
+py main.py
+```
+
+Little Script
+```bash
+import sys
+
+def print_message():
+   if sys.version_info[0] < 3:
+     print("Hello old World!")
+   else:
+     print("Hello new World!")
+
+if __name__ == '__main__':
+    print_message()
+```
+
+versions
+```bash
+python3 -V
+```
+
+`pip3 -V`
+
+Build webapps with flask
 
 ```bash
+pip install flask
+```
 
+```JSON
+pip show flask
 ```
 
 
-
-```bash
-
+look in the directory for the package dependencies
+```JSON
+python3 -c "import sys; print(sys.path)"
 ```
 
+Requirements.txt you can specify the version numbers for the package.  Flask==1.0.9
 
-
-```bash
-
+```JSON
+pip install -r requirements.txt
 ```
 
+upgrade package
 
-
-```bash
-
+```JSON
+pip install flask --upgrade
 ```
 
+Uninstall 
 
-
-```bash
-
+```JSON
+pip uninstall flask
 ```
 
+easy_install  .egg files uses setuptools, download .egg file and place where py can find it and upack
 
-
-```bash
-
+```JSON
+easy_install install app
 ```
 
+wheels needs to be unpacked 
 
-
-```bash
-
+```JSON
+pip install app.whl
 ```
-
-
-
-
-
-
-
 
