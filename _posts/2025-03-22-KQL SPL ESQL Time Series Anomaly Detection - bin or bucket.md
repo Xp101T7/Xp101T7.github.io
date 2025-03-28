@@ -57,7 +57,6 @@ This command produces a time-based chart showing event counts per hour.​
     _Example: Counting Events per Hour_
     
 
-
 ```JSON
 FROM logs   
 | STATS event_count = COUNT(*) BY hour = BUCKET(@timestamp, 1h)
