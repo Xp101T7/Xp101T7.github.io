@@ -3,5 +3,7 @@
   "obsidian-git",
   "templater-obsidian",
   "obsidian-html-plugin",
-  "obsidian-advanced-slides"
+  "obsidian-advanced-slides",
+  "execute-code",
+  "obsidian-day-planner"
 ]
