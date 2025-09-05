@@ -16,7 +16,7 @@ tags: [Diagrams,DFIR,Attack,Breach]
 -  DOH
 
 
-![[Pasted image 20250904211848.png]]
+![Pasted image 20250904211848.png](https://raw.githubusercontent.com/Xp101T7/Xp101T7.github.io/main/Media/Pasted%20image%2020250904211848.png)
 
 
 1- An attacker sends a spear phishing message with the subject "Free Flaming Moe’s in the Cafeteria at after work: Details in Attachment" containing a malicious Microsoft Word attachment to Homer Simpson who opens the attachment and enables Macros when prompted to view the sweet, sweet Flaming Moe’s details.

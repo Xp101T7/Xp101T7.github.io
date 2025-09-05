@@ -51,12 +51,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2025-09-04-PySpark AI Datamodels.md",
+                "file": "_posts/2025-09-04-PowerPlant Data Breach.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-09-04-PySpark AI Datamodels"
+              "title": "2025-09-04-PowerPlant Data Breach"
             }
           }
         ],
@@ -233,9 +233,10 @@
   },
   "active": "22db995e9452cfc4",
   "lastOpenFiles": [
-    "_posts/2025-09-04-PowerPlant Data Breach.md",
-    "_posts/2025-08-05-MCP Servers Building.md",
     "_posts/2025-09-04-PySpark AI Datamodels.md",
+    "_posts/2025-09-04-PowerPlant Data Breach.md",
+    "_posts/2023-05-05-Temp.md",
+    "_posts/2025-08-05-MCP Servers Building.md",
     "_posts/2025-01-05-DevOps Pre-Requisite Intro.md",
     "_posts/2025-01-09-KQL Dynamic Anomaly Detection.md",
     "_posts/2025-03-22-KQL SPL ESQL Time Series Anomaly Detection - bin or bucket.md",
