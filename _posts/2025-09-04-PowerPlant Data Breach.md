@@ -13,7 +13,7 @@ tags: [Diagrams,DFIR,Attack,Breach]
 
 ## PowerPlant Data Breach
 
-
+-  DOH
 
 
 ![[Pasted image 20250904211848.png]]
